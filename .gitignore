@@ -1,0 +1,22 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# macOS
+.DS_Store
+
+# Office temp files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Unpacked office artifacts
+unpacked/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/

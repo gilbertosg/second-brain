@@ -1,0 +1,8 @@
+{
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "'Fira Code', monospace",
+  "workbench.panel.defaultLocation": "right"
+}
