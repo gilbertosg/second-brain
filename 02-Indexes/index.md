@@ -64,6 +64,7 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 |---|---|---|
 | [Health × Career Performance](topic_maps/health-performance-crossmap.md) | L1, L3, L4, L5 | Free Testosterone (54.0 pg/mL, first measurement) is the primary L3 bottleneck — 64% below Medicine 3.0 optimal minimum. Total T improving (262→300). hs-CRP rising (0.49→1.2 mg/L). Physician consult urgent. |
 | [Books × Health Synthesis](topic_maps/books-health-synthesis.md) | L1, L3, L4 | All 4 books converge on the same hormonal/biochemical root cause. Tiered 90-day intervention stack with Tier 1 self-managed actions and Tier 2 physician-directed protocol. |
+| [Career Progression × Productivity Systems](topic_maps/career-productivity-crossmap.md) | L3, L4, L1, L7 | PIE Model gap: no Image OKR. Deep Work math fails without GTD + communication norms + chronotype scheduling in parallel. L4 teaching loop unlocks L7 content pipeline. |
 
 ---
 
@@ -76,6 +77,7 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | [Effective at Life — Operating System](../00-Raw_Sources/00-Foundation_Batch/Effective_at_Life-Operating_System.md) | System definition | 2026-05-24 |
 | [The High-Performance Operating System](../00-Raw_Sources/00-Foundation_Batch/The_High-Performance_Operating_System_How_to_Organize_Your_Life_for_Peace_of_Mind.md) | E7 article draft | 2026-05-24 |
 | [OKRs 2026](../00-Raw_Sources/00-Foundation_Batch/OKRs_2026.md) | Goal registry | 2026-05-24 |
+| [The Effective Week: 2024 Curated Edition](../00-Raw_Sources/00-Foundation_Batch/Effective%20Week%202024%20Curation.md) | Newsletter compilation | 2026-06-20 |
 
 ### L1 Batch — Health Data (Ingested 2026-05-24)
 
@@ -107,6 +109,23 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 
 ---
 
+## L3-Career Notes
+
+| File | Source | Key Contribution |
+|---|---|---|
+| [The 5 Hidden Habits Blocking Your Career Growth](../L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth.md) | Jorge Luis Pando / The Effective Company (2025) | Five hidden habits: efficiency trap, communication drain, unoptimized meetings, memory overload, Homer Self — all threaten Deep Work and Principal promotion |
+| [Effective Week 2024 — L3 Career Notes](../L3-Career/book-notes-effective-week-2024.md) | The Effective Company (2024) | PIE Model (Exposure=60%), Managing Up 7-point 1:1, SPADE decision-making, Customer Obsession for stakeholders, Harada 64-Chart, 7 Amazon career lessons |
+
+---
+
+## L4-Growth Notes
+
+| File | Source | Key Contribution |
+|---|---|---|
+| [Effective Week 2024 — L4 Growth Notes](../L4-Growth/book-notes-effective-week-2024.md) | The Effective Company (2024) | Kahneman System 1/2 bias management, 30-week discipline framework, Regret Minimization (lion-into-kittens), self-transcendence via teaching, input vs. output goals |
+
+---
+
 ## Entities
 
 | File | Type | Description |
@@ -117,8 +136,8 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 
 ## Vault Health
 
-- **Total pages:** 25 (1 master + 7 pillar schemas + 7 L1 data/protocol files + 4 L1 book notes + 2 topic maps + 1 index + 1 log + 2 raw batches)
-- **Last full rebuild:** 2026-05-25 (Session 5)
+- **Total pages:** 31 (1 master + 7 pillar schemas + 7 L1 data/protocol files + 4 L1 book notes + 3 topic maps + 3 L3/L4 career/growth notes + 1 index + 1 log + 3 raw batches)
+- **Last full rebuild:** 2026-06-20 (Session 7 — Ingest Protocol)
 - **Inbox items pending ingest:** 3
 - **Orphan pages:** 0
 - **Critical health flags (active):**

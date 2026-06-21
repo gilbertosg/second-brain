@@ -103,9 +103,9 @@ Most people set vague resolutions like "Get healthy." You will set **Objectives 
 
 **🖼️ Image Placeholder 4: The Dashboard** *Prompt:* "Screenshot of the OKR Spreadsheet showing progress bars and green 'On Track' status indicators."
 
-### **Phase 2: The Weekly Review (The "Friday Finish") 📅**
+### **Phase 2: The Weekly Review (The "Saturday Finish") 📅**
 
-This is the most critical ritual. You cannot win the day if you haven't won the week. **Schedule a recurring 30-minute block on Friday afternoons (3:30 PM).**
+This is the most critical ritual. You cannot win the day if you haven't won the week. **Schedule a recurring 30-minute block on Saturday mornings (11:30 PM).**
 
 **Open your `Weekly Reviews 2026.docx` and `Weekly Reviews 2026.xlsx`.**
 
@@ -164,14 +164,14 @@ You will fail. You will get sick, work will explode, or a family emergency will 
 
 **2\. The Passenger Rule** If your main job gets crazy, your side projects (Passengers) must pause. Do not feel guilty. Skip the blog post. The goal is consistency over a year, not perfection in a week.
 
-**3\. The Monday Reset** If you miss your Friday Review, don't panic. Do it Sunday night or Monday morning. Never start the week without a plan.
+**3\. The Monday Reset** If you miss your Saturday Review, don't panic. Do it Sunday night or Monday morning. Never start the week without a plan.
 
 ## **5\. ❓ Frequently Asked Questions**
 
 **1\. "This looks like a second job. How long does it take?"** It takes less time than the chaos does.
 
 * **Daily:** 5 minutes in the morning, 2 minutes at night.  
-* **Weekly:** 30 minutes on Friday.  
+* **Weekly:** 30 minutes on Saturday.  
 * **Yearly:** 2 hours to set up your goals.
 
 **2\. "Do I really need spreadsheets to be happy?"** Digital tools give you data over time, which helps you see trends (e.g., "I sleep poorly when I drink alcohol"). However, if you hate spreadsheets, you can do the "Qualitative Reflection" in a physical journal. The tool matters less than the habit.

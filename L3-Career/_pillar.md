@@ -70,6 +70,17 @@ E7 (effectiveatlife.com) translates Gil OS productivity systems for US and Latin
 - **Cal Newport (Slow Productivity):** Work < 40 hr/week is a Slow Productivity KR — quality over quantity.
 - **Demir & Carey Bentley (Winning the Week):** Friday Finish blocks Deep Work for the coming week before Monday starts.
 - **James Clear (Atomic Habits):** Deep Work tracking on the Habit Tracker makes the 10 hr/week target a daily identity signal, not a weekly hope.
+- **Harvey Coleman (PIE Model):** Performance = 10%, Image = 30%, Exposure = 60% of career advancement. CRM is the Exposure system; Image OKR is a gap (see book notes).
+- **Jorge Luis Pando (Managing Up):** 7-point 1:1 structure with manager ensures contributions don't go unnoticed. Time Wasters segment prevents capacity overcommit.
+
+---
+
+## Book Notes (L3-Filtered Synthesized Sources)
+
+| File | Source | Key Contribution |
+|---|---|---|
+| [The 5 Hidden Habits](The-5-Hidden-Habits-Blocking-Your-Career-Growth.md) | Jorge Luis Pando / The Effective Company | Five hidden habits: efficiency trap, communication drain, unoptimized meetings, memory overload, Homer Self — all threaten Deep Work |
+| [Effective Week 2024 — L3 Notes](book-notes-effective-week-2024.md) | The Effective Company | PIE model, Managing Up framework, Decision-Making (SPADE), Customer Obsession for stakeholders, 7 Amazon career lessons, Goal Setting systems |
 
 ---
 

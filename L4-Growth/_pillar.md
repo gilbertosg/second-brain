@@ -43,9 +43,19 @@ L4 is **Active** in 2026. It does not receive Driver-level time allocation but d
 
 ## Key Methodologies Applied
 
-- **James Clear (Atomic Habits):** Reading treated as a daily identity habit. Audiobooks enable reading during commute/exercise, compounding time without adding separate blocks.
+- **James Clear (Atomic Habits):** Reading treated as a daily identity habit. Audiobooks enable reading during commute/exercise, compounding time without adding separate blocks. Input goals (pages/day) take precedence over output goals (8 books).
 - **Cal Newport (Slow Productivity):** Focus on completing fewer, higher-quality learning projects rather than starting many courses. 2 ML courses > 6 half-finished ones.
 - **Tiago Forte (Building a Second Brain):** Knowledge captured in this vault. Books and course insights feed the 03-Resources layer and relevant pillar files.
+- **Daniel Kahneman (Thinking Fast and Slow):** Weekly Review is a designed System 2 mechanism. Prevents Homer Self (System 1, impulsive) from filling the week reactively.
+- **Jeff Bezos (Regret Minimization):** New projects (E7, TPM Samurai) follow the lion-into-kittens approach — smallest viable unit first. Scale after 20% time validation.
+
+---
+
+## Book Notes (L4-Filtered Synthesized Sources)
+
+| File | Source | Key Contribution |
+|---|---|---|
+| [Effective Week 2024 — L4 Notes](book-notes-effective-week-2024.md) | The Effective Company | Discipline system (30-week framework), Kahneman System 1/2, Regret Minimization, Finding Meaning via teaching, Creativity as energy, Input vs. Output goals |
 
 ---
 

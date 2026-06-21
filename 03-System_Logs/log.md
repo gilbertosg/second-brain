@@ -255,6 +255,41 @@ Chronological record of all operations performed on this Second Brain vault. App
 
 ---
 
+## [2026-06-20] convert | PDF → Markdown (L3 Career Notes)
+
+**Source ingested:**
+1. `00-Raw_Sources/00-Foundation_Batch/The 5 Hidden Habits Blocking Your Career Growth.pdf`
+
+**Author:** Jorge Luis Pando — The Effective Company (© 2025)
+
+**Actions taken:**
+
+| Action | File Created/Updated | Notes |
+|---|---|---|
+| Converted PDF to markdown | `L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth.md` | Full 10-page PDF extracted via pdfplumber; doubled characters from PDF rendering cleaned; YAML frontmatter added; structured as clean reference note with tables, action lists, and summary |
+| Updated master index | `02-Indexes/index.md` | Added L3-Career Notes section; updated page count to 26 |
+
+**Summary of content:**
+
+Five hidden habits blocking high-performing professionals:
+1. **Efficiency over effectiveness** — the Trap Zone; fix by mapping Big Rocks to org goals
+2. **Communication overload** — 190 messages/day, 5 hrs lost; fix with GTD triage flow
+3. **Unstructured meetings** — meetings consume 25–50%/week; fix with agendas, team norms, and surveys
+4. **Brain as to-do list** — Miller's Law (4–7 thoughts max); fix with a single electronic capture system
+5. **Homer Self vs. Spock Self** — impulsive doer vs. rational planner; fix with Weekly Review + chronotype-aligned scheduling
+
+**Cross-pillar relevance:**
+- **L3 (Career):** Direct application — all 5 habits map to Principal TPM promotion and Deep Work OKR
+- **L4 (Growth):** Habit 1 (effectiveness) and Habit 5 (chronotype scheduling) apply to ML course and reading goals
+- **L1 (Health):** Habit 2 (communication drain) and Habit 3 (meetings) drive TPM stress → cortisol → hs-CRP pathway
+
+**Vault state after this operation:**
+- Total pages: 26
+- Orphan pages: 0 (new file linked from index)
+- Inbox items pending: 3
+
+---
+
 ## [2026-05-25] query | Biomarker Correction Daily Execution Schedule
 
 **Query:** Synthesize Out-of-Range-Biomarkers data against Critical-Biomarkers-for-Male-Longevity-and-Performance benchmarks and Gil-Health-Upgrade-Protocol-Proposal. Create actionable daily execution schedule addressing primary health deficiencies.
@@ -290,4 +325,103 @@ Chronological record of all operations performed on this Second Brain vault. App
 - Total pages: 25
 - New file: `L1-Health/protocols/biomarker_correction_plan.md`
 - Orphan pages: 0
+- Inbox items pending: 3
+
+---
+
+## [2026-06-20] convert | PDF → Markdown (Foundation Batch — Productivity)
+
+**Source ingested:**
+1. `00-Raw_Sources/00-Foundation_Batch/Effective Week 2024 Curation.pdf`
+
+**Author:** The Effective Company (© 2025) | www.TheEffective.co
+**Original format:** PDF, 106 pages
+
+**Actions taken:**
+
+| Action | File Created/Updated | Notes |
+|---|---|---|
+| Converted PDF to markdown | `00-Raw_Sources/00-Foundation_Batch/Effective Week 2024 Curation.md` | Full 106-page PDF extracted in 6 chunks (20-page max per read); YAML frontmatter added; all 5 section headers and 39 articles preserved |
+| Updated master index | `02-Indexes/index.md` | Added file to Foundation Batch raw sources table; updated page count to 27 |
+
+**Content summary:**
+
+39 curated newsletter articles from 2024 organized into 5 sections:
+
+| Section | Articles | Key Themes |
+|---|---|---|
+| Career Growth | 12 | Managing up, stakeholder communication, executive presence, high-performance routines |
+| Goal Setting | 8 | OKR frameworks, weekly reviews, quarterly planning, focus and prioritization |
+| Growth & Learning | 7 | Deliberate practice, feedback loops, skill acquisition, mentorship |
+| Mindset & Well-Being | 9 | Stress management, resilience, energy management, work-life integration |
+| Other | 3 | Miscellaneous high-performance insights |
+
+Each article follows a consistent structure: Theory → Personal Thoughts → How to Put This Into Practice.
+
+**Cross-pillar relevance:**
+- **L3 (Career):** Career Growth section maps directly to Principal TPM promotion path and managing up at Blue Origin
+- **L4 (Growth):** Growth & Learning section supports 8-book goal and deliberate practice framework
+- **L1 (Health):** Mindset & Well-Being section complements Dispenza protocol and energy management system
+- **L7 (Contribute):** Goal Setting frameworks align with E7 brand content planning methodology
+
+**Vault state after this operation:**
+- Total pages: 27
+- New raw source: `00-Raw_Sources/00-Foundation_Batch/Effective Week 2024 Curation.md`
+- Orphan pages: 0
+- Inbox items pending: 3
+
+---
+
+## [2026-06-20] ingest | Effective Week 2024 + 5 Hidden Habits → L3 / L4 Architecture
+
+**Sources synthesized:**
+1. `00-Raw_Sources/00-Foundation_Batch/Effective-Week-2024-Curation.md` — 106 pages, 39 articles, 5 sections
+2. `00-Raw_Sources/00-Foundation_Batch/The-5-Hidden-Habits-Blocking-Your-Career-Growth.md` — 10 pages, Jorge Luis Pando / The Effective Company
+
+**Protocol:** Ingest Protocol — Librarian
+
+**Actions taken:**
+
+| Action | File Created/Updated | Notes |
+|---|---|---|
+| Created L3 Career synthesis notes | `L3-Career/book-notes-effective-week-2024.md` | Career Growth + Goal Setting sections filtered for Principal promotion path; PIE Model, Managing Up 7-point 1:1, SPADE decision-making, Harada 64-Chart, 7 Amazon lessons |
+| Created L4 Growth synthesis notes | `L4-Growth/book-notes-effective-week-2024.md` | Growth & Learning + Goal Systems sections; Kahneman System 1/2, discipline framework, Regret Minimization, self-transcendence, input vs. output goals |
+| Created cross-pillar topic map | `02-Indexes/topic_maps/career-productivity-crossmap.md` | Surfaces 10 structural connections between L3/L4; reveals Deep Work math failure, PIE Image gap, L4→L7 teaching loop |
+| Updated L3 pillar schema | `L3-Career/_pillar.md` | Added PIE Model and Managing Up to Key Methodologies; added Book Notes section |
+| Updated L4 pillar schema | `L4-Growth/_pillar.md` | Added Kahneman and Bezos to Key Methodologies; added Book Notes section; clarified input goals |
+| Rebuilt master index | `02-Indexes/index.md` | Added L3 and L4 book notes; added career-productivity topic map; updated page count to 31 |
+
+**Critical synthesis findings:**
+
+1. **PIE IMAGE GAP — 🔴 NEW CRITICAL FLAG (Career):** L3 currently has no explicit Image OKR. PIE research shows Image = 30% of career advancement, yet Gil tracks zero Image input metrics. The promotion case depends disproportionately on Performance (10%) and a vague Exposure KR (CRM contacts count). Recommendation: Add quarterly peer perception check and quarterly communication improvement goal to L3 system.
+
+2. **DEEP WORK MATH FAILS WITHOUT 3 SIMULTANEOUS INTERVENTIONS:** Async communication consumes 6.2 hr/day (60–77% of workday). Meetings consume 25–50% additional. The remaining time in a 40-hr week is 0–9 hours. Deep Work target is 10 hr/week. The 3 required interventions (GTD triage, communication norms, chronotype scheduling) must run in parallel — any one or two alone are insufficient.
+
+3. **L4 → L7 TEACHING LOOP NOT YET WIRED:** Every book Gil reads could directly produce an E7 newsletter issue (Feynman Technique). This removes the E7 "what to write about" bottleneck, converts L4 activity into L7 output, and generates L3 Exposure simultaneously. The three pillars share the same raw material; the loop is not yet connected.
+
+4. **REGRET MINIMIZATION VALIDATES E7 SATURDAY CONSTRAINT:** The lion-into-kittens framework (Regret Minimization) confirms that the E7 Saturday morning constraint is correct. Jorge's own path took 7 years from first training to 3,000 subscribers. Gil should not try to accelerate past the Saturday constraint — the constraint is the validation mechanism that keeps E7 as a Passenger track.
+
+5. **STAKEHOLDER MAP IS THE MISSING SYSTEM INPUT:** The Principal promotion loop (Manage Up → PIE Exposure → Sponsor relationship → Nomination) breaks at the Managing Up step if contributions are invisible. The 7-point 1:1 structure + stakeholder map (name / last touch / feedback / follow-up) are the two structural inputs that make the entire promotion system functional. Neither is currently built.
+
+**New cross-pillar intersections detected:**
+
+- **L4 (Weekly Review) → L3 (Deep Work):** System 2 planning on Fridays determines whether Homer Self or Spock Self runs the following week. Without it, Deep Work hours get claimed by reactive work.
+- **L3 (Communication drain) → L1 (hs-CRP):** Already flagged in health crossmap. Confirmed again: reducing meeting and async volume is both a career productivity and a health inflammation intervention.
+- **L4 (Teaching/sharing) → L7 (Content pipeline):** Each book read → 1 E7 issue. Currently not connected. Wiring this removes the L7 content creation bottleneck.
+- **L3 (E7 Saturdays) → L2 (Luisa relationship):** Saturday morning E7 sessions are a direct L2 time competitor. The Saturday constraint must enforce a hard stop — E7 does not bleed into afternoon.
+
+**Contradictions resolved:**
+
+- **Prior:** L3 _pillar said "10 hr Deep Work is the primary KR" with no constraints on what the Deep Work is spent on.
+- **Resolved:** Habit 1 (Efficiency ≠ Effectiveness) from 5 Hidden Habits now provides the constraint: Deep Work hours must be spent on Principal-promotion-track work (effectiveness), not just any focused work.
+
+- **Prior:** L4 _pillar listed "8 books" as the OKR.
+- **Resolved:** Reframed as: input goal = 20 pages/day (controllable); output goal = 8 books (result). System is now action-based, not result-based.
+
+**Vault state after this operation:**
+- Total pages: 31
+- New files: 3 (`L3-Career/book-notes-effective-week-2024.md`, `L4-Growth/book-notes-effective-week-2024.md`, `02-Indexes/topic_maps/career-productivity-crossmap.md`)
+- Pages updated: 4 (`L3-Career/_pillar.md`, `L4-Growth/_pillar.md`, `02-Indexes/index.md`, this log)
+- Orphan pages: 0
+- Critical gaps flagged: 3 (PIE Image OKR missing, stakeholder map not built, L4→L7 teaching loop not wired)
 - Inbox items pending: 3
