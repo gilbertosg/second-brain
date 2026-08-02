@@ -2,7 +2,7 @@
 title: Second Brain — Master Registry
 type: index
 owner: Gilberto Silva Gonzalez
-last_updated: 2026-05-25 (Session 5)
+last_updated: 2026-08-02 (Session 8)
 ---
 
 # Second Brain — Master Registry
@@ -65,6 +65,7 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | [Health × Career Performance](topic_maps/health-performance-crossmap.md) | L1, L3, L4, L5 | Free Testosterone (54.0 pg/mL, first measurement) is the primary L3 bottleneck — 64% below Medicine 3.0 optimal minimum. Total T improving (262→300). hs-CRP rising (0.49→1.2 mg/L). Physician consult urgent. |
 | [Books × Health Synthesis](topic_maps/books-health-synthesis.md) | L1, L3, L4 | All 4 books converge on the same hormonal/biochemical root cause. Tiered 90-day intervention stack with Tier 1 self-managed actions and Tier 2 physician-directed protocol. |
 | [Career Progression × Productivity Systems](topic_maps/career-productivity-crossmap.md) | L3, L4, L1, L7 | PIE Model gap: no Image OKR. Deep Work math fails without GTD + communication norms + chronotype scheduling in parallel. L4 teaching loop unlocks L7 content pipeline. |
+| [AI for Friends Course × Career × Contribution](topic_maps/ai-course-cross-pillar-map.md) | L4, L3, L7 | Self-created AI course is concrete Agent Award evidence; realizes the previously-unwired L4→L7 teaching loop; flags a personal compliance gap re: confidential data on personal Claude Pro. |
 
 ---
 
@@ -77,30 +78,50 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | [Effective at Life — Operating System](../00-Raw_Sources/00-Foundation_Batch/Effective_at_Life-Operating_System.md) | System definition | 2026-05-24 |
 | [The High-Performance Operating System](../00-Raw_Sources/00-Foundation_Batch/The_High-Performance_Operating_System_How_to_Organize_Your_Life_for_Peace_of_Mind.md) | E7 article draft | 2026-05-24 |
 | [OKRs 2026](../00-Raw_Sources/00-Foundation_Batch/OKRs_2026.md) | Goal registry | 2026-05-24 |
-| [The Effective Week: 2024 Curated Edition](../00-Raw_Sources/00-Foundation_Batch/Effective%20Week%202024%20Curation.md) | Newsletter compilation | 2026-06-20 |
+| [The Effective Week: 2024 Curated Edition](../00-Raw_Sources/00-Foundation_Batch/Effective-Week-2024-Curation.md) | Newsletter compilation | 2026-06-20 |
 
 ### L1 Batch — Health Data (Ingested 2026-05-24)
 
 | File | Type | Ingested |
 |---|---|---|
-| [Weight Tracker](../00-Raw_Sources/L1_Batch/weight_tracker.md) | Body composition history | 2026-05-24 |
-| [Blood Analysis Biomarkers (Lifeforce)](../00-Raw_Sources/L1_Batch/Blood_Analysis_Biomarkers_LifeForce.md) | Biomarker reference | 2026-05-24 |
-| [Blood Analysis Historical Results](../00-Raw_Sources/L1_Batch/Blood_Analysis_Historical.md) | Blood panel history | 2026-05-24 |
+| [Weight Tracker](../00-Raw_Sources/L1_Health/weight_tracker.md) | Body composition history | 2026-05-24 |
+| [Blood Analysis Biomarkers (Lifeforce)](../00-Raw_Sources/L1_Health/Blood_Analysis_Biomarkers_LifeForce.md) | Biomarker reference | 2026-05-24 |
+| [Blood Analysis Historical Results](../00-Raw_Sources/L1_Health/Blood_Analysis_Historical.md) | Blood panel history | 2026-05-24 |
 
 ### L1 Batch — Books (Ingested 2026-05-25)
 
 | File | Type | Ingested |
 |---|---|---|
-| [Book: Outlive (Peter Attia)](../00-Raw_Sources/L1_Batch/books/Book-Outlive-The-Science-And-Art-of-Longevity.md) | Book report + personal application | 2026-05-25 |
-| [Book: Breaking the Habit (Dispenza)](../00-Raw_Sources/L1_Batch/books/Book-Breaking-the-Habit-of-Being-Yourself.md) | Book report + personal application | 2026-05-25 |
-| [Book: Life Force (Tony Robbins)](../00-Raw_Sources/L1_Batch/books/Book-Life-Force_Tony-Robbins.pdf) | Book report | 2026-05-25 |
-| [Life Mastery Workbook (Tony Robbins)](../00-Raw_Sources/L1_Batch/books/Life-Mastery-Workbook-Tony-Robbins.pdf) | Workbook | 2026-05-25 |
+| [Book: Outlive (Peter Attia)](../00-Raw_Sources/L1_Health/books/Book-Outlive-The-Science-And-Art-of-Longevity.md) | Book report + personal application | 2026-05-25 |
+| [Book: Breaking the Habit (Dispenza)](../00-Raw_Sources/L1_Health/books/Book-Breaking-the-Habit-of-Being-Yourself.md) | Book report + personal application | 2026-05-25 |
+| [Book: Life Force (Tony Robbins)](../00-Raw_Sources/L1_Health/books/Book-Life-Force_Tony-Robbins.pdf) | Book report | 2026-05-25 |
+| [Life Mastery Workbook (Tony Robbins)](../00-Raw_Sources/L1_Health/books/Life-Mastery-Workbook-Tony-Robbins.pdf) | Workbook | 2026-05-25 |
 
 ### L1 Batch — Biomarkers (Ingested 2026-05-25)
 
 | File | Type | Ingested |
 |---|---|---|
-| [Out-of-Range Biomarkers (Function Health, May 2026)](../00-Raw_Sources/L1_Batch/Out-of-Range-Biomarkers.md) | Blood panel — out-of-range report | 2026-05-25 |
+| [Out-of-Range Biomarkers (Function Health, May 2026)](../00-Raw_Sources/L1_Health/Out-of-Range-Biomarkers.md) | Blood panel — out-of-range report | 2026-05-25 |
+| [Critical Biomarkers for Male Longevity and Performance](../00-Raw_Sources/L1_Health/Critical-Biomarkers-for-Male-Longevity-and-Performance.md) | Biomarker reference | 2026-05-25 |
+| [Gil Health Upgrade Protocol Proposal](../00-Raw_Sources/L1_Health/Gil-Health-Upgrade-Protocol-Proposal.md) | Protocol proposal | 2026-05-25 |
+
+### L4 Growth Batch — AI for Friends Course (Ingested 2026-08-02)
+
+| File | Type | Ingested |
+|---|---|---|
+| [1-0 AI Foundations Module](../00-Raw_Sources/L4_Growth/2026-08-02/1-0_AI_Foundations_module.md) | Course module index | 2026-08-02 |
+| [1-1 How AI Models Work](../00-Raw_Sources/L4_Growth/2026-08-02/1-1_How_AI_Models_Work.md) | Course lesson | 2026-08-02 |
+| [1-2 Prompt vs. Context Engineering](../00-Raw_Sources/L4_Growth/2026-08-02/1-2_Prompt_Engineering_vs_Context_Engineering.md) | Course lesson | 2026-08-02 |
+| [1-3 Practical Prompting Techniques](../00-Raw_Sources/L4_Growth/2026-08-02/1-3_Practical_Prompting_Techniques.md) | Course lesson | 2026-08-02 |
+| [1-4 Choosing an AI Model](../00-Raw_Sources/L4_Growth/2026-08-02/1-4_Chossing_AI_Model.md) | Course lesson | 2026-08-02 |
+| [2-0 Setting Up Your Computer](../00-Raw_Sources/L4_Growth/2026-08-02/2-0_Setting_Up_Computer.md) | Course module index | 2026-08-02 |
+| [2-1 Installing Windows Terminal](../00-Raw_Sources/L4_Growth/2026-08-02/2-1_Installing_Windows_terminal.md) | Course lesson — **empty file, content gap** | 2026-08-02 |
+| [2-2 Installing VS Code](../00-Raw_Sources/L4_Growth/2026-08-02/2-2_Intalling_VS_Code.md) | Course lesson | 2026-08-02 |
+| [2-3 Navigating the Terminal](../00-Raw_Sources/L4_Growth/2026-08-02/2-3_Navigating_Terminal.md) | Course lesson — **contains a duplicated Module 3 tail, see gap notes** | 2026-08-02 |
+| [3-0 Claude Code (Module Index)](../00-Raw_Sources/L4_Growth/2026-08-02/3-0_Claude-Code.md) | Course module index | 2026-08-02 |
+| [3-1 Claude Code Installation](../00-Raw_Sources/L4_Growth/2026-08-02/3-1_Claude_Code_Installation.md) | Course lesson | 2026-08-02 |
+
+Module 4 ("Building Your AI Personal Assistant") is referenced in this batch but has no source file — not yet created by Gil. See gap notes in [AI for Friends — Course Overview](../L4-Growth/course-ai-for-friends.md).
 
 **Inbox (Pending Ingest):**
 - `00-Raw_Sources/inbox/0-Persistent-AI-Second-Brain-Implementation-Guide.md`
@@ -114,7 +135,7 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | File | Source | Key Contribution |
 |---|---|---|
 | [The 5 Hidden Habits Blocking Your Career Growth](../L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth.md) | Jorge Luis Pando / The Effective Company (2025) | Five hidden habits: efficiency trap, communication drain, unoptimized meetings, memory overload, Homer Self — all threaten Deep Work and Principal promotion |
-| [Effective Week 2024 — L3 Career Notes](../L3-Career/book-notes-effective-week-2024.md) | The Effective Company (2024) | PIE Model (Exposure=60%), Managing Up 7-point 1:1, SPADE decision-making, Customer Obsession for stakeholders, Harada 64-Chart, 7 Amazon career lessons |
+| [Effective Week 2024 — L3 Career Notes](../L3-Career/book-notes-effective-week-2024-l3.md) | The Effective Company (2024) | PIE Model (Exposure=60%), Managing Up 7-point 1:1, SPADE decision-making, Customer Obsession for stakeholders, Harada 64-Chart, 7 Amazon career lessons |
 
 ---
 
@@ -126,20 +147,33 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 
 ---
 
+## L4-Growth Course Notes
+
+| File | Source | Key Contribution |
+|---|---|---|
+| [AI for Friends — Course Overview](../L4-Growth/course-ai-for-friends.md) | Self-created course (taught 2026) | Index of a 3-module AI literacy course Gil created and taught to friends; flags an empty source lesson and a missing Module 4 |
+| [Module 1 — AI Foundations](../L4-Growth/course-ai-for-friends-module1-foundations.md) | AI for Friends | AI mental model, agentic loop, prompt vs. context engineering, 5 prompting patterns, COSTARS framework, model selection (Haiku/Sonnet/Opus) |
+| [Module 2 — Computer Setup](../L4-Growth/course-ai-for-friends-module2-computer-setup.md) | AI for Friends | Terminal basics (pwd/ls/cd/mkdir), VS Code install — optional warm-up; 1 source lesson empty |
+| [Module 3 — Claude Code](../L4-Growth/course-ai-for-friends-module3-claude-code.md) | AI for Friends | Claude Code install/tutorial, CLAUDE.md, Plan Mode, VS Code extensions, confidentiality/compliance guidance |
+
+---
+
 ## Entities
 
 | File | Type | Description |
 |---|---|---|
+| [AI for Friends (Course)](../01-Entities/ai-for-friends-course.md) | initiative | First entity page in the vault. Connecting node for the self-created AI course across L4 (learning), L3 (career evidence), and L7 (content pipeline) |
 | *(none yet)* | — | Luisa (partner), Luna (companion) identified as key entities; pages not yet created |
 
 ---
 
 ## Vault Health
 
-- **Total pages:** 31 (1 master + 7 pillar schemas + 7 L1 data/protocol files + 4 L1 book notes + 3 topic maps + 3 L3/L4 career/growth notes + 1 index + 1 log + 3 raw batches)
-- **Last full rebuild:** 2026-06-20 (Session 7 — Ingest Protocol)
+- **Total pages:** 37 (1 master + 7 pillar schemas + 7 L1 data/protocol files + 4 L1 book notes + 4 topic maps + 3 L3/L4 career/growth notes + 4 L4 course notes + 1 entity + 1 index + 1 log + 4 raw batches)
+- **Last full rebuild:** 2026-08-02 (Session 8 — Ingest Protocol, AI for Friends Course)
 - **Inbox items pending ingest:** 3
 - **Orphan pages:** 0
+- **Source-quality gaps found (2026-08-02):** `00-Raw_Sources/L4_Growth/2026-08-02/2-1_Installing_Windows_terminal.md` is empty (Lesson 2.1 content missing, low impact — Module 3 doesn't depend on it); `2-3_Navigating_Terminal.md` contains a duplicated-content tail (Module 3 index repeated) not double-counted in synthesis; Module 4 of the course ("Building Your AI Personal Assistant") is referenced but has no source file yet.
 - **Critical health flags (active):**
   - 🔴 **Free Testosterone 54.0 pg/mL** (first measurement; Medicine 3.0 action trigger < 150 breached; 64% below optimal minimum) — **NEW — Session 5**
   - 🔴 hs-CRP 1.2 mg/L (was 0.49 in Jan 2026; +145% in 4 months)

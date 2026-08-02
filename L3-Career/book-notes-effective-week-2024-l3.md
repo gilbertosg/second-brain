@@ -1,12 +1,26 @@
 ---
 title: "Book Notes — The Effective Week: 2024 Curated Edition (L3 Career)"
-source: "The Effective Company — Jorge Luis Pando"
-source_file: "00-Raw_Sources/00-Foundation_Batch/Effective-Week-2024-Curation.md"
+source: The Effective Company — Jorge Luis Pando
+source_file: 00-Raw_Sources/00-Foundation_Batch/Effective-Week-2024-Curation.md
 type: book-notes
-pillar: L3
 created: 2026-06-20
-tags: [l3, career, productivity, managing-up, pie-model, decision-making, communication, mentorship, goal-setting, promotion]
-related: [L3-Career/_pillar, L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth, L4-Growth/book-notes-effective-week-2024, 02-Indexes/topic_maps/career-productivity-crossmap]
+tags:
+  - l3
+  - career
+  - productivity
+  - managing-up
+  - pie-model
+  - decision-making
+  - communication
+  - mentorship
+  - goal-setting
+  - promotion
+related:
+  - L3-Career/_pillar
+  - L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth
+  - L4-Growth/book-notes-effective-week-2024
+  - 02-Indexes/topic_maps/career-productivity-crossmap
+pillar_id: L3
 ---
 
 # The Effective Week 2024 — L3 Career Notes

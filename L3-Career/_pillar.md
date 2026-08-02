@@ -6,7 +6,7 @@ owner: Gilberto Silva Gonzalez
 status: active
 strategic_priority: Driver (Career) / Passenger (E7 Business)
 created: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-02
 tags: [l3, career, blue-origin, e7, business, tpm, principal, pillar]
 related: [gil_os_master, L1-Health/_pillar, L4-Growth/_pillar, L5-Finance/_pillar, L7-Contribute/_pillar]
 ---
@@ -80,7 +80,7 @@ E7 (effectiveatlife.com) translates Gil OS productivity systems for US and Latin
 | File | Source | Key Contribution |
 |---|---|---|
 | [The 5 Hidden Habits](The-5-Hidden-Habits-Blocking-Your-Career-Growth.md) | Jorge Luis Pando / The Effective Company | Five hidden habits: efficiency trap, communication drain, unoptimized meetings, memory overload, Homer Self — all threaten Deep Work |
-| [Effective Week 2024 — L3 Notes](book-notes-effective-week-2024.md) | The Effective Company | PIE model, Managing Up framework, Decision-Making (SPADE), Customer Obsession for stakeholders, 7 Amazon career lessons, Goal Setting systems |
+| [Effective Week 2024 — L3 Notes](book-notes-effective-week-2024-l3.md) | The Effective Company | PIE model, Managing Up framework, Decision-Making (SPADE), Customer Obsession for stakeholders, 7 Amazon career lessons, Goal Setting systems |
 
 ---
 
@@ -111,3 +111,4 @@ E7 (effectiveatlife.com) translates Gil OS productivity systems for US and Latin
 - **TPM Samurai** — Brand identity for Gil's TPM expertise. Likely targets the same audience as E7.
 - **Serenity Scheduling** — Internal or external product; scope to be captured in a dedicated project file.
 - The "work < 40 hr/week" KR is a protective constraint, not just an ambition. It enforces Slow Productivity and protects L1 energy.
+- **2026-08-02:** the self-created "AI for Friends" course ([[L4-Growth/course-ai-for-friends]]) is concrete Agent Award evidence — a demonstrated, teachable AI capability rather than a course-completion certificate. Its Claude Code module also contains confidentiality guidance (personal Claude Pro has no corporate data agreement) that Gil should apply to his own Blue-Origin-adjacent AI usage. See [[02-Indexes/topic_maps/ai-course-cross-pillar-map]].

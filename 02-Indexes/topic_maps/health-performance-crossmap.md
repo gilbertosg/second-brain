@@ -1,17 +1,33 @@
 ---
-title: "Topic Map — Health Metrics × Career Performance"
+title: Topic Map — Health Metrics × Career Performance
 type: topic-map
 created: 2026-05-24
 last_updated: 2026-05-25
 status: active
-tags: [topic-map, l1, l3, l4, testosterone, deep-work, performance, cross-pillar]
-pillars_covered: [L1, L3, L4, L5]
+tags:
+  - topic-map
+  - l1
+  - l3
+  - l4
+  - testosterone
+  - deep-work
+  - performance
+  - cross-pillar
 sources:
   - L1-Health/blood-analysis.md
   - L1-Health/weight-tracker.md
   - L3-Career/_pillar.md
   - 02-Indexes/gil_os_master.md
-related: [L1-Health/_pillar, L3-Career/_pillar, L4-Growth/_pillar, L5-Finance/_pillar]
+related:
+  - L1-Health/_pillar
+  - L3-Career/_pillar
+  - L4-Growth/_pillar
+  - L5-Finance/_pillar
+pillars:
+  - L1
+  - L3
+  - L4
+  - L5
 ---
 
 # Topic Map — Health Metrics × Career Performance

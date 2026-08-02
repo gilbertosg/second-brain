@@ -6,7 +6,7 @@ owner: Gilberto Silva Gonzalez
 status: active
 strategic_priority: Passenger
 created: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-02
 tags: [l7, contribute, e7, brand, writing, youtube, website, pillar]
 related: [gil_os_master, L3-Career/_pillar, L4-Growth/_pillar]
 ---
@@ -78,3 +78,4 @@ Both tracks run on the same Saturday morning schedule and serve the same brand.
 - **3 website versions:** Likely iterative releases of effectiveatlife.com. Track versioning in L7 project files.
 - **TPM Samurai** (from L3 KRs) may generate L7 content as well. Capture relationship when scope is defined.
 - All content KRs target roughly 1 unit/month — a deliberately manageable Passenger cadence.
+- **2026-08-02:** the "AI for Friends" course ([[L4-Growth/course-ai-for-friends]]) is an untapped content source — it is the strongest realized instance yet of the L4→L7 teaching loop identified in [[02-Indexes/topic_maps/career-productivity-crossmap]]. No blog post or video has been drafted from it yet. See [[02-Indexes/topic_maps/ai-course-cross-pillar-map]] for candidate conversions.

@@ -233,4 +233,4 @@ A finding that the original pillar schemas did not surface:
 
 ---
 
-*For related vault documents see: [[L3-Career/book-notes-effective-week-2024]], [[L4-Growth/book-notes-effective-week-2024]], [[L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth]], [[02-Indexes/topic_maps/health-performance-crossmap]]*
+*For related vault documents see: [[L3-Career/book-notes-effective-week-2024-l3]], [[L4-Growth/book-notes-effective-week-2024]], [[L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth]], [[02-Indexes/topic_maps/health-performance-crossmap]]*

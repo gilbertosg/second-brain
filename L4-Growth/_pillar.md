@@ -6,7 +6,7 @@ owner: Gilberto Silva Gonzalez
 status: active
 strategic_priority: Active
 created: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-02
 tags: [l4, growth, learning, books, ml, certificates, pillar]
 related: [gil_os_master, L3-Career/_pillar]
 ---
@@ -59,6 +59,17 @@ L4 is **Active** in 2026. It does not receive Driver-level time allocation but d
 
 ---
 
+## Course Notes (L4-Created Course Material)
+
+| File | Source | Key Contribution |
+|---|---|---|
+| [AI for Friends — Course Overview](course-ai-for-friends.md) | Self-created course (taught 2026) | Index of a 3-module AI literacy course Gil created and taught to friends; counts toward the "4 AI/side projects" OKR |
+| [Module 1 — AI Foundations](course-ai-for-friends-module1-foundations.md) | AI for Friends | AI mental model, agentic loop, prompt vs. context engineering, COSTARS framework, model selection |
+| [Module 2 — Computer Setup](course-ai-for-friends-module2-computer-setup.md) | AI for Friends | Terminal basics, VS Code install (optional warm-up module) |
+| [Module 3 — Claude Code](course-ai-for-friends-module3-claude-code.md) | AI for Friends | Claude Code install/tutorial, CLAUDE.md, Plan Mode, confidentiality guidance |
+
+---
+
 ## Weekly Check-in Questions
 
 1. Did I complete this week's Weekly Review?
@@ -82,3 +93,4 @@ L4 is **Active** in 2026. It does not receive Driver-level time allocation but d
 - Certificate target unspecified in source. Most likely a technical PM, cloud, or AI certification. Capture decision when made.
 - "AI/Projects 4" overlaps with L3 project KRs — track in L3 project files and credit to both pillars.
 - Weekly Reviews are tracked in Google Drive `02 Areas/0 System/Weekly Reviews 2026.xlsx` and `.docx`.
+- **2026-08-02:** "AI for Friends" course ingested — 1 of the 4 "AI/side projects" KR now has a concrete, documented instance. See [[02-Indexes/topic_maps/ai-course-cross-pillar-map]] for its L3/L7 implications.

@@ -1,12 +1,25 @@
 ---
 title: "Book Notes — The Effective Week: 2024 Curated Edition (L4 Growth)"
-source: "The Effective Company — Jorge Luis Pando"
-source_file: "00-Raw_Sources/00-Foundation_Batch/Effective-Week-2024-Curation.md"
+source: The Effective Company — Jorge Luis Pando
+source_file: 00-Raw_Sources/00-Foundation_Batch/Effective-Week-2024-Curation.md
 type: book-notes
-pillar: L4
 created: 2026-06-20
-tags: [l4, growth, learning, discipline, decision-making, habits, creativity, kahneman, regret-minimization, goal-systems]
-related: [L4-Growth/_pillar, L3-Career/book-notes-effective-week-2024, 02-Indexes/topic_maps/career-productivity-crossmap]
+tags:
+  - l4
+  - growth
+  - learning
+  - discipline
+  - decision-making
+  - habits
+  - creativity
+  - kahneman
+  - regret-minimization
+  - goal-systems
+related:
+  - L4-Growth/_pillar
+  - L3-Career/book-notes-effective-week-2024-l3
+  - 02-Indexes/topic_maps/career-productivity-crossmap
+pillar_id: L4
 ---
 
 # The Effective Week 2024 — L4 Growth Notes

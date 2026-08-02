@@ -1,13 +1,25 @@
 ---
-title: "Book Notes — Life Force"
+title: Book Notes — Life Force
 type: book-notes
 author: Tony Robbins with Peter Diamandis & Robert Hariri
-pillar: L1
 owner: Gilberto Silva Gonzalez
 created: 2026-05-24
 last_updated: 2026-05-24
-tags: [l1, health, longevity, hormone-optimization, peptides, regeneration, diagnostics, book-notes]
-related: [L1-Health/_pillar, L1-Health/blood-analysis, L1-Health/biomarker-reference, 02-Indexes/topic_maps/health-performance-crossmap]
+tags:
+  - l1
+  - health
+  - longevity
+  - hormone-optimization
+  - peptides
+  - regeneration
+  - diagnostics
+  - book-notes
+related:
+  - L1-Health/_pillar
+  - L1-Health/blood-analysis
+  - L1-Health/biomarker-reference
+  - 02-Indexes/topic_maps/health-performance-crossmap
+pillar_id: L1
 ---
 
 # Book Notes — Life Force

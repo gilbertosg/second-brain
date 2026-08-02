@@ -425,3 +425,178 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 - Orphan pages: 0
 - Critical gaps flagged: 3 (PIE Image OKR missing, stakeholder map not built, L4→L7 teaching loop not wired)
 - Inbox items pending: 3
+
+---
+
+## [2026-08-01] duplicate-check | Foundation Batch Re-submission (2 sources)
+
+**Sources reviewed (no action taken):**
+1. `00-Raw_Sources/00-Foundation_Batch/2026-08-01-Gil-OS.md`
+2. `00-Raw_Sources/00-Foundation_Batch/OKRs_2026.md`
+
+**Requested action:** Ingest both sources and write new files into `L4-Growth/`.
+
+**Finding: both sources are duplicates. No files created or modified.**
+
+- `OKRs_2026.md` is already listed in `02-Indexes/gil_os_master.md`'s `sources:` frontmatter from the 2026-05-24 Foundation Batch ingest. Every key result in it was diffed line-by-line against the current `L1`–`L7` `_pillar.md` OKR tables: all targets, units, and cadences match verbatim. No deltas found.
+- `2026-08-01-Gil-OS.md` (frontmatter: `audience: external`, `status: draft`) duplicates `00-Raw_Sources/inbox/3-Second-Brain-Teaching-Summary.md`, a prior artifact explicitly annotated as not registered in the vault index. Its system/tooling sections (Directory Architecture, Ingest Protocol, Tooling & Conventions) restate vault meta-documentation already covered by `Claude.md` and the librarian protocol, not new personal-knowledge content. Its pillar/OKR content duplicates `gil_os_master.md` and the `_pillar.md` files, and its Operational Loops section is less detailed than the existing `gil_os_master.md` version.
+- The requested destination (`L4-Growth/`) was also incorrect independent of the duplication: the OKR content in both sources spans all seven pillars (L1–L7), not L4 alone. Writing it there would have misfiled six pillars' worth of data.
+
+**Outcome:** No new files. `02-Indexes/index.md` left unchanged (nothing new to register).
+
+---
+
+## [2026-08-02] ingest | AI for Friends Course (11 sources)
+
+**Protocol:** Ingest Protocol — Librarian
+
+**Sources ingested:**
+1. `00-Raw_Sources/L4_Growth/2026-08-02/1-0_AI_Foundations_module.md`
+2. `00-Raw_Sources/L4_Growth/2026-08-02/1-1_How_AI_Models_Work.md`
+3. `00-Raw_Sources/L4_Growth/2026-08-02/1-2_Prompt_Engineering_vs_Context_Engineering.md`
+4. `00-Raw_Sources/L4_Growth/2026-08-02/1-3_Practical_Prompting_Techniques.md`
+5. `00-Raw_Sources/L4_Growth/2026-08-02/1-4_Chossing_AI_Model.md`
+6. `00-Raw_Sources/L4_Growth/2026-08-02/2-0_Setting_Up_Computer.md`
+7. `00-Raw_Sources/L4_Growth/2026-08-02/2-1_Installing_Windows_terminal.md` — **empty file, no content to ingest**
+8. `00-Raw_Sources/L4_Growth/2026-08-02/2-2_Intalling_VS_Code.md`
+9. `00-Raw_Sources/L4_Growth/2026-08-02/2-3_Navigating_Terminal.md` — **contains a duplicated Module 3 tail past line ~162, only true Lesson 2.3 content ingested**
+10. `00-Raw_Sources/L4_Growth/2026-08-02/3-0_Claude-Code.md`
+11. `00-Raw_Sources/L4_Growth/2026-08-02/3-1_Claude_Code_Installation.md`
+
+**Context:** these 11 files are course-export material for "AI for Friends," an AI-literacy course Gil created and taught to his friends, targeting non-technical professionals (HR, industrial engineering, legal, marketing). Requested action: ingest into `L4-Growth/`, cross-reference against other pillars (AI is cross-functional), map all cross-pillar intersections, rebuild `02-Indexes/index.md`, and log the action. Granularity, entity scope, and L2 integration were confirmed with Gil before execution: module-level synthesis (not per-lesson or single-file), a course entity only (no tool/framework entities yet), and no forced tie-in to L2-Relationships.
+
+**Actions taken:**
+
+| Action | File Created/Updated | Notes |
+|---|---|---|
+| Created course overview | `L4-Growth/course-ai-for-friends.md` | Syllabus/index page; module table; source-quality gap notes; cross-pillar links |
+| Created Module 1 synthesis | `L4-Growth/course-ai-for-friends-module1-foundations.md` | AI mental model, agentic loop, prompt vs. context engineering, 5 prompting patterns, COSTARS, model selection |
+| Created Module 2 synthesis | `L4-Growth/course-ai-for-friends-module2-computer-setup.md` | Terminal basics, VS Code install; flags empty Lesson 2.1 source |
+| Created Module 3 synthesis | `L4-Growth/course-ai-for-friends-module3-claude-code.md` | Claude Code install/tutorial, CLAUDE.md, Plan Mode, extensions, confidentiality guidance |
+| Created first entity page | `01-Entities/ai-for-friends-course.md` | First-ever file in `01-Entities`; type: entity, entity_type: initiative; establishes the entity-page convention |
+| Created cross-pillar topic map | `02-Indexes/topic_maps/ai-course-cross-pillar-map.md` | Maps L4→L3 (Agent Award evidence, compliance flag) and L4→L7 (teaching loop realized) intersections |
+| Updated L4 pillar schema | `L4-Growth/_pillar.md` | Added Course Notes table; updated `last_updated`; noted progress on "4 AI/side projects" OKR |
+| Updated L3 pillar schema | `L3-Career/_pillar.md` | Added Notes entry linking the course to Agent Award evidence and the personal compliance gap |
+| Updated L7 pillar schema | `L7-Contribute/_pillar.md` | Added Notes entry flagging the course as an untapped content source for the teaching loop |
+| Rebuilt master index | `02-Indexes/index.md` | Added L4 Course Notes table, new topic-map row, new entity row, new Raw Sources batch section; updated Vault Health stats |
+
+**Critical findings:**
+
+1. **EMPTY SOURCE FILE — Lesson 2.1:** `2-1_Installing_Windows_terminal.md` has zero content. Its lesson (standalone Windows Terminal install + PowerShell default) could not be synthesized and is flagged as a gap rather than fabricated. Low downstream impact: Module 3 uses VS Code's integrated terminal and does not depend on this lesson.
+2. **DUPLICATED-CONTENT ARTIFACT — Lesson 2.3:** `2-3_Navigating_Terminal.md` concatenates genuine Lesson 2.3 content (lines 1–162) with a near-verbatim copy of the Module 3 index page (from line 163 on, matching `3-0_Claude-Code.md`). Only the true Lesson 2.3 material was synthesized; the duplicated tail was not double-counted.
+3. **MODULE 4 REFERENCED BUT ABSENT:** Both `2-0_Setting_Up_Computer.md` and `3-0_Claude-Code.md` reference a Module 4 ("Building Your AI Personal Assistant" / Claude Projects) as "what's next," but no source file exists in this batch. Flagged as a known gap in the course overview page, not invented.
+4. **FIRST USE OF `01-Entities`:** The directory was empty prior to this ingest despite the index and multiple pillar files flagging Luisa/Luna as pending entities. This ingest establishes the first entity-page schema (inferred from the `_pillar.md` convention), used here for the course itself.
+
+**Cross-pillar intersections detected:**
+
+- **L4 → L3 (Agent Award evidence):** creating and teaching the course is concrete, demonstrable AI capability — stronger evidence for the Agent Award KR and Principal-promotion case than an abstract "took an ML course" credit.
+- **L4 → L3 (compliance flag):** the course's own confidentiality guidance (personal Claude Pro has no corporate data agreement, audit logs, or retention controls) applies directly to Gil's own AI usage at Blue Origin — flagged as a personal action item, not just course content.
+- **L4 → L7 (teaching loop realized):** `02-Indexes/topic_maps/career-productivity-crossmap.md` (Section 8) previously identified an unwired "L4 → L7 Teaching Loop." This course is the first concrete, structured instance of that loop — pre-formatted module notes make conversion into L7 blog/video content low-cost.
+- **L4 (course as project) → L4 (OKR):** counts as 1 of the 4 "AI/side projects" 2026 KR.
+
+**Contradictions / gaps identified:**
+
+- No contradiction found between this course material and existing vault claims — this is new-topic content, not a revision of prior claims.
+- **Gap:** the L4→L7 teaching loop is now *wired conceptually* (this topic map) but not yet *executed* — no L7 blog post or video has actually been drafted from this course material.
+- **Gap:** the Blue Origin compliance question (has any of Gil's own Claude Code usage touched work-adjacent data on a personal Pro plan) is flagged but not yet answered — requires a manual check, not a vault-only action.
+
+**Vault state after this operation:**
+- Total pages: 37 (was 31)
+- New files: 6 (`L4-Growth/course-ai-for-friends.md`, `L4-Growth/course-ai-for-friends-module1-foundations.md`, `L4-Growth/course-ai-for-friends-module2-computer-setup.md`, `L4-Growth/course-ai-for-friends-module3-claude-code.md`, `01-Entities/ai-for-friends-course.md`, `02-Indexes/topic_maps/ai-course-cross-pillar-map.md`)
+- Pages updated: 4 (`L4-Growth/_pillar.md`, `L3-Career/_pillar.md`, `L7-Contribute/_pillar.md`, `02-Indexes/index.md`)
+- Orphan pages: 0
+- Source-quality gaps flagged: 3 (empty Lesson 2.1, duplicated-content tail in Lesson 2.3, missing Module 4)
+- Inbox items pending: 3 (unchanged, unrelated to this batch)
+
+---
+
+## [2026-08-02] lint | Vault Health Check
+
+**Protocol:** Lint Protocol — Librarian
+
+**Method:** `hyalo summary`, `hyalo links fix` (dry run), `hyalo find --broken-links/--orphan/--dead-end`, `hyalo properties summary`, plus manual verification of every automated finding (file existence checks, git history, direct reads) before reporting — several raw `hyalo find --broken-links` results turned out to be false positives from its relative-path resolver inside markdown tables and were discarded rather than reported. Read-only pass: no vault files other than this log were modified.
+
+### 1. Contradictions Between Pages
+
+**None found.** L1-Health biomarker claims (Total T, Free T, hs-CRP, ApoB) remain internally consistent across `_pillar.md`, `blood-analysis.md`, `biomarker-scorecard-may2026.md`, and the book-notes files — consistent with the contradiction-resolution work already recorded in the 2026-06-20 and prior log entries. No new conflicting claims introduced by the 2026-08-02 AI-course ingest (new-topic content, not a revision of existing claims).
+
+### 2. Stale Claims / Broken References From a Directory Rename
+
+🔴 **`02-Indexes/index.md` points to a raw-source directory that no longer exists.** At some point outside this session, `00-Raw_Sources/L1_Batch/` was renamed to `00-Raw_Sources/L1_Health/` (confirmed via `git status` — the old directory shows as fully deleted, the new one as untracked; file contents are byte-identical, confirmed via diff on `weight_tracker.md` — this was a pure rename, not a content change). `index.md`'s "L1 Batch — Health Data" and "L1 Batch — Books" tables (lines ~86–96, ~104) still link to the old `L1_Batch` path. **6 broken links**, all pointing to files that do exist, just at `L1_Health/` instead:
+- `weight_tracker.md`, `Blood_Analysis_Biomarkers_LifeForce.md`, `Blood_Analysis_Historical.md`, `Out-of-Range-Biomarkers.md`, `books/Book-Outlive-The-Science-And-Art-of-Longevity.md`, `books/Book-Breaking-the-Habit-of-Being-Yourself.md`
+- The two PDF book sources (`Book-Life-Force_Tony-Robbins.pdf`, `Life-Mastery-Workbook-Tony-Robbins.pdf`) are also linked via the stale `L1_Batch` path and are likewise unresolved once the directory move is accounted for, though both PDFs are confirmed present at the new `L1_Health/books/` location.
+- **Recommended fix:** update 6 links in `index.md` from `00-Raw_Sources/L1_Batch/...` to `00-Raw_Sources/L1_Health/...` (path segment swap only, no other changes needed).
+
+🟡 **One Foundation Batch link is stale from a file rename.** `index.md` line 81 links to `../00-Raw_Sources/00-Foundation_Batch/Effective%20Week%202024%20Curation.md` (URL-encoded spaces); the actual file is `Effective-Week-2024-Curation.md` (hyphenated, no spaces). Same fix pattern — swap the linked filename.
+
+🟢 **`L4-Growth` pillar summary row in `index.md` (line ~29) doesn't yet reflect 2026-08-02 progress.** It still reads "8 books, 2 ML courses, 1 certificate, 4 AI projects" with no indication that 1 of the 4 AI/side-project slots now has a concrete, ingested instance (the AI for Friends course). Not incorrect, just not yet updated to reflect today's ingest — the detail lives in `L4-Growth/_pillar.md`'s Notes section but hasn't propagated up to the index summary row.
+
+### 3. Orphan Files (No Inbound Links)
+
+**18 orphans found**, of which **16 are structurally expected, not defects**: `03-System_Logs/log.md` and `Claude.md` are operational/config files never meant to be linked into content; the 14 raw files under `00-Raw_Sources/00-Foundation_Batch/`, `L1_Health/`, and `inbox/` are either (a) already covered by the broken-link fix above once corrected, or (b) intentionally un-linked drafts (`inbox/0-`, `inbox/1-`, `inbox/2-` are the 3 known-pending inbox items; `inbox/3-Second-Brain-Teaching-Summary.md` and `00-Foundation_Batch/2026-08-01-Gil-OS.md` were explicitly flagged as duplicates with "no action taken" in the 2026-08-01 log entry, and `High-Performance-OS-Weekly-Reviews.md` has never been ingested).
+
+🟡 **2 orphans are not accounted for by any prior log entry:** `00-Raw_Sources/L1_Health/Critical-Biomarkers-for-Male-Longevity-and-Performance.md` and `00-Raw_Sources/L1_Health/Gil-Health-Upgrade-Protocol-Proposal.md` have no inbound links from `index.md` at all (not even a stale one) despite `L1-Health/protocol-health-upgrade.md` and `L1-Health/biomarker-reference.md` reading like they were synthesized from this exact material. Possible data gap: these two raw sources may never have been formally registered in `index.md`'s Raw Sources batch tables even though their content appears to have been used.
+
+🟢 **`Welcome.md`** (vault root) is Obsidian's default starter file, unprocessed, containing only a placeholder "create a link" prompt. Cosmetic — flag for the user to decide whether to delete it, not a data-integrity issue.
+
+### 4. Missing Cross-References / Data Gaps
+
+🔴 **Filename collisions create ambiguous, unresolved bare-filename links** — confirmed via direct filesystem search, not just the link scanner:
+- `L3-Career/book-notes-effective-week-2024.md` and `L4-Growth/book-notes-effective-week-2024.md` share an identical basename. `L4-Growth/_pillar.md`'s Book Notes table links `book-notes-effective-week-2024.md` with no directory prefix — ambiguous between the two, and unresolved by hyalo's link index. Same issue in reverse for `L3-Career/_pillar.md`.
+- `L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth.md` (processed) and `00-Raw_Sources/00-Foundation_Batch/The-5-Hidden-Habits-Blocking-Your-Career-Growth.md` (raw) share an identical basename. `L3-Career/_pillar.md`'s Book Notes table has the same ambiguous bare-filename problem.
+- **Recommended fix:** qualify both links in each pillar file with a directory prefix (e.g. `L4-Growth/book-notes-effective-week-2024.md`, `L3-Career/The-5-Hidden-Habits-Blocking-Your-Career-Growth.md`), matching the fully-qualified style already used for every other cross-directory link in the vault.
+
+🟡 **`L4-Growth/course-ai-for-friends-module1-foundations.md` (created today) has zero outbound links**, unlike its sibling module files (Module 2 links forward to Module 3; Module 3 links back to the course overview and the topic map). Internal inconsistency introduced in today's ingest — Module 1 should link to the course overview and/or Module 2 for navigational symmetry.
+
+🟡 **Frontmatter schema drift, vault-wide (pre-existing, not newly introduced):**
+- Pillar identity is stored under two different keys: `pillar_id` (18 files — the majority pattern, used by all 7 `_pillar.md` files and most L1 sub-pages) vs. `pillar` (6 files — used by the L1/L3/L4 book-notes files). Recommend standardizing on `pillar_id`.
+- Cross-pillar topic maps use `pillars` (2 files, incl. today's `ai-course-cross-pillar-map.md`) vs. `pillars_covered` (1 file — `health-performance-crossmap.md`). Recommend standardizing on `pillars`.
+- `source_file` is typed as a list in 3 files (incl. today's 3 module files) vs. a single string in 2 files. `date` is typed as a proper date in 2 files vs. a bare number in 1 (`Effective-Week-2024-Curation.md`'s `date: 2024`). `last_updated` is a proper date in 23 files vs. free text in 1 (`index.md`'s `"2026-08-02 (Session 8)"` annotation style — a long-standing convention in that file, not a new issue).
+- None of these break anything functionally; they reduce the reliability of `hyalo find --property` filtering across the whole vault and are worth a dedicated cleanup pass.
+
+🟢 **3 inbox items remain pending ingest** (unchanged from prior sessions): `inbox/0-Persistent-AI-Second-Brain-Implementation-Guide.md`, `inbox/1-LLM_Wiki_Installation_Guide.md`, `inbox/2-Gil_OS_Second_Brain_Architecture.md`.
+
+🟢 **AI-course Module 4 ("Building Your AI Personal Assistant") remains unauthored** — already flagged in today's ingest entry, restated here for completeness since it is a standing data gap.
+
+### Vault State at Time of Lint
+
+- Total pages: 37 (unchanged by this lint pass — read-only operation)
+- Broken links (real, actionable): 8 (6 in `index.md` from the `L1_Batch`→`L1_Health` rename, 1 filename-encoding mismatch, +2 ambiguous filename-collision links found by manual verification, not the link scanner)
+- Orphans: 18 total (16 structurally expected, 2 unexplained — see above)
+- Dead-ends: 15 (14 pre-existing by design — book-notes files link only via frontmatter `related:`, not in-body — plus 1 newly introduced today, `course-ai-for-friends-module1-foundations.md`)
+- Schema drift items: 4 property-naming/typing inconsistencies (`pillar`/`pillar_id`, `pillars`/`pillars_covered`, `source_file` type, `date` type)
+- No content contradictions found
+- **This lint pass is diagnostic only — no fixes were applied.** All recommended fixes above are small, low-risk edits (path corrections, link qualification) that can be applied on request.
+
+---
+
+## [2026-08-02] lint-fix | Applied Vault Health Fixes
+
+**Protocol:** Lint Protocol — Librarian (fix pass, applied on Gil's explicit instruction following the health-check above)
+
+**Actions taken:**
+
+| Action | File(s) | Notes |
+|---|---|---|
+| Fixed 8 broken `L1_Batch` links | `02-Indexes/index.md` | Repointed all `00-Raw_Sources/L1_Batch/...` links to `00-Raw_Sources/L1_Health/...` (6 `.md` + 2 `.pdf`), matching the directory rename that happened outside this vault's session history |
+| Fixed 1 stale filename link | `02-Indexes/index.md` | `Effective%20Week%202024%20Curation.md` → `Effective-Week-2024-Curation.md` |
+| Resolved filename collision (L4 kept as canonical) | `L3-Career/book-notes-effective-week-2024.md` → `L3-Career/book-notes-effective-week-2024-l3.md` | Renamed via `hyalo mv`, which auto-updated `02-Indexes/index.md` and `02-Indexes/topic_maps/career-productivity-crossmap.md`; manually fixed the 2 references `hyalo mv` doesn't reach (frontmatter YAML lists and bare same-directory links): `L4-Growth/book-notes-effective-week-2024.md`'s `related:` list and `L3-Career/_pillar.md`'s Book Notes table link |
+| Registered 2 orphaned raw sources | `02-Indexes/index.md` | Added `Critical-Biomarkers-for-Male-Longevity-and-Performance.md` and `Gil-Health-Upgrade-Protocol-Proposal.md` to the "L1 Batch — Biomarkers" table |
+| Fixed Module 1 dead-end | `L4-Growth/course-ai-for-friends-module1-foundations.md` | Added a back-link to the course overview and a "What's Next" section forward to Module 2, matching sibling modules' navigational pattern |
+| Standardized `pillar` → `pillar_id` | 6 files (`L1-Health/book-notes-*.md` ×4, `L3-Career/book-notes-effective-week-2024-l3.md`, `L4-Growth/book-notes-effective-week-2024.md`) | Bulk rename via `hyalo properties rename`, zero conflicts |
+| Standardized `pillars_covered` → `pillars` | `02-Indexes/topic_maps/health-performance-crossmap.md` | Bulk rename via `hyalo properties rename`, zero conflicts |
+| Deleted unused placeholder | `Welcome.md` | Obsidian's default starter file; Gil confirmed no interest in keeping it |
+
+**Not fixed (explicitly out of scope for this pass):** the second filename collision — `The-5-Hidden-Habits-Blocking-Your-Career-Growth.md` exists in both `L3-Career/` and the immutable `00-Raw_Sources/00-Foundation_Batch/` — was not part of Gil's fix list and is left as-is. `source_file` type inconsistency (string vs. list) and `date` type inconsistency (2 files date-typed, 1 number-typed) were flagged in the lint but not requested for this fix pass.
+
+**Verification run after fixes:**
+- `hyalo properties summary` — `pillar` and `pillars_covered` no longer appear as property keys.
+- `hyalo mv --dry-run` confirmed the rename's blast radius before applying; post-rename `hyalo find --broken-links` no longer shows the `book-notes-effective-week-2024.md` ambiguity for either pillar file.
+- `00-Raw_Sources/` confirmed untouched — all fixes were link/property corrections in `02-Indexes/`, `L3-Career/`, `L4-Growth/`, plus the `Welcome.md` deletion at vault root.
+
+**Vault state after this operation:**
+- Total pages: 36 (was 37 — `Welcome.md` deleted, no new pages created; `book-notes-effective-week-2024-l3.md` is a rename, not a new page)
+- Files modified: 6 (`02-Indexes/index.md`, `02-Indexes/topic_maps/career-productivity-crossmap.md`, `L3-Career/_pillar.md`, `L4-Growth/book-notes-effective-week-2024.md`, `L4-Growth/course-ai-for-friends-module1-foundations.md`, plus the 6-file and 1-file property-rename batches overlapping some of the above)
+- Files renamed: 1 (`L3-Career/book-notes-effective-week-2024.md` → `book-notes-effective-week-2024-l3.md`)
+- Files deleted: 1 (`Welcome.md`)
+- Remaining known issues: 1 filename collision (Hidden Habits, out of scope), `source_file`/`date` type drift (not requested), 3 inbox items pending, AI-course Module 4 unauthored

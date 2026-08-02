@@ -2,12 +2,24 @@
 title: "Book Notes — Outlive: The Science & Art of Longevity"
 type: book-notes
 author: Peter Attia, MD with Bill Gifford
-pillar: L1
 owner: Gilberto Silva Gonzalez
 created: 2026-05-24
 last_updated: 2026-05-24
-tags: [l1, health, longevity, medicine-3.0, exercise, nutrition, sleep, book-notes]
-related: [L1-Health/_pillar, L1-Health/blood-analysis, L1-Health/biomarker-reference, 02-Indexes/topic_maps/health-performance-crossmap]
+tags:
+  - l1
+  - health
+  - longevity
+  - medicine-3.0
+  - exercise
+  - nutrition
+  - sleep
+  - book-notes
+related:
+  - L1-Health/_pillar
+  - L1-Health/blood-analysis
+  - L1-Health/biomarker-reference
+  - 02-Indexes/topic_maps/health-performance-crossmap
+pillar_id: L1
 ---
 
 # Book Notes — Outlive: The Science & Art of Longevity

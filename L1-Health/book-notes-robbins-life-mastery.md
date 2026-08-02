@@ -1,13 +1,25 @@
 ---
-title: "Book Notes — Life Mastery Workbook"
+title: Book Notes — Life Mastery Workbook
 type: book-notes
 author: Tony Robbins
-pillar: L1
 owner: Gilberto Silva Gonzalez
 created: 2026-05-24
 last_updated: 2026-05-24
-tags: [l1, health, detox, nutrition, biochemistry, structural, psychology, book-notes]
-related: [L1-Health/_pillar, L1-Health/blood-analysis, L1-Health/biomarker-reference, L1-Health/book-notes-robbins-lifeforce]
+tags:
+  - l1
+  - health
+  - detox
+  - nutrition
+  - biochemistry
+  - structural
+  - psychology
+  - book-notes
+related:
+  - L1-Health/_pillar
+  - L1-Health/blood-analysis
+  - L1-Health/biomarker-reference
+  - L1-Health/book-notes-robbins-lifeforce
+pillar_id: L1
 ---
 
 # Book Notes — Life Mastery Workbook

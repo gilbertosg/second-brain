@@ -1,13 +1,25 @@
 ---
-title: "Book Notes — Breaking the Habit of Being Yourself"
+title: Book Notes — Breaking the Habit of Being Yourself
 type: book-notes
 author: Dr. Joe Dispenza
-pillar: L1
 owner: Gilberto Silva Gonzalez
 created: 2026-05-24
 last_updated: 2026-05-24
-tags: [l1, l3, mental-health, neuroplasticity, meditation, stress, cortisol, hrv, book-notes]
-related: [L1-Health/_pillar, L3-Career/_pillar, 02-Indexes/topic_maps/health-performance-crossmap]
+tags:
+  - l1
+  - l3
+  - mental-health
+  - neuroplasticity
+  - meditation
+  - stress
+  - cortisol
+  - hrv
+  - book-notes
+related:
+  - L1-Health/_pillar
+  - L3-Career/_pillar
+  - 02-Indexes/topic_maps/health-performance-crossmap
+pillar_id: L1
 ---
 
 # Book Notes — Breaking the Habit of Being Yourself
