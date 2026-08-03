@@ -2,7 +2,7 @@
 title: Second Brain — Master Registry
 type: index
 owner: Gilberto Silva Gonzalez
-last_updated: 2026-08-02 (Session 8)
+last_updated: 2026-08-02 (Session 10)
 ---
 
 # Second Brain — Master Registry
@@ -24,10 +24,10 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | File | Pillar | Priority | 2026 Key Focus |
 |---|---|---|---|
 | [L1 — Mind & Physical Body](../L1-Health/_pillar.md) | Health & Fitness | **Driver** | 3 heavy lifts/week, lose 8 kg, sleep 7:20 hr/day — **⚠ 2 Critical Alerts: Testosterone 262 ng/dL + hs-CRP 1.2 mg/L rising** |
-| [L2 — Relationships](../L2-Relationships/_pillar.md) | Relationships | Active | 40 date nights, 4 trips with Luisa, new home decision |
+| [L2 — Relationships](../L2-Relationships/_pillar.md) | Relationships | Active | 40 date nights, 4 trips with Luisa, new home ✅ resolved (Everbe, closed 2026-06-02) |
 | [L3 — Work / Career / Mission](../L3-Career/_pillar.md) | Career & Business | **Driver** (Career) / Passenger (E7) | Principal TPM path, 10 hr Deep Work/week, E7 relaunch |
 | [L4 — Personal Growth](../L4-Growth/_pillar.md) | Learning & Skills | Active | 8 books, 2 ML courses, 1 certificate, 4 AI projects |
-| [L5 — Finances](../L5-Finance/_pillar.md) | Finance & Wealth | Active | Positive cash flow x12, savings 5%/mo, MPI +10%/mo |
+| [L5 — Finances](../L5-Finance/_pillar.md) | Finance & Wealth | Active | Positive cash flow x12, savings 5%/mo, MPI +10%/mo — **⚠ Jan–Jul 2026 actuals: 5 of 7 months net-negative (YTD −$4,934.32)** |
 | [L6 — Hobbies & Celebrate Life](../L6-Hobbies/_pillar.md) | Joy & Recovery | Active | Join soccer team, 5 golf lessons, 4 new spots with Luna |
 | [L7 — Contribute](../L7-Contribute/_pillar.md) | E7 Brand & Publishing | Passenger | 12 videos, 12 blog posts, 6 failure posts, new website |
 
@@ -66,6 +66,7 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | [Books × Health Synthesis](topic_maps/books-health-synthesis.md) | L1, L3, L4 | All 4 books converge on the same hormonal/biochemical root cause. Tiered 90-day intervention stack with Tier 1 self-managed actions and Tier 2 physician-directed protocol. |
 | [Career Progression × Productivity Systems](topic_maps/career-productivity-crossmap.md) | L3, L4, L1, L7 | PIE Model gap: no Image OKR. Deep Work math fails without GTD + communication norms + chronotype scheduling in parallel. L4 teaching loop unlocks L7 content pipeline. |
 | [AI for Friends Course × Career × Contribution](topic_maps/ai-course-cross-pillar-map.md) | L4, L3, L7 | Self-created AI course is concrete Agent Award evidence; realizes the previously-unwired L4→L7 teaching loop; flags a personal compliance gap re: confidential data on personal Claude Pro. |
+| [Household Finance × Relationship](topic_maps/household-finance-relationship-map.md) | L5, L2, L3 | New-home L2 milestone was stale — Everbe already closed (a Pulte home). Household income 100% single-employer (Blue Origin). Jan–Jul cash flow is net-negative in 5 of 7 months. MPI naming question updated with strong Mutual-of-Omaha evidence. |
 
 ---
 
@@ -123,6 +124,14 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 
 Module 4 ("Building Your AI Personal Assistant") is referenced in this batch but has no source file — not yet created by Gil. See gap notes in [AI for Friends — Course Overview](../L4-Growth/course-ai-for-friends.md).
 
+### L5 Finances Batch (Ingested 2026-08-02)
+
+| File | Type | Ingested |
+|---|---|---|
+| [Household Income Report](../00-Raw_Sources/L5_Finances/Household Income Report.md) | Financial data — gross/net income, transaction log | 2026-08-02 |
+| [Financial Schema — Expense Categories](../00-Raw_Sources/L5_Finances/Financial Schema - Expense Categories.md) | Categorization schema | 2026-08-02 |
+| [2026 YTD Transactions — Jan-Jul (CSV)](../00-Raw_Sources/L5_Finances/2026-YTD-Jan-Jul.csv) | Raw transaction export — **10,126 rows, only 1,585 real (8,541 blank padding)** | 2026-08-02 |
+
 **Inbox (Pending Ingest):**
 - `00-Raw_Sources/inbox/0-Persistent-AI-Second-Brain-Implementation-Guide.md`
 - `00-Raw_Sources/inbox/1-LLM_Wiki_Installation_Guide.md`
@@ -158,22 +167,39 @@ Module 4 ("Building Your AI Personal Assistant") is referenced in this batch but
 
 ---
 
+## L5-Finance Data Files
+
+| File | Type | Summary |
+|---|---|---|
+| [Household Income — 2026 Baseline](../L5-Finance/household-income-2026.md) | Financial data | Gil ($205K) + Luisa ($123K) gross income; net biweekly/monthly structure; June (2-check) vs. July (3-check) split (~63/37 Gil/Luisa); account routing map; house down payment note |
+| [Expense Categorization Schema](../L5-Finance/expense-categorization-schema.md) | Reference | 5-group routing rules (NEEDS, WANTS JOINT, SAVINGS/DEBT, PERSONAL LU, PERSONAL GIL) and full subcategory data dictionary; July sample snapshot (reference only, not a budget) |
+| [Transaction Analysis — Jan–Jul 2026](../L5-Finance/transaction-analysis-2026-jan-jul.md) | Analysis | Full-ledger cash-flow reality check (5/7 months negative, YTD −$4,934.32); Mortgage-bucket purchase-cost clarification (Pulte home, 10602 Evening Star St, Orlando); MPI evidence upgrade; 28 pending "To Review" items |
+| [Transactions — Jan–Jul 2026 (CSV)](../L5-Finance/transactions-2026-jan-jul.csv) | Financial data (CSV) | 1,585 validated, schema-annotated transactions; source for the analysis above |
+
+---
+
 ## Entities
 
 | File | Type | Description |
 |---|---|---|
 | [AI for Friends (Course)](../01-Entities/ai-for-friends-course.md) | initiative | First entity page in the vault. Connecting node for the self-created AI course across L4 (learning), L3 (career evidence), and L7 (content pipeline) |
-| *(none yet)* | — | Luisa (partner), Luna (companion) identified as key entities; pages not yet created |
+| [Luisa](../01-Entities/luisa.md) | person | Partner; Blue Origin employee since 2026-04-20 (same employer as Gil); primary stakeholder in L2/L5 decisions. Created 2026-08-02 upon the L5 Finance ingest |
+| *(none yet)* | — | Luna (companion) identified as a key entity; page not yet created |
 
 ---
 
 ## Vault Health
 
-- **Total pages:** 37 (1 master + 7 pillar schemas + 7 L1 data/protocol files + 4 L1 book notes + 4 topic maps + 3 L3/L4 career/growth notes + 4 L4 course notes + 1 entity + 1 index + 1 log + 4 raw batches)
-- **Last full rebuild:** 2026-08-02 (Session 8 — Ingest Protocol, AI for Friends Course)
+- **Total pages:** 42 (1 master + 7 pillar schemas + 7 L1 data/protocol files + 4 L1 book notes + 5 topic maps + 3 L3/L4 career/growth notes + 4 L4 course notes + 4 L5 finance files + 2 entities + 1 index + 1 log + 5 raw batches)
+- **Last full rebuild:** 2026-08-02 (Session 10 — Ingest Protocol, L5 Finance Transaction Ledger)
 - **Inbox items pending ingest:** 3
 - **Orphan pages:** 0
-- **Source-quality gaps found (2026-08-02):** `00-Raw_Sources/L4_Growth/2026-08-02/2-1_Installing_Windows_terminal.md` is empty (Lesson 2.1 content missing, low impact — Module 3 doesn't depend on it); `2-3_Navigating_Terminal.md` contains a duplicated-content tail (Module 3 index repeated) not double-counted in synthesis; Module 4 of the course ("Building Your AI Personal Assistant") is referenced but has no source file yet.
+- **Source-quality gaps found (2026-08-02, AI course batch):** `00-Raw_Sources/L4_Growth/2026-08-02/2-1_Installing_Windows_terminal.md` is empty (Lesson 2.1 content missing, low impact — Module 3 doesn't depend on it); `2-3_Navigating_Terminal.md` contains a duplicated-content tail (Module 3 index repeated) not double-counted in synthesis; Module 4 of the course ("Building Your AI Personal Assistant") is referenced but has no source file yet.
+- **Source-quality note (2026-08-02, L5 CSV batch):** `00-Raw_Sources/L5_Finances/2026-YTD-Jan-Jul.csv` has 10,126 rows but only 1,585 are real transactions — 8,541 are entirely blank (export artifact). All L5 transaction analysis is computed from the 1,585 real rows only.
+- **Open data gap (2026-08-02, updated):** MPI naming question — new evidence (a $5,500 Mutual of Omaha payment tagged "MPI") points away from the original "Blue Origin retirement account" guess toward a specific insurance/investment vehicle. Still not confirmed by Gil. See [[02-Indexes/topic_maps/household-finance-relationship-map]].
+- **Open data gap (2026-08-02, new):** L5's "12 months positive cash flow" OKR — Jan–Jul 2026 actuals show 5 of 7 months net-negative (YTD −$4,934.32). Pillar Strategic Context updated to reflect this; OKR itself not yet reframed. See [[L5-Finance/transaction-analysis-2026-jan-jul.md]].
+- **Open data gap (2026-08-02, new):** expense schema has no defined group for "Taxes" ($802.67, 3 txns) or the legacy "Apartments-Houses/Archive" category ($283.01, 2 txns, likely Home Everbe furniture). Original categories preserved, not reassigned — pending Gil's decision.
+- **Contradiction resolved (2026-08-02):** L2's "Define new home" OKR was listed as an open milestone but is actually resolved — the Everbe property closed 2026-06-02 (confirmed a Pulte-built home at 10602 Evening Star Street, Orlando, FL via a June 1 title-company wire). Updated in `L2-Relationships/_pillar.md` and `L5-Finance/_pillar.md`.
 - **Critical health flags (active):**
   - 🔴 **Free Testosterone 54.0 pg/mL** (first measurement; Medicine 3.0 action trigger < 150 breached; 64% below optimal minimum) — **NEW — Session 5**
   - 🔴 hs-CRP 1.2 mg/L (was 0.49 in Jan 2026; +145% in 4 months)

@@ -6,7 +6,7 @@ owner: Gilberto Silva Gonzalez
 status: active
 strategic_priority: Active
 created: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-08-02
 tags: [l2, relationships, luisa, family, friends, pillar]
 related: [gil_os_master, L5-Finance/_pillar]
 ---
@@ -29,7 +29,7 @@ Sustains the emotional infrastructure of Gil OS. Marriage, family, and close fri
 |---|---|---|
 | Weekly dates | 40 date nights | Weekly |
 | Trips together | 4 trips | Annual |
-| Define new home | Identify and decide on new place to live | Milestone |
+| Define new home | ✅ **Resolved 2026-06-02** — Everbe property closed; now in execution phase (mortgage starts 2026-08-01) | Milestone |
 | Dream & Finance meetings | Bi-weekly alignment sessions | Bi-weekly |
 
 ### Family & Friends
@@ -45,7 +45,7 @@ Sustains the emotional infrastructure of Gil OS. Marriage, family, and close fri
 
 ## Strategic Context
 
-L2 is **Active** (not Driver) in 2026, but it requires consistent investment to avoid becoming a liability to L3 and L1. The "Define new place to live" KR is a high-stakes milestone that intersects directly with L5-Finance (major financial decision). This requires dedicated bi-weekly Dream & Finance meetings with Luisa to maintain alignment.
+L2 is **Active** (not Driver) in 2026, but it requires consistent investment to avoid becoming a liability to L3 and L1. The "Define new place to live" KR is **resolved as of 2026-06-02** — the Everbe property closed and the household is now in the execution phase (HOA, furniture, mortgage starting 2026-08-01; see [[L5-Finance/household-income-2026]]). Dream & Finance meetings likely shift focus from "which home" to settling into Everbe and ongoing financial alignment — see [[02-Indexes/topic_maps/household-finance-relationship-map]].
 
 The **Google Tasks widget system** (shared on iPhone 17 Pros) serves as the household operations layer, delegating logistical coordination so relationship time focuses on connection rather than task management.
 
@@ -72,7 +72,7 @@ The **Google Tasks widget system** (shared on iPhone 17 Pros) serves as the hous
 
 | Link | Direction | Note |
 |---|---|---|
-| [[L5-Finance/_pillar]] | L2 ↔ L5 | New home decision is a major shared financial event |
+| [[L5-Finance/_pillar]] | L2 ↔ L5 | New home decision resolved 2026-06-02 (Everbe); now a shared execution-phase financial event, not a pending decision |
 | [[L1-Health/_pillar]] | L2 ↔ L1 | Evening routines and Digital Sunset protect couple time |
 | [[L6-Hobbies/_pillar]] | L2 → L6 | 4 trips together contribute to both Relationships and Hobbies |
 
@@ -80,7 +80,7 @@ The **Google Tasks widget system** (shared on iPhone 17 Pros) serves as the hous
 
 ## Key Entities
 
-- **Luisa** — Partner. Shared command center (Google Tasks). Primary stakeholder in L2 and L5 decisions.
+- **Luisa** — [[01-Entities/luisa]]. Partner. Shared command center (Google Tasks). Primary stakeholder in L2 and L5 decisions. Also works at Blue Origin (since 2026-04-20) — full entity page created 2026-08-02.
 - **Parents** — Mexico-based. 1 US visit targeted. 3 Mexico visits planned.
 - **Siblings** — 1 US visit targeted.
 - **Luna** — Companion. Features in L6 travel goals.

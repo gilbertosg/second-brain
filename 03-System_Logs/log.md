@@ -600,3 +600,97 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 - Files renamed: 1 (`L3-Career/book-notes-effective-week-2024.md` → `book-notes-effective-week-2024-l3.md`)
 - Files deleted: 1 (`Welcome.md`)
 - Remaining known issues: 1 filename collision (Hidden Habits, out of scope), `source_file`/`date` type drift (not requested), 3 inbox items pending, AI-course Module 4 unauthored
+
+---
+
+## [2026-08-02] ingest | L5 Finance — Household Income & Expense Schema (2 sources)
+
+**Protocol:** Ingest Protocol — Librarian
+
+**Sources ingested:**
+1. `00-Raw_Sources/L5_Finances/Household Income Report.md`
+2. `00-Raw_Sources/L5_Finances/Financial Schema - Expense Categories.md`
+
+**Context:** first substantive financial data for L5-Finance, which previously held only a bare `_pillar.md` skeleton. Covers Gil + Luisa's gross/net income structure, biweekly account routing, and the household's 5-group expense categorization schema (NEEDS, WANTS JOINT, SAVINGS/DEBT, PERSONAL LU, PERSONAL GIL) with full subcategory routing rules.
+
+**Actions taken:**
+
+| Action | File Created/Updated | Notes |
+|---|---|---|
+| Created household income baseline | `L5-Finance/household-income-2026.md` | Gross/net income, biweekly account routing, June (2-check) vs. July (3-check) split, ~63/37 Gil/Luisa ratio |
+| Created expense categorization reference | `L5-Finance/expense-categorization-schema.md` | Full routing-rule taxonomy + subcategory data dictionary, durable reference (not a budget) |
+| Created first person entity | `01-Entities/luisa.md` | Elevates the long-flagged "Luisa — page not yet created" note into a real entity page, following the `ai-for-friends-course.md` precedent |
+| Created cross-pillar topic map | `02-Indexes/topic_maps/household-finance-relationship-map.md` | Maps L5→L2 (stale home-decision OKR) and L5↔L3 (single-employer income concentration); flags MPI naming collision as an open gap |
+| Updated L5 pillar schema | `L5-Finance/_pillar.md` | Added Financial Data Files table; resolved new-home Strategic Context; added MPI naming caveat to Notes |
+| Updated L2 pillar schema | `L2-Relationships/_pillar.md` | Marked "Define new home" OKR resolved (Everbe closed 2026-06-02); updated Strategic Context and Cross-Pillar Links; linked Luisa entity |
+| Updated L3 pillar schema | `L3-Career/_pillar.md` | Added Notes entry: Luisa's parallel Blue Origin employment (concentration-risk pointer, no OKR change) |
+| Rebuilt master index | `02-Indexes/index.md` | Added L5-Finance Data Files table, Luisa entity row, new topic-map row, L5 Finances raw batch, updated L2/L5 pillar-table summaries, Vault Health stats |
+
+**Critical findings:**
+
+1. **STALE L2 OKR — CONTRADICTION RESOLVED:** `L2-Relationships/_pillar.md` listed "Define new home" as an open milestone ("identify and decide"). The income report shows the Everbe property closed 2026-06-02, down payment funded by Gil's March 2026 bonus, first mortgage payment scheduled 2026-08-01, and the prior CIRRUS residence vacated 2026-06-08. The decision is resolved and the household is in the execution phase — L2 and L5 pillar files updated accordingly.
+2. **HOUSEHOLD INCOME IS NOW 100% SINGLE-EMPLOYER:** Luisa joined Blue Origin 2026-04-20, the same employer Gil has worked at ~3 years 9 months. Both income streams (62.99% Gil / 37.01% Luisa in the standard month) now depend on one company — a concentration risk not previously named in either L3 or L5.
+3. **MPI NAMING COLLISION — NOT RESOLVED BY ASSUMPTION:** L5's "Monthly Passive Income (MPI)" OKR and the expense schema's "MPI account" (Retirement subcategory) are very likely two different things — one a metric, one a named account. Explicitly flagged as an open gap for Gil to clarify rather than conflated.
+4. **First entity page for a person:** `01-Entities/luisa.md` is the vault's first person-type entity (the prior entity, `ai-for-friends-course.md`, was an initiative). Establishes `entity_type: person` as a new convention value.
+
+**Cross-pillar intersections detected:**
+
+- **L5 → L2:** home-purchase resolution changes L2's OKR status and Dream & Finance meeting focus (see topic map).
+- **L5 ↔ L3:** single-employer household income concentration — Luisa's Blue Origin employment ties L3's employer risk directly to L5's income stability.
+- **L2 → L5:** Luisa's entity page is now a shared reference point for both the relationship and the joint-finance context.
+
+**Contradictions resolved:**
+
+- **Prior:** `L2-Relationships/_pillar.md` — "Define new home | Identify and decide on new place to live | Milestone" (open).
+- **Resolved:** Everbe property closed 2026-06-02 per the income report's down-payment and transaction data. OKR row and Strategic Context updated to reflect execution phase, not decision phase.
+
+**Vault state after this operation:**
+- Total pages: 40 (was 36)
+- New files: 4 (`L5-Finance/household-income-2026.md`, `L5-Finance/expense-categorization-schema.md`, `01-Entities/luisa.md`, `02-Indexes/topic_maps/household-finance-relationship-map.md`)
+- Pages updated: 4 (`L5-Finance/_pillar.md`, `L2-Relationships/_pillar.md`, `L3-Career/_pillar.md`, `02-Indexes/index.md`)
+- Orphan pages: 0
+- Open gaps flagged: 2 (MPI naming collision, MPI OKR baseline still uncaptured)
+- Inbox items pending: 3 (unchanged, unrelated to this batch)
+
+---
+
+## [2026-08-02] ingest | L5 Finance — Full Transaction Ledger (Jan–Jul 2026)
+
+**Protocol:** Ingest Protocol — Librarian
+
+**Sources ingested:**
+1. `00-Raw_Sources/L5_Finances/2026-YTD-Jan-Jul.csv` (10,126 rows; **1,585 real transactions, 8,541 entirely blank padding rows** — data-quality finding, not a parsing error)
+
+**Context:** Gil explicitly flagged this file as "crucial for how I organize and manage my personal and couple finances in the future." Given the scale (1,585 real transactions), this was processed with a Python script rather than manual transcription — every number in the outputs below is script-computed and spot-verified, not estimated. The script cross-validated its income totals for June ($19,253.67) and July ($28,950.97) against `L5-Finance/household-income-2026.md` (written in the prior ingest) and found **exact matches**, confirming this CSV is consistent with the previously-ingested income report.
+
+**Actions taken:**
+
+| Action | File Created/Updated | Notes |
+|---|---|---|
+| Generated validated transaction CSV | `L5-Finance/transactions-2026-jan-jul.csv` | 1,585 rows, all original columns preserved unmodified, plus an added `schema_check` annotation column (`OK`/`TO_REVIEW`/`GAP:*`/`NOTE:*`) — script-generated, no source values altered |
+| Wrote transaction analysis | `L5-Finance/transaction-analysis-2026-jan-jul.md` | Category/subcategory totals, monthly cash-flow table, Mortgage-bucket clarification, MPI evidence, internal-transfer summary, 28-item "To Review" list, schema-gap findings |
+| Updated L5 pillar schema | `L5-Finance/_pillar.md` | Purpose and Strategic Context updated with the cash-flow reality check; home-purchase note enriched with Pulte/property-address findings; MPI note strengthened; added both new files to Financial Data Files table |
+| Updated cross-pillar topic map | `02-Indexes/topic_maps/household-finance-relationship-map.md` | §3 (MPI) rewritten with the new Mutual-of-Omaha evidence; Impact Matrix and Open Gaps tables updated with the cash-flow and taxonomy-gap findings |
+| Rebuilt master index | `02-Indexes/index.md` | Added both new files to L5-Finance Data Files table; added CSV row to the L5 Finances raw batch; updated L5/topic-map summary rows; updated Vault Health stats |
+
+**Critical findings:**
+
+1. **CASH FLOW OKR CONTRADICTED BY ACTUAL DATA:** `L5-Finance/_pillar.md` describes 2026 as a "stability and positive cash flow" year with a 12-month positive-cash-flow OKR. The actual Jan–Jul ledger shows **5 of 7 months closed net-negative** (Jan +$3,674, Feb −$1,420, Mar −$7,551, Apr −$3,843, May −$1,610, Jun −$4,704, Jul +$10,520; YTD net **−$4,934.32**). Surfaced explicitly in the pillar file rather than smoothed over.
+2. **"MORTGAGE" CATEGORY ($18,034.26, 6 txns) IS HOME-PURCHASE COST, NOT RECURRING PAYMENT:** 3 payments to Pulte Homes/Pulte Mortgage ($15,947 combined — confirms Everbe is a Pulte-built home), a title-company wire to PGP Title of Florida referencing **10602 Evening Star Street, Orlando, FL** dated 2026-06-01 (independently confirms the 2026-06-02 closing date already on file), and a Neptune flood-insurance payment ($589.93) likely miscategorized under Mortgage instead of Insurance. Consistent with, not contradictory to, the prior finding that recurring mortgage payments start 2026-08-01.
+3. **MPI EVIDENCE UPGRADE:** a $5,500 payment to Mutual of Omaha (2026-03-23, tagged `MPI`) sits outside the standard $5,075 "Retirement" subcategory — strong evidence "MPI" is a specific insurance/investment vehicle, not a generic Blue Origin retirement account as originally guessed. Still not confirmed by Gil.
+4. **TWO SCHEMA TAXONOMY GAPS FOUND:** "Taxes" ($802.67, 3 txns) and legacy "Apartments-Houses/Archive" ($283.01, 2 txns — likely Home Everbe furniture per the schema's own furniture-inclusion rule) have no defined group in the expense schema. Original category values preserved as-is in the output; not reassigned unilaterally.
+5. **28 TRANSACTIONS PENDING GIL'S OWN REVIEW:** tagged "To Review" in the source data. Listed by name/date/amount in the analysis file; explicitly not auto-categorized.
+6. **DATA-QUALITY ARTIFACT:** 8,541 of 10,126 raw CSV rows are entirely blank. Confirmed via full-file parsing, not an extraction error on this end.
+
+**Contradictions resolved:**
+
+- **Prior:** `L5-Finance/_pillar.md` — "The 2026 focus is stability and positive cash flow" (stated as the current condition).
+- **Resolved:** reframed as *intent*, with the actual Jan–Jul reality (5 of 7 months negative) stated explicitly alongside it. The OKR itself was not altered — only the descriptive framing, which was not supported by the transaction data.
+
+**Vault state after this operation:**
+- Total pages: 42 (was 40)
+- New files: 2 (`L5-Finance/transactions-2026-jan-jul.csv`, `L5-Finance/transaction-analysis-2026-jan-jul.md`)
+- Pages updated: 3 (`L5-Finance/_pillar.md`, `02-Indexes/topic_maps/household-finance-relationship-map.md`, `02-Indexes/index.md`)
+- Orphan pages: 0
+- Open gaps flagged: 3 (MPI confirmation still pending, cash-flow OKR not yet reframed, Taxes/Archive taxonomy gaps unresolved)
+- Inbox items pending: 3 (unchanged, unrelated to this batch)
