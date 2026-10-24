@@ -694,3 +694,50 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 - Orphan pages: 0
 - Open gaps flagged: 3 (MPI confirmation still pending, cash-flow OKR not yet reframed, Taxes/Archive taxonomy gaps unresolved)
 - Inbox items pending: 3 (unchanged, unrelated to this batch)
+
+---
+
+## [2026-08-16] ingest | L5 Finance — Corrected Full Transaction Ledger (Jan–Aug 2026), Supersedes 2026-08-02 Ingest
+
+**Protocol:** Ingest Protocol — Librarian
+
+**Sources ingested:**
+1. `00-Raw_Sources/L5_Finances/2026-YTD-Jan-Aug.csv` (1,702 rows, **all real — zero blank padding**, spanning 2026-01-01 through 2026-08-16)
+
+**Context:** Gil explicitly stated the previously-ingested raw source (`2026-YTD-Jan-Jul.csv`, ingested 2026-08-02) **contained errors that he and Luisa have since corrected**, and instructed this new export be treated as the sole source of truth for 2026 transactions, superseding the prior ingest. Per the immutable-raw-sources policy, the old raw file was left untouched in `00-Raw_Sources/` — only its **downstream L5-Finance processed outputs** (`transactions-2026-jan-jul.csv`, `transaction-analysis-2026-jan-jul.md`) were removed, since those are derived artifacts, not raw sources. Processed with the same Python-script methodology as the prior ingest — every figure below is script-computed, not estimated, and the script additionally recomputed the retired Jan–Jul window from the corrected data to quantify the correction's impact (see Critical Findings #1).
+
+**Actions taken:**
+
+| Action | File Created/Updated/Removed | Notes |
+|---|---|---|
+| Generated validated transaction CSV | `L5-Finance/transactions-2026-jan-aug.csv` (new) | 1,702 rows, all original columns preserved unmodified, plus an added `schema_check` annotation column (`OK`/`OK:INCOME`/`OK:TRANSFER`/`TO_REVIEW`/`GAP:*`/`NOTE:*`) — script-generated, no source values altered |
+| Wrote transaction analysis | `L5-Finance/transaction-analysis-2026-jan-aug.md` (new) | §0 documents the before/after correction comparison; category/subcategory totals, monthly cash-flow table, Mortgage first-recurring-payment confirmation, MPI evidence (sign-corrected), internal-transfer summary, 26-item "To Review" list, schema-gap findings |
+| Removed superseded CSV | `L5-Finance/transactions-2026-jan-jul.csv` (removed) | Retired — replaced by `transactions-2026-jan-aug.csv`. Recoverable via git history if needed; not deleted from `00-Raw_Sources`. |
+| Removed superseded analysis | `L5-Finance/transaction-analysis-2026-jan-jul.md` (removed) | Retired — replaced by `transaction-analysis-2026-jan-aug.md`. Recoverable via git history if needed. |
+| Updated L5 pillar schema | `L5-Finance/_pillar.md` | Purpose, Strategic Context, Financial Data Files table, and Notes all updated to reflect the corrected data and the file swap |
+| Updated cross-pillar topic map | `02-Indexes/topic_maps/household-finance-relationship-map.md` | §3 (MPI) updated with sign-corrected evidence; Impact Matrix and Open Gaps tables updated with the reversed cash-flow finding and the confirmed mortgage payment |
+| Rebuilt master index | `02-Indexes/index.md` | Added new raw-source row and updated L5-Finance Data Files table (old rows replaced); updated L5/topic-map summary rows; updated Vault Health stats (3 open-gap entries revised) |
+
+**Critical findings:**
+
+1. **SOURCE-DATA CORRECTION REVERSES THE PRIOR CASH-FLOW FINDING:** recomputing the identical Jan 1–Jul 31 window from the corrected export changes YTD net from **−$4,934.32 (retired figure)** to **+$6,288.27** — an **$11,222.59 swing**, driven almost entirely by corrected spend figures (income moved by only single/low-triple digits most months; March alone corrected by $6,815). The count of individually net-negative months is unchanged (5 of 7: Feb–Jun), but the year-to-date sign flipped from negative to positive. Full month-by-month before/after table in `L5-Finance/transaction-analysis-2026-jan-aug.md` §0.
+2. **INCLUDING THE AUGUST EXTENSION, YTD (THROUGH AUG 16) NET IS +$3,217.57.** August is a partial month (16 of 31 days) and should not be compared directly to complete months.
+3. **FIRST RECURRING MORTGAGE PAYMENT CONFIRMED:** `Freedom Mtg Pymts`, $3,292.68, posted 2026-08-04 — confirms the expense schema's ~$3,200 estimate. All Jan–Jul "Mortgage" transactions remain one-time home-purchase costs, unchanged from the prior ingest's finding.
+4. **MPI-TAGGED TRANSACTION SIGN CORRECTED:** the $5,500 Mutual of Omaha transaction (2026-03-23, tagged `MPI`) now shows as **−$5,500.00**, flipped from +$5,500.00 in the retired export. Same transaction, corrected sign — not a new data point. MPI naming question remains unconfirmed by Gil.
+5. **DATA QUALITY IMPROVED SUBSTANTIALLY:** the new export has zero blank padding rows (vs. 8,541 of 10,126 in the retired file) and normalized ISO date formatting (vs. the retired file's `M/D/YY` format).
+6. **TO-REVIEW LIST NET CHANGE:** 26 items now (was 28) — 4 previously-flagged items no longer appear (apparently corrected/reclassified: `Tmobile*auto Pay` $467.27, `Zelle Payment To Luisa F Rangel` $204.00, two `Online-mobile Recurring` −$35.00 each), 2 new items added for the August extension (`Home Depot` $596.88, `Amazon Mktpl*5h6ye3nh1` $67.99).
+7. **ONE NEW SCHEMA TAXONOMY GAP:** two "City Of Cocoa" water-utility payments ($84.53 combined, 2026-01-06) have no category — the schema's "Electricity" subcategory is electric-only, with no defined water-utility bucket. Flagged, not reassigned. The "Taxes" and "Apartments-Houses/Archive" gaps from the prior ingest persist unchanged (Archive total grew slightly to $316.26 with 2 new August pest-control/home-improvement transactions).
+
+**Contradictions resolved:**
+
+- **Prior:** `L5-Finance/transaction-analysis-2026-jan-jul.md` and `L5-Finance/_pillar.md` — "5 of 7 months closed net-negative; YTD net −$4,934.32" (stated as fact, computed from the since-corrected source file).
+- **Resolved:** superseded by corrected data — Jan–Jul YTD net is +$6,288.27, not −$4,934.32. The retired files are removed from `L5-Finance/`; this document and `transaction-analysis-2026-jan-aug.md` are now authoritative. Not treated as a silent overwrite — the full before/after comparison is preserved in §0 of the new analysis file specifically so the correction remains visible rather than disappearing from the record.
+
+**Vault state after this operation:**
+- Total pages: 42 (net unchanged — 2 files added, 2 files removed)
+- New files: 2 (`L5-Finance/transactions-2026-jan-aug.csv`, `L5-Finance/transaction-analysis-2026-jan-aug.md`)
+- Removed files: 2 (`L5-Finance/transactions-2026-jan-jul.csv`, `L5-Finance/transaction-analysis-2026-jan-jul.md`) — raw source untouched, retrievable via git history
+- Pages updated: 3 (`L5-Finance/_pillar.md`, `02-Indexes/topic_maps/household-finance-relationship-map.md`, `02-Indexes/index.md`)
+- Orphan pages: 0
+- Open gaps flagged: 4 (MPI confirmation still pending, cash-flow OKR volatility not yet reframed, Taxes/Archive taxonomy gaps unresolved, new water-utility taxonomy gap)
+- Inbox items pending: 3 (unchanged, unrelated to this batch)

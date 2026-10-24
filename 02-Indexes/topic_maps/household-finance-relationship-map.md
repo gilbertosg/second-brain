@@ -5,12 +5,12 @@ pillars: [L5, L2, L3]
 sources:
   - "L5-Finance/household-income-2026.md"
   - "L5-Finance/expense-categorization-schema.md"
-  - "L5-Finance/transaction-analysis-2026-jan-jul.md"
+  - "L5-Finance/transaction-analysis-2026-jan-aug.md"
   - "01-Entities/luisa.md"
   - "L2-Relationships/_pillar.md"
   - "L3-Career/_pillar.md"
 created: 2026-08-02
-last_updated: 2026-08-02
+last_updated: 2026-08-16
 tags: [finance, relationship, l2, l3, l5, home-purchase, income-concentration, luisa, cash-flow]
 ---
 
@@ -52,11 +52,11 @@ Household Net Income (June 2026, standard month): $19,253.67
 
 ---
 
-## 3. MPI Naming Question — Updated with Transaction Evidence (2026-08-02)
+## 3. MPI Naming Question — Updated with Transaction Evidence (2026-08-16)
 
 `L5-Finance/_pillar.md`'s Couple OKR table includes **"Monthly Passive Income (MPI) — grow MPI by 10%/month."** The expense schema separately references a **"MPI account"** under the Retirement subcategory (Savings/Debt group). Originally flagged here as an unresolved naming collision, tentatively guessed to be a Blue Origin retirement account.
 
-**New evidence from the Jan–Jul 2026 transaction ledger revises that guess:** a **$5,500 payment to Mutual of Omaha on 2026-03-23, tagged `MPI`**, sits outside the standard Retirement subcategory (which totals only $5,075 across 7 unrelated transactions — see [[L5-Finance/transaction-analysis-2026-jan-jul.md]] §3). A lump-sum payment to an insurance company, tagged with the exact OKR acronym, strongly suggests **MPI is a specific Mutual of Omaha investment/insurance product** (commonly an IUL-type policy marketed as an income vehicle) — not a Blue Origin retirement plan account as first guessed.
+**Evidence from the corrected Jan–Aug 2026 transaction ledger (re-ingested 2026-08-16) revises that guess:** a **−$5,500.00 transaction to Mutual of Omaha on 2026-03-23, tagged `MPI`**, sits outside the standard Retirement subcategory (which totals $5,800.00 across 8 unrelated transactions — see [[L5-Finance/transaction-analysis-2026-jan-aug.md]] §3). Note: the amount's *sign* flipped from +$5,500 in the original (now-retired) Jan–Jul export to −$5,500 in the corrected export — a further data-quality fix, not a new transaction. A lump-sum transaction to an insurance company, tagged with the exact OKR acronym, strongly suggests **MPI is a specific Mutual of Omaha investment/insurance product** (commonly an IUL-type policy marketed as an income vehicle) — not a Blue Origin retirement plan account as first guessed.
 
 **Still not fully confirmed.** This is materially stronger evidence than the original guess, but not certain. Flagged for Gil to confirm directly: is the Mutual of Omaha policy the same vehicle the "Monthly Passive Income" OKR tracks?
 
@@ -69,8 +69,8 @@ Household Net Income (June 2026, standard month): $19,253.67
 | L5 (home purchase closed) | L2 (new-home OKR) | OKR status is stale — decision resolved, execution phase active | 🔴 High |
 | L3 (Luisa joins Blue Origin) | L5 (income structure) | Household income now 100% single-employer — concentration risk | 🟡 Med |
 | L5 (MPI tagged transaction) | L5 (MPI OKR) | $5,500 Mutual of Omaha payment tagged "MPI" suggests a specific insurance/investment vehicle, not a generic retirement account — still needs Gil's confirmation | 🟡 Med |
-| L5 (mortgage starts Aug 1) | L5 (budget baseline) | Jan–Jul "Mortgage" transactions ($18,034.26) are one-time purchase costs (Pulte builder payments, title wire, flood insurance), not recurring payments — first real recurring mortgage month (August) will look structurally different | 🟢 Low |
-| L5 (cash flow reality) | L5 (positive-cash-flow OKR) | 5 of 7 months Jan–Jul closed net-negative (YTD −$4,934.32) — contradicts the pillar's "stability" framing; see [[L5-Finance/transaction-analysis-2026-jan-jul.md]] §1 | 🔴 High |
+| L5 (mortgage starts Aug 1) | L5 (budget baseline) | First recurring mortgage payment confirmed 2026-08-04 ($3,292.68, vs. schema doc's ~$3,200 estimate) — Jan–Jul "Mortgage" total ($18,034.26) was purchase costs only; Aug data now shows the structural shift | 🟢 Low |
+| L5 (cash flow reality, corrected) | L5 (positive-cash-flow OKR) | Corrected data reverses the prior finding: Jan–Jul 2026 closes net-**positive** (+$6,288.27, vs. the retired analysis's −$4,934.32 — an $11,222.59 swing from source-data corrections). 5 of 7 months still individually net-negative. See [[L5-Finance/transaction-analysis-2026-jan-aug.md]] §0–1 | 🟡 Med |
 
 ---
 
@@ -82,9 +82,9 @@ Household Net Income (June 2026, standard month): $19,253.67
 | MPI naming ambiguity | $5,500 Mutual of Omaha payment tagged "MPI" sits outside the Retirement subcategory (2026-08-02 evidence) | Ask Gil directly to confirm: is the Mutual of Omaha policy the vehicle the OKR tracks? |
 | MPI OKR baseline still missing | `L5-Finance/_pillar.md` Notes already flagged this before this ingest; still unresolved | Capture a starting MPI figure once the naming question is settled |
 | No emergency-fund sizing tied to single-employer risk | Concentration finding above, no existing L5 OKR addresses it | Consider whether the "12 months positive cash flow" KR should be reframed with the concentration risk in mind |
-| Positive-cash-flow OKR not tracking reality | 5 of 7 months Jan–Jul 2026 net-negative (2026-08-02 evidence) | Track actual monthly cash flow explicitly against the 12-month target rather than assuming stability |
-| 3 taxonomy gaps in expense schema | "Taxes" and "Apartments-Houses/Archive" categories have no defined group (2026-08-02 evidence) | Gil to decide: add "Taxes" as a NEEDS subcategory; confirm "Apartments-Houses" purchases should route to "Home Everbe" |
+| Positive-cash-flow OKR volatility not tracked | Jan–Aug 2026 YTD net is positive (+$3,217.57), but 5 of 8 months individually closed negative (2026-08-16 corrected evidence) | Track actual monthly cash flow explicitly against the 12-month target — month-level volatility, not just YTD sign, matters for the KR |
+| 4 taxonomy gaps in expense schema | "Taxes," "Apartments-Houses/Archive," and a new "City Of Cocoa" water-utility gap have no defined group (2026-08-16 evidence) | Gil to decide: add "Taxes" as a NEEDS subcategory; confirm "Apartments-Houses" purchases route to "Home Everbe"; define a water-utility subcategory |
 
 ---
 
-*For related vault documents see: [[L5-Finance/household-income-2026]], [[L5-Finance/expense-categorization-schema]], [[L5-Finance/transaction-analysis-2026-jan-jul.md]], [[01-Entities/luisa]], [[L2-Relationships/_pillar]], [[L3-Career/_pillar]]*
+*For related vault documents see: [[L5-Finance/household-income-2026]], [[L5-Finance/expense-categorization-schema]], [[L5-Finance/transaction-analysis-2026-jan-aug.md]], [[01-Entities/luisa]], [[L2-Relationships/_pillar]], [[L3-Career/_pillar]]*

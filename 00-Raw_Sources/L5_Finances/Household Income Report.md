@@ -76,4 +76,3 @@ The tables below detail every net transaction received from Blue Origin over the
 | 2026-07-31 | Gil | Debt/Credit/Loans | Total Checking 7379 | $2,453.68 |
 | 2026-07-31 | Gil | Bills | Total Checking 7818 | $3,067.10 |
 | 2026-07-31 | Luisa | Personal/Base | Adv Plus Banking 0372 | $3,563.08 |
-
