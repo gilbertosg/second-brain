@@ -741,3 +741,60 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 - Orphan pages: 0
 - Open gaps flagged: 4 (MPI confirmation still pending, cash-flow OKR volatility not yet reframed, Taxes/Archive taxonomy gaps unresolved, new water-utility taxonomy gap)
 - Inbox items pending: 3 (unchanged, unrelated to this batch)
+
+
+## [2026-10-24] ingest | L5 Finance — Full-Year Transaction Ledger Refresh (Jan 1 – Oct 23, 2026), Supersedes 2026-08-16 Ingest
+
+**Sources ingested:**
+1. `00-Raw_Sources/L5_Finances/2026-YTD-Jan-1-Oct-24.csv` (1,876 rows: 1,751 regular, 125 income, **0 internal transfers**; 5 `pending`; dates 2026-01-01 through 2026-10-23)
+
+**Context:** Gil and Luisa updated their inputs and asked for a refresh of the whole 2026 transaction history. Gil confirmed two decisions: (1) he left internal transfers out of the export on purpose, so the file is accepted as-is; (2) the 5 pending rows count in the totals without a flag, and October is a partial month. The new export is the sole source of truth for 2026 transactions and supersedes the Jan–Aug ingest. Per the immutable-raw-sources policy, no file in `00-Raw_Sources/` changed; only the derived L5 outputs were replaced. A Python script computed every figure (run with `python3 -I`, scripts kept in the scratchpad).
+
+**Actions taken:**
+
+| Action | File Created/Updated/Removed | Notes |
+|---|---|---|
+| Generated validated transaction CSV | `L5-Finance/transactions-2026-jan-oct.csv` (new) | 1,876 rows; all 13 source columns match the raw file (script-asserted); added `schema_check` column (`OK` 1,692 · `OK:INCOME` 125 · `TO_REVIEW` 42 · `GAP:*` 17) |
+| Wrote transaction analysis | `L5-Finance/transaction-analysis-2026-jan-oct.md` (new) | §0 before/after vs. Jan–Aug; cash flow with headline and loan-adjusted views; mortgage; MPI; spend by group; new tag analysis; schema gaps; 42 To Review items |
+| Removed superseded CSV | `L5-Finance/transactions-2026-jan-aug.csv` (removed) | Recoverable via git history |
+| Removed superseded analysis | `L5-Finance/transaction-analysis-2026-jan-aug.md` (removed) | Recoverable via git history |
+| Updated L5 pillar | `L5-Finance/_pillar.md` | Purpose, Strategic Context (cash flow, mortgage, MPI), Financial Data Files table, Notes; links repointed to the Jan–Oct analysis |
+| Updated topic map | `02-Indexes/topic_maps/household-finance-relationship-map.md` | §3 MPI rewritten; Impact Matrix and Open Gaps updated (loan inflow, Oct mortgage category, transfer visibility, new taxonomy gaps) |
+| Rebuilt master index | `02-Indexes/index.md` | New raw-source row; Jan–Aug raw row marked superseded; L5 data-file rows swapped; Vault Health notes updated |
+
+**Critical findings:**
+
+1. **A $29,331.20 LOAN INFLOW DISTORTS AUGUST:** a `regular`-type row `Transfer Cross River Bank From Marlette Funding` posted at −$29,331.20 on 2026-08-19 (tags `Loan, Lu`, blank category). The unchanged method counts it as negative spend. Headline YTD net is **+$37,575.18**; excluding the loan, YTD net is **+$8,243.98** and Jan–Sep net is +$2,536.58. No repayment rows follow; the last `Upstart Network` payment ($613.89) posted 2026-07-29. The loan's purpose is unconfirmed.
+2. **THE CORRECTIONS ADDED $1,108.16 OF SPEND TO MAY–AUGUST:** the Jan 1–Aug 16 window moves from +$3,217.57 to +$2,109.41; Jan–Jul moves from +$6,288.27 to +$5,532.36. Income is unchanged ($162,604.68). January through April match the prior ingest to the cent.
+3. **6 OF 9 COMPLETE MONTHS CLOSED NET-NEGATIVE** (Feb, Mar, Apr, May, Jun, Sep). September adds a sixth to the five from the prior ingest. October (Oct 1–23) is partial: +$5,707.40.
+4. **MORTGAGE PAYMENT HOLDS AT $3,292.68** for Aug 4, Sep 1, and Oct 1. The October payment is coded `Loans / SAVINGS-DEBT`, not `Mortgage / NEEDS`. The Mortgage subcategory ($24,858.60, 11 txns) also holds $238.98 of HOA and dues that the schema assigns to Home Everbe.
+5. **MPI EVIDENCE CHANGES DIRECTION:** the export records income as negative, so the −$5,500.00 Mutual of Omaha row (2026-03-23, tag `MPI`) is an **inflow**, not a payment as earlier pages stated. The Retirement subcategory is ten monthly $725.00 `United Of Omaha - Ins Prem` debits ($7,250.00). The MPI naming question stays unconfirmed.
+6. **90 ROWS WERE RECATEGORIZED**, 78 of them travel-related: the generic `Travel & Vacation` bucket split into `Travel & Vacation Joint` / `Lu` / `Gil`. These names are missing from the schema doc.
+7. **TO REVIEW GREW FROM 26 TO 42:** 7 prior items cleared, 19 carry over, 23 are new (21 of the 42 are Amazon charges). Total $4,330.70.
+8. **NEW TAXONOMY GAP:** `Church` ($63.39, 6 txns). Taxes, Archive/Apartments-Houses ($283.01, 2 txns after August rows moved to Home Everbe), and City of Cocoa water persist.
+9. **TAG DATA NOW EXISTS:** Blue Origin income 86% of YTD income ($182,733.75); Gas $1,782.70; Tolls $640.00; Dayana Cleaning $1,460.00.
+
+**Contradictions resolved:**
+
+- **Prior:** `L5-Finance/_pillar.md`, the topic map, and `index.md` stated "YTD net +$3,217.57 through Aug 16" and "5 of 7/8 months net-negative."
+- **Resolved:** superseded. Headline YTD net is +$37,575.18 and adjusted YTD net is +$8,243.98 through Oct 23; 6 of 9 complete months are net-negative. The Jan–Aug figures stay visible in §0 of the new analysis.
+- **Prior:** vault pages described the $5,500 Mutual of Omaha row as a payment *to* Mutual of Omaha.
+- **Resolved:** reframed as an inflow under the export's sign convention; direction flagged for Gil to confirm.
+
+**Vault state after this operation:**
+- Total pages: 42 (net unchanged — 2 files added, 2 files removed)
+- New files: 2 (`L5-Finance/transactions-2026-jan-oct.csv`, `L5-Finance/transaction-analysis-2026-jan-oct.md`)
+- Removed files: 2 (`L5-Finance/transactions-2026-jan-aug.csv`, `L5-Finance/transaction-analysis-2026-jan-aug.md`) — raw sources untouched, retrievable via git history
+- Pages updated: 3 (`L5-Finance/_pillar.md`, `02-Indexes/topic_maps/household-finance-relationship-map.md`, `02-Indexes/index.md`)
+- Orphan pages: 0
+- Open gaps flagged: 6 (MPI confirmation, cash-flow OKR reframe, Marlette loan purpose, Oct mortgage category, taxonomy gaps incl. Church, schema doc missing travel subcategory names)
+- Inbox items pending: 3 (unchanged, unrelated to this batch)
+
+
+## [2026-10-24] query | How much did I spend in September 2026?
+
+**Sources read:** `L5-Finance/transactions-2026-jan-oct.csv` (198 September rows), `L5-Finance/transaction-analysis-2026-jan-oct.md` §1.
+
+**Answer:** September spend is **$24,374.51** (181 regular transactions, excluding 8 `To Review` rows worth $419.03; all-in $24,793.54). Income was $19,961.11; net −$4,413.40. NEEDS $8,459.17, WANTS JOINT $8,436.41, SAVINGS / DEBT $5,902.86, PERSONAL GIL $851.69, PERSONAL LU $724.38.
+
+**Actions taken:** filed the answer as `L5-Finance/query-2026-09-spend.md` (new); added it to `02-Indexes/index.md` and raised the page count to 43.
