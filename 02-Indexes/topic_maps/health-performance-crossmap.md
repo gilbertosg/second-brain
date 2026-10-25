@@ -119,14 +119,14 @@ Ordered by expected ROI on L3 career performance per unit of effort:
 
 ### Priority 1 — Free Testosterone Restoration (L1 → L3)
 
-**Highest leverage action in the vault.** The bottleneck is Free T bioavailability, not total production. Restoring Free T from 54.0 pg/mL to the Medicine 3.0 optimal minimum (148.8 pg/mL) requires addressing SHBG binding, not just testosterone production. This would directly improve:
+**Highest leverage action in the vault.** *(Oct 2026 note: the May framing below — bioavailability and SHBG binding — is not supported by SHBG 13–15 nmol/L; see the chain correction above. The physician decides which axis limits Free T.)* The May text: the bottleneck is Free T bioavailability, not total production; restoring Free T from 54.0 pg/mL to the Medicine 3.0 optimal minimum (148.8 pg/mL) requires addressing SHBG binding, not just testosterone production. Restoring it would directly improve:
 - Energy levels for Deep Work
 - Cognitive focus and working memory
 - Mood stability and motivation
 - Muscle recovery from the lifting protocol
 
 **Actions:**
-1. **Physician consult (urgent) — Full hormone panel with Free T fractionation.** Request SHBG, Free T, LH, FSH, Estradiol alongside Total T. Free T at 54.0 pg/mL with Total T at 300 ng/dL suggests elevated SHBG binding. Evaluate Clomiphene citrate, Enclomiphene (preserves fertility), or direct TRT.
+1. **Physician consult (urgent) — Full hormone panel with Free T fractionation.** Request SHBG, Free T, LH, FSH, Estradiol alongside Total T. Free T at 54.0 pg/mL with Total T at 300 ng/dL was read in May as elevated SHBG binding; measured SHBG (13, then 15 nmol/L) is low-normal, so that reading does not hold. Evaluate Clomiphene citrate, Enclomiphene (preserves fertility), or direct TRT.
 2. **Compound lower-body lifting** — Squats, deadlifts, hip hinges. The 2022 physician specifically noted: "lower body strength training helps maintain testosterone levels much more than smaller muscles." The Alpha/Beta/Gamma protocol (Barbell Back Squat + RDL + Bulgarian Split Squat) is optimally designed for this.
 3. **Body fat reduction** — Fat tissue aromatizes testosterone to estrogen and may elevate SHBG. Every kg lost improves Free T availability. The -8 kg OKR directly supports this.
 4. **Sleep 7:20 hr/night + Magnesium L-Threonate** — Testosterone pulses occur during deep sleep. L-Threonate (not Glycinate) crosses the blood-brain barrier to enhance slow-wave and REM sleep architecture.
@@ -145,7 +145,7 @@ Elevated homocysteine (7.55 Jan; 10.0 May) and persistently elevated MCH across 
 **Actions:**
 1. **Methylated B-complex daily** (as previously prescribed by Lifeforce in Mar 2023 — status unknown)
 2. **Increase dietary B12 and folate** — asparagus, avocado, broccoli, Brussels sprouts, dark leafy vegetables
-3. **Request MCH on next blood draw** — if still elevated after B-complex, escalate to physician for B12 serum level and reticulocyte testing
+3. **Request MCH on next blood draw** — *(done: 32.9 May, 32.6 pg Oct, both in range; escalate only if it rises again)* if still elevated after B-complex, escalate to physician for B12 serum level and reticulocyte testing
 
 ### Priority 3 — Liver and Metabolic Follow-Up (L1 → L1, L3 capacity)
 
@@ -198,7 +198,7 @@ The 2026 fitness protocol (3 heavy lifts + 4 sessions/week) is well-designed to 
 
 | Action | Owner | Target Date | Related File |
 |---|---|---|---|
-| **Schedule physician consult — full hormone panel with Free T fractionation, SHBG, LH, FSH** | Gil | **Urgent — Q2 2026** | [[L1-Health/blood-analysis]] |
+| **Schedule physician consult — full hormone panel with Free T fractionation, SHBG, LH, FSH** | Gil | **Urgent — Q2 2026 (target passed; no visit recorded in the vault as of 2026-10-25)** | [[L1-Health/blood-analysis]] |
 | **Begin protocol supplement stack immediately** (Omega-3 2g, Creatine 5g, Mg L-Threonate, D3/K2) | Gil | **2026-05-25** | [[L1-Health/protocol-health-upgrade]] |
 | **Establish Alpha/Beta/Gamma training rotation in Fitbod** | Gil | By 2026-06-07 | [[L1-Health/protocol-health-upgrade]] |
 | Retest hs-CRP and Omega-3 Total | Gil | 2026-08-10 (8–12 weeks) | [[L1-Health/blood-analysis-function-may2026]] — **status (Oct 2026):** hs-CRP retested 2026-10-02 (1.2, unchanged); Omega-3 not retested |

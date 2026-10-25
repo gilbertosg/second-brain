@@ -11,9 +11,9 @@ tags: [l1, protocol, daily-schedule, biomarker-correction, execution, supplement
 sources:
   - L1-Health/biomarker-scorecard-may2026.md
   - L1-Health/protocol-health-upgrade.md
-  - 00-Raw_Sources/L1_Batch/Out-of-Range-Biomarkers.md
-  - 00-Raw_Sources/L1_Batch/Critical-Biomarkers-for-Male-Longevity-and-Performance.md
-  - 00-Raw_Sources/L1_Batch/Gil-Health-Upgrade-Protocol-Proposal.md
+  - 00-Raw_Sources/L1_Health/Out-of-Range-Biomarkers.md
+  - 00-Raw_Sources/L1_Health/Critical-Biomarkers-for-Male-Longevity-and-Performance.md
+  - 00-Raw_Sources/L1_Health/Gil-Health-Upgrade-Protocol-Proposal.md
 related: [L1-Health/_pillar, L1-Health/protocol-health-upgrade, L1-Health/biomarker-scorecard-may2026, L1-Health/blood-analysis, 02-Indexes/topic_maps/health-performance-crossmap]
 ---
 

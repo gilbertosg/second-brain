@@ -7,6 +7,7 @@ one row per biomarker: category, previous and latest value, change, status, rang
 """
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 ROW = re.compile(r"^\| (\d{4}-\d{2}-\d{2}) \| (.*?) \| (.*?) \| (.*?) \|$")
@@ -79,7 +80,7 @@ def main():
         "pillar_id: L1",
         "owner: Gilberto Silva Gonzalez",
         "created: 2026-10-24",
-        "last_updated: 2026-10-24",
+        f"last_updated: {date.today().isoformat()}",
         "status: active",
         "tags: [l1, blood, biomarkers, function-health, registry, generated]",
         f"sources:\n  - 00-Raw_Sources/L1_Health/function-health/{folder.name}/",
@@ -107,8 +108,10 @@ def main():
     for b in items:
         if b["category"] != cat:
             cat = b["category"]
+            slug = re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-")
             lines += [
                 f"## {cat}", "",
+                f"Explainers: [[L1-Health/biomarker-digest-{slug}]]", "",
                 "| Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |",
                 "|---|---|---|---|---|---|---|---|---|",
             ]

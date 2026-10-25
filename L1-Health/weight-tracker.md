@@ -7,7 +7,7 @@ created: 2026-05-24
 last_updated: 2026-05-24
 status: active
 tags: [l1, weight, bmi, body-fat, fitness, tracker]
-source: 00-Raw_Sources/L1_Batch/weight_tracker.md
+source: 00-Raw_Sources/L1_Health/weight_tracker.md
 related: [L1-Health/_pillar, L1-Health/blood-analysis]
 ---
 

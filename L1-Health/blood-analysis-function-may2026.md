@@ -14,6 +14,8 @@ related: [L1-Health/blood-analysis, L1-Health/_pillar, L1-Health/biomarker-refer
 
 # L1 — Blood Analysis: Function Health Panel (May 19, 2026)
 
+> **Snapshot — partly superseded by the Oct 2, 2026 panel** ([[L1-Health/blood-analysis-function-oct2026]]). Resolved since May: Glucose, HDL Large, and LDL Peak Size are back in range (LDL Pattern A on both draws), so this page's "shifting toward Pattern B" reading and the "early metabolic syndrome dyad" framing no longer hold as written. Still open: hs-CRP (1.2 mg/L on both draws). New in Oct: ALT/AST and LDL particle-count flags. The age line below (34) conflicts with Function's profile (33); see [[L1-Health/blood-analysis]].
+
 **Platform:** Function Health
 **Test date:** May 19, 2026
 **Age at test:** 34

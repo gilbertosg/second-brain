@@ -4,7 +4,7 @@ type: health-data
 pillar_id: L1
 owner: Gilberto Silva Gonzalez
 created: 2026-10-24
-last_updated: 2026-10-24
+last_updated: 2026-10-25
 status: active
 tags: [l1, blood, biomarkers, function-health, registry, generated]
 sources:
@@ -26,12 +26,16 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Autoimmunity
 
+Explainers: [[L1-Health/biomarker-digest-autoimmunity]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Antinuclear Antibodies (ANA) Screen |  | — | NEGATIVE (May 19) | — | In range | NEGATIVE | NEGATIVE | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/antinuclear-antibodies-ana-screen.md) |
 | Rheumatoid Factor (RF) | IU/mL | — | <10 (May 19) | — | In range | <14 | [0,14] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/rheumatoid-factor-rf.md) |
 
 ## Blood
+
+Explainers: [[L1-Health/biomarker-digest-blood]]
 
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
@@ -49,6 +53,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Electrolytes
 
+Explainers: [[L1-Health/biomarker-digest-electrolytes]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Calcium | mg/dL | 9.6 (May 19) | 9.1 (Oct 2) | -0.5 (-5%) | In range | 8.6-10.3 | [8.6,10.3] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/calcium.md) |
@@ -58,12 +64,16 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Environmental Toxins
 
+Explainers: [[L1-Health/biomarker-digest-environmental-toxins]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Lead | mcg/dL | — | 1.0 (May 19) | — | In range | <3.5 | [0,0] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/lead.md) |
 | Mercury | mcg/L | — | <4 (May 19) | — | In range | <=10 | [0,0] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/mercury.md) |
 
 ## Heart
+
+Explainers: [[L1-Health/biomarker-digest-heart]]
 
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
@@ -84,6 +94,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Immune Regulation
 
+Explainers: [[L1-Health/biomarker-digest-immune-regulation]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Basophils | cells/uL | 33 (May 19) | 37 (Oct 2) | +4 (+12%) | In range | 0 - 200 | [0,200] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/basophils.md) |
@@ -101,6 +113,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Kidney
 
+Explainers: [[L1-Health/biomarker-digest-kidney]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Albumin, Random Urine without Creatinine | mg/dL | <0.2 (May 19) | 0.4 (Oct 2) | — | In range | See Note: | -0.2 | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/albumin-random-urine-without-creatinine.md) |
@@ -110,6 +124,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 | Sodium | mmol/L | 141 (May 19) | 139 (Oct 2) | -2 (-1%) | In range | 135 - 146 | [135,146] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/sodium.md) |
 
 ## Liver
+
+Explainers: [[L1-Health/biomarker-digest-liver]]
 
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
@@ -124,6 +140,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 | Total Protein | g/dL | 7.2 (May 19) | 6.8 (Oct 2) | -0.4 (-6%) | In range | 6.1-8.1 | [6,8.5] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/total-protein.md) |
 
 ## Male Health
+
+Explainers: [[L1-Health/biomarker-digest-male-health]]
 
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
@@ -143,6 +161,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Metabolic
 
+Explainers: [[L1-Health/biomarker-digest-metabolic]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Glucose | mg/dL | 100 (May 19) | 93 (Oct 2) | -7 (-7%) | In range | 65-99 | [70,85] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/glucose.md) |
@@ -152,6 +172,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 | Uric Acid | mg/dL | — | 6.3 (May 19) | — | In range | 4.0-8.0 | [4,5.5] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/uric-acid.md) |
 
 ## Nutrients
+
+Explainers: [[L1-Health/biomarker-digest-nutrients]]
 
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
@@ -177,12 +199,16 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Pancreas
 
+Explainers: [[L1-Health/biomarker-digest-pancreas]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Amylase | U/L | — | 46 (May 19) | — | In range | 21-101 | [21,101] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/amylase.md) |
 | Lipase | U/L | — | 35 (May 19) | — | In range | 7-60 | [7,60] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/lipase.md) |
 
 ## Stress & Aging
+
+Explainers: [[L1-Health/biomarker-digest-stress-aging]]
 
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
@@ -193,6 +219,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 
 ## Thyroid
 
+Explainers: [[L1-Health/biomarker-digest-thyroid]]
+
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|
 | Thyroglobulin Antibodies (TgAb) | IU/mL | — | <2 (May 19) | — | In range | <=2 | (,1] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/thyroglobulin-antibodies-tgab.md) |
@@ -202,6 +230,8 @@ Every biomarker Function Health returned for the draws on May 19, May 20, Oct 2 
 | Triiodothyronine (T3) Free | pg/mL | — | 3.6 (May 19) | — | In range | 2.3-4.2 | [3,4.4] | [file](../00-Raw_Sources/L1_Health/function-health/2026-10-02/triiodothyronine-t3-free.md) |
 
 ## Urine
+
+Explainers: [[L1-Health/biomarker-digest-urine]]
 
 | Biomarker | Unit | Previous | Latest | Change | Status | Quest range | Function optimal | Source |
 |---|---|---|---|---|---|---|---|---|

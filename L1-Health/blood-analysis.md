@@ -8,8 +8,8 @@ last_updated: 2026-10-24
 status: active
 tags: [l1, blood, biomarkers, testosterone, hormones, metabolic, health-data]
 sources:
-  - 00-Raw_Sources/L1_Batch/Blood_Analysis_Historical.md
-  - 00-Raw_Sources/L1_Batch/Blood_Analysis_Biomarkers_LifeForce.md
+  - 00-Raw_Sources/L1_Health/Blood_Analysis_Historical.md
+  - 00-Raw_Sources/L1_Health/Blood_Analysis_Biomarkers_LifeForce.md
   - 00-Raw_Sources/L1_Health/function-health/2026-10-02/
 related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/health-performance-crossmap, L1-Health/blood-analysis-function-oct2026, L1-Health/function-health-registry]
 ---
@@ -36,7 +36,7 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 
 > **⚠ Oct 2026 Update:** The Oct 2, 2026 Function Health panel adds two new liver flags (ALT 31 → 94 U/L, AST 21 → 50 U/L), three new LDL particle flags (LDL-P 1033 → 1309 nmol/L; LDL Medium and Small above range), and an unchanged hs-CRP of 1.2 mg/L. Glucose, HDL Large, LDL Peak Size, and LH returned to range. Free Testosterone rose from 54.0 to 64.1 pg/mL and stays far below the Medicine 3.0 floor. See [[L1-Health/blood-analysis-function-oct2026]] for the full analysis and [[L1-Health/function-health-registry]] for all 123 biomarkers.
 
-> **Age discrepancy flagged:** This timeline lists age 34 at the May 19, 2026 draw, but the Function account profile gives age 33 at both May 19 and Oct 2, 2026 (and the Jan 22, 2026 row already lists 33). The May entry likely holds an error. Confirm before correcting.
+> **Age discrepancy flagged:** This timeline lists age 34 at the May 19, 2026 draw, but the Function account profile gives age 33 at both May 19 and Oct 2, 2026 (and the Jan 22, 2026 row already lists 33). Age 34 also appears in the four book notes, `protocol-health-upgrade.md`, and the May note, so the discrepancy runs through the vault; the Function profile (33) is the only source tied to a birth date. Confirm, then correct everywhere in one pass.
 
 > **Data anomaly flagged:** The 2025 Aug 14 results table in the source document contains dates of "01/22/2026" for all entries. The biomarker values appear identical to the Jan 2026 results. This is likely a source document copy-paste error. The Spren scores for Aug 2025 are distinct (82/76/94/77) and appear genuine. Biomarker data for Aug 2025 should be treated as unconfirmed until the original data is located.
 
@@ -80,7 +80,7 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 | ApoB | 62 mg/dL | **56 mg/dL** | −10% | ✅ Now within Medicine 3.0 optimal (< 60–70 mg/dL) |
 | HbA1c | 5.1% | **5.2%** | +0.1% | 🟡 At optimal ceiling — action trigger (5.3%) not breached |
 
-#### Persistent Flags (Jan 2026 — Spren, not yet retested at Function Health)
+#### Persistent Flags (Jan 2026 — Spren; all since retested at Function Health: DHEA-S 234 → 212, Cortisol 8.0 → 14.7, TSH 1.08, Homocysteine 10.0)
 
 | Flag | Biomarker | Result | Range | Severity |
 |---|---|---|---|---|
@@ -176,7 +176,7 @@ Trending downward (through Jan 2026). Low TSH may indicate the thyroid is slight
 | May 2026 | 8.0 | mcg/dL | Function/Quest 4–22 (in range); below Spren band |
 | **Oct 2026** | **14.7** | **mcg/dL** | **Function/Quest 4–22 (in range); inside Spren band; +84% from May** |
 
-**Oct 2026 update:** The "low cortisol" reading is superseded. Cortisol rose from 8.0 (May) to 14.7 mcg/dL (Oct), inside Spren's 10–15 band. Function's export carries no draw time, and cortisol follows a circadian rhythm, so a morning versus afternoon draw could explain part of the gap. Record draw time and fasting status at the next draw. The low Testosterone:Cortisol ratio quoted below dates from Jan 2026 and no longer reflects current data.
+**Oct 2026 update:** The "low cortisol" reading is superseded. Cortisol rose from 8.0 (May) to 14.7 mcg/dL (Oct), inside Spren's 10–15 band. Function's export carries no draw time, and cortisol follows a circadian rhythm, so a morning versus afternoon draw could explain part of the gap. Record draw time and fasting status at the next draw. The Testosterone:Cortisol ratio quoted below (0.034 in Jan 2026) did not improve with the cortisol rise. On the same convention (Total T ng/dL ÷ cortisol mcg/dL ÷ 1000, inferred from 262 ÷ 7.6) it was 0.0375 in May and 0.0194 in Oct: cortisol doubled while Total T slipped, so the ratio fell.
 
 Low cortisol combined with low testosterone creates the low Testosterone:Cortisol ratio (0.034). This pattern is associated with reduced anabolic drive and recovery capacity. Cortisol follows a circadian rhythm — morning tests are expected to be higher. A 7.6 reading in the morning is functionally low.
 

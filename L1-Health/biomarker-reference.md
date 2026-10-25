@@ -8,17 +8,17 @@ last_updated: 2026-10-24
 status: active
 tags: [l1, biomarkers, reference, health, hormones, metabolic, lipid-fractionation, omega-3, inflammation]
 sources:
-  - 00-Raw_Sources/L1_Batch/Blood_Analysis_Biomarkers_LifeForce.md
-  - 00-Raw_Sources/L1_Batch/Out-of-Range-Biomarkers.md
-  - 00-Raw_Sources/L1_Batch/Critical-Biomarkers-for-Male-Longevity-and-Performance.md
-  - 00-Raw_Sources/L1_Batch/Gil-Health-Upgrade-Protocol-Proposal.md
+  - 00-Raw_Sources/L1_Health/Blood_Analysis_Biomarkers_LifeForce.md
+  - 00-Raw_Sources/L1_Health/Out-of-Range-Biomarkers.md
+  - 00-Raw_Sources/L1_Health/Critical-Biomarkers-for-Male-Longevity-and-Performance.md
+  - 00-Raw_Sources/L1_Health/Gil-Health-Upgrade-Protocol-Proposal.md
   - 00-Raw_Sources/L1_Health/function-health/2026-10-02/
 related: [L1-Health/blood-analysis, L1-Health/_pillar, L1-Health/protocol-health-upgrade, L1-Health/biomarker-scorecard-may2026, L1-Health/blood-analysis-function-oct2026, L1-Health/function-health-registry]
 ---
 
 # L1 — Biomarker Reference Guide
 
-Reference for interpreting Gil's blood panel results. Sourced from Lifeforce platform documentation, updated through the Oct 2, 2026 Function Health panel ([[L1-Health/blood-analysis-function-oct2026]]). Use alongside [[L1-Health/blood-analysis]] when reviewing test results. Complete value list: [[L1-Health/function-health-registry]].
+Reference for interpreting Gil's blood panel results. Sourced from Lifeforce platform documentation, updated through the Oct 2, 2026 Function Health panel ([[L1-Health/blood-analysis-function-oct2026]]). Use alongside [[L1-Health/blood-analysis]] when reviewing test results. Complete value list: [[L1-Health/function-health-registry]]. What each Function Health biomarker measures and why it matters: the 15 category digests, linked from the registry (for example [[L1-Health/biomarker-digest-liver]] and [[L1-Health/biomarker-digest-heart]]).
 
 ---
 
@@ -37,7 +37,7 @@ Reference for interpreting Gil's blood panel results. Sourced from Lifeforce pla
 | **SHBG** | Binds sex hormones; high SHBG = low free T | 🟢 15 nmol/L (Oct 2026), 13 (May), 12 (Jan 2024); in range 10–50 | Stress reduction |
 
 **Cortisol intervention targets (if high):** Ashwagandha, rhodiola, sleep hygiene, nature time, dark chocolate, fermented foods.
-**Cortisol intervention targets (if low, as in 2026):** High-intensity exercise, caffeine (strategic).
+**Cortisol intervention targets (if low; Jan and May 2026 readings were low, Oct 2026 read 14.7 mcg/dL):** High-intensity exercise, caffeine (strategic).
 
 ---
 
@@ -126,7 +126,7 @@ The Oct 2, 2026 panel splits the May picture:
 4. Dispenza morning protocol — cortisol reduction removes NF-κB activation pathway
 5. Retest hs-CRP in 8–12 weeks to confirm response
 
-### For Low HDL Large + LDL Peak Size (Metabolic Particle Shift):
+### For Low HDL Large + LDL Peak Size (Metabolic Particle Shift) — both resolved Oct 2026; the steps below now apply to the LDL particle flags (LDL-P, Medium, Small):
 1. EPA/DHA supplementation — shifts both HDL toward larger particles and LDL toward Pattern A
 2. Zone 2 cardio — most effective single intervention for HDL particle improvement
 3. Weight loss (−8 kg OKR) — visceral fat reduction directly improves lipid particle quality

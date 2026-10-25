@@ -121,13 +121,13 @@ L1 operates as a **Driver** for 2026. The fitness protocol (3 heavy lift session
 ## Health Data Files
 
 - [[L1-Health/weight-tracker]] — Full weight/BMI/body-fat history (2023–2026), OKR progress, trend analysis
-- [[L1-Health/blood-analysis]] — Complete blood panel history (2022–2026); Free T 54.0 pg/mL (first measurement, critical); Total T improving (262→300); ApoB 56 (optimal); HbA1c 5.2%
+- [[L1-Health/blood-analysis]] — Complete blood panel history (2022–2026, 9 draws); Oct 2026: Free T 64.1 pg/mL (critical, improving), Total T 285 (May gain did not hold), HbA1c 5.3%; ApoB 56 (May, not retested)
 - [[L1-Health/blood-analysis-function-oct2026]] — Function Health Oct 2026 panel: 7 out-of-range biomarkers; new liver and LDL particle flags; deltas vs May; proposed protocol changes
 - [[L1-Health/liver-enzymes-alt-ast-oct2026]] — ALT 94 / AST 50 synthesis: causes against Gil's context, panel evidence, questions for the physician
 - [[L1-Health/function-health-registry]] — All 123 Function Health biomarkers with May and Oct values (generated)
 - [[L1-Health/blood-analysis-function-may2026]] — Function Health May 2026 panel: 5 out-of-range biomarkers; particle-level lipid data; unified metabolic risk signal
 - [[L1-Health/biomarker-reference]] — Interpretation guide for all tracked biomarkers; Free T vs Total T distinction; Medicine 3.0 optimal ranges
-- [[L1-Health/biomarker-scorecard-may2026]] — Master scorecard: 10 biomarkers vs Medicine 3.0 optimal; Deficit Score 6/10; action triggers
+- [[L1-Health/biomarker-scorecard-may2026]] — Master scorecard: 10 biomarkers vs Medicine 3.0 optimal; Deficit Score 6/10 as of May 2026 (not recomputed for Oct); action triggers
 - [[L1-Health/protocol-health-upgrade]] — Canonical L1 protocol: Alpha/Beta/Gamma training; supplement stack; Sunday meal prep; OS telemetry integration
 - [[02-Indexes/topic_maps/health-performance-crossmap]] — Synthesis: Free T (54 pg/mL) as primary L3 Deep Work and Principal Promotion threat
 

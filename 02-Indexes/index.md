@@ -2,7 +2,7 @@
 title: Second Brain — Master Registry
 type: index
 owner: Gilberto Silva Gonzalez
-last_updated: 2026-10-24 (Session 13)
+last_updated: 2026-10-25 (Session 14)
 ---
 
 # Second Brain — Master Registry
@@ -38,7 +38,7 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | File | Type | Summary |
 |---|---|---|
 | [Weight Tracker](../L1-Health/weight-tracker.md) | Health data | Full weight/BMI/body-fat history 2023–2026; trend analysis; OKR projection — current 93.5 kg, target 85.5 kg |
-| [Blood Analysis History](../L1-Health/blood-analysis.md) | Health data | 8 blood draws (2022–2026); May 2026 update: Free T 54.0 pg/mL (first measurement, critical); Total T improved 262→300 ng/dL; ApoB improved 62→56 mg/dL; hs-CRP 1.2 mg/L |
+| [Blood Analysis History](../L1-Health/blood-analysis.md) | Health data | 9 blood draws (2022–2026); Oct 2026 update: Free T 64.1 pg/mL (critical, improving); Total T 285 ng/dL (May gain did not hold); new ALT 94 / AST 50 and LDL particle flags; hs-CRP 1.2 mg/L persistent; May 2026: Free T 54.0 first measurement, ApoB 56 |
 | [Blood Analysis — Function Health May 2026](../L1-Health/blood-analysis-function-may2026.md) | Health data | First Function Health panel (May 19, 2026); 5 out-of-range biomarkers; hs-CRP 1.2 mg/L (critical flag); particle-level lipid data |
 | [Blood Analysis — Function Health Oct 2026](../L1-Health/blood-analysis-function-oct2026.md) | Health data | Second Function Health panel (Oct 2, 2026); 7 out-of-range biomarkers; **new liver flags ALT 94 / AST 50 U/L**; new LDL particle flags (LDL-P 1309); hs-CRP unchanged at 1.2; glucose, HDL Large, LDL Peak Size resolved; Free T 54.0 → 64.1 pg/mL; contradicts/strengthens table and 7 proposed protocol changes |
 | [Liver Enzymes — ALT and AST (Oct 2026)](../L1-Health/liver-enzymes-alt-ast-oct2026.md) | Health analysis | ALT 94 / AST 50 U/L synthesis: data table, 11-row causes-against-context table using panel markers, Function follow-up menu, six questions only Gil can answer, five proposed actions (protocols unchanged) |
@@ -47,6 +47,30 @@ The authoritative registry of all pages in the Gil OS Second Brain vault. Update
 | [Biomarker Scorecard — May 2026](../L1-Health/biomarker-scorecard-may2026.md) | Analysis | Master scorecard: 10 biomarkers vs Medicine 3.0 optimal ranges; Deficit Score 6/10; Free T action trigger breached; Total T improving |
 | [Health Upgrade Protocol](../L1-Health/protocol-health-upgrade.md) | Protocol | 5-domain upgrade architecture: Alpha/Beta/Gamma training + Zone 2/5; Medicine 3.0 biomarker table with action triggers; Sunday meal prep; supplement stack (Creatine/Mg L-Threonate/Omega-3/D3+K2); OS integration telemetry |
 | [Biomarker Correction Plan](../L1-Health/protocols/biomarker_correction_plan.md) | Execution schedule | Time-blocked daily schedule targeting 6 biomarker deficiencies; exact supplement timing; training day map; Sunday batch prep checklist; physician consult lab list; 90-day correction timeline |
+
+---
+
+## L1 Biomarker Digests
+
+One page per Function Health category, paraphrasing Function's explainer text for each biomarker (what it measures, why it matters, high versus low, Gil's result) with a link to the raw file. Tier 1 entries (out of range or tracked in the vault) add causes and follow-up; only out-of-range entries carry Function's lever lists. Values live in the [registry](../L1-Health/function-health-registry.md).
+
+| File | Biomarkers | Summary |
+|---|---|---|
+| [Digest — Liver](../L1-Health/biomarker-digest-liver.md) | 9 | ALT 94 / AST 50 above range (new); GGT above Function optimal; ALP, bilirubin, albumin in range; ALT and AST entries carry causes, follow-up, and Function's lever lists |
+| [Digest — Heart](../L1-Health/biomarker-digest-heart.md) | 14 | Cholesterol, ApoB, HDL Large, and the LDL particle set; LDL Particle Number / Medium / Small above range; peak size and HDL Large resolved; triglycerides above Function optimal |
+| [Digest — Male Health](../L1-Health/biomarker-digest-male-health.md) | 13 | Total and free testosterone (below Function's bands), SHBG, LH, FSH, estradiol, prolactin, PSA set; SHBG low-normal, with Function's inverse link to insulin |
+| [Digest — Metabolic](../L1-Health/biomarker-digest-metabolic.md) | 5 | Glucose, HbA1c (on the 5.3% line), fasting insulin (2.5× Function optimal), leptin, uric acid |
+| [Digest — Nutrients](../L1-Health/biomarker-digest-nutrients.md) | 19 | OmegaCheck below range with causes and levers; omega-3/6 fractions and ratios; iron set, ferritin, homocysteine, MMA, magnesium RBC, zinc, vitamin D |
+| [Digest — Immune Regulation](../L1-Health/biomarker-digest-immune-regulation.md) | 12 | hs-CRP above range with causes, follow-up, and levers; white cell count and its five cell types, counts and percentages |
+| [Digest — Blood](../L1-Health/biomarker-digest-blood.md) | 11 | Hematocrit, hemoglobin, RBC indices (MCH now in range), platelets, MPV, RDW, blood type and Rh factor |
+| [Digest — Thyroid](../L1-Health/biomarker-digest-thyroid.md) | 5 | TSH, free T4, free T3, TPO and thyroglobulin antibodies; all May-only and in range |
+| [Digest — Stress & Aging](../L1-Health/biomarker-digest-stress-aging.md) | 4 | Cortisol (8.0 → 14.7; draw time unknown), DHEA-S (well under Function's age benchmark), IGF-1 and Z score |
+| [Digest — Kidney](../L1-Health/biomarker-digest-kidney.md) | 5 | Creatinine, BUN, eGFR, random urine albumin, sodium; all in range |
+| [Digest — Electrolytes](../L1-Health/biomarker-digest-electrolytes.md) | 4 | Calcium, potassium, chloride, carbon dioxide; all in range |
+| [Digest — Pancreas](../L1-Health/biomarker-digest-pancreas.md) | 2 | Amylase and lipase; May-only and in range |
+| [Digest — Autoimmunity](../L1-Health/biomarker-digest-autoimmunity.md) | 2 | ANA negative and rheumatoid factor in range (May only) |
+| [Digest — Environmental Toxins](../L1-Health/biomarker-digest-environmental-toxins.md) | 2 | Lead and mercury in range at Quest; Function's target is zero (May only) |
+| [Digest — Urine](../L1-Health/biomarker-digest-urine.md) | 16 | Urinalysis dipsticks and microscopy; all in range, urine pH inside Function's band in Oct |
 
 ---
 
@@ -196,8 +220,8 @@ Module 4 ("Building Your AI Personal Assistant") is referenced in this batch but
 
 ## Vault Health
 
-- **Total pages:** 46 (1 master + 7 pillar schemas + 10 L1 data/protocol files + 4 L1 book notes + 5 topic maps + 3 L3/L4 career/growth notes + 4 L4 course notes + 4 L5 finance files + 2 entities + 1 index + 1 log + 5 raw batches)
-- **Last full rebuild:** 2026-10-24 (Session 13 — Function Health Oct 2026 ingest, stages 1–2; L5 Finance refresh from Session 12 retained)
+- **Total pages:** 62 (1 master + 7 pillar schemas + 10 L1 data/protocol files + 15 L1 biomarker digests + 4 L1 book notes + 5 topic maps + 3 L3/L4 career/growth notes + 4 L4 course notes + 4 L5 finance files + 2 entities + 1 index + 1 log + 5 raw batches)
+- **Last full rebuild:** 2026-10-25 (Session 14 — Function Health Oct 2026 ingest: stages 1–2, L1 lint, and 15 biomarker digest pages; L5 Finance refresh from Session 12 retained)
 - **Inbox items pending ingest:** 3
 - **Orphan pages:** 0
 - **Source-quality gaps found (2026-08-02, AI course batch):** `00-Raw_Sources/L4_Growth/2026-08-02/2-1_Installing_Windows_terminal.md` is empty (Lesson 2.1 content missing, low impact — Module 3 doesn't depend on it); `2-3_Navigating_Terminal.md` contains a duplicated-content tail (Module 3 index repeated) not double-counted in synthesis; Module 4 of the course ("Building Your AI Personal Assistant") is referenced but has no source file yet.

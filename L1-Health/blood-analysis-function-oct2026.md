@@ -195,6 +195,7 @@ These are data-driven proposals, not medical advice. Liver and lipid-particle fi
 ## Cross-Reference
 
 - [[L1-Health/function-health-registry]] — all 123 biomarkers, generated from the raw files
+- Category digests of Function's explainer text, one page per category, each entry linked to its raw file: [[L1-Health/biomarker-digest-liver]], [[L1-Health/biomarker-digest-heart]], [[L1-Health/biomarker-digest-male-health]], [[L1-Health/biomarker-digest-metabolic]], [[L1-Health/biomarker-digest-nutrients]], [[L1-Health/biomarker-digest-immune-regulation]]; the other nine are linked from the registry
 - [[L1-Health/blood-analysis-function-may2026]] — May 19, 2026 panel (baseline for every delta above)
 - [[L1-Health/blood-analysis]] — full draw history
 - [[L1-Health/biomarker-reference]] — interpretation guide (liver row corrected in this ingest)

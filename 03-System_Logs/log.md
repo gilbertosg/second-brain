@@ -806,7 +806,7 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 1. `00-Raw_Sources/L1_Health/function-health/2026-10-02/` — 123 per-biomarker files (May 19/20 and Oct 2 results, Quest and Function ranges, Function explainer sections)
 2. `00-Raw_Sources/L1_Health/function-health/2026-10-02/function-health-data-report-2026-10-24.md` — Data-page PDF reconciliation (132 of 132 entries match on latest value, date, and in/out-of-range flag; Daily Metrics recorded)
 
-**Context:** Gil extracted the full account with the `function-health-extract` skill and asked for a staged `/librarian` ingest. Tiering: about 20 files read in depth (7 out-of-range biomarkers, 5 status changes, vault-tracked hormone and metabolic markers); deltas for the 83 two-result files computed by script; 40 single-result files rolled up. Stage 2 (liver synthesis page, `_pillar.md`, health-performance topic map, `index.md` health-flag section) remains. `protocol-health-upgrade.md` and `protocols/biomarker_correction_plan.md` stay unchanged by Gil's choice; changes are proposed in the panel note.
+**Context:** Gil extracted the full account with the `function-health-extract` skill and asked for a staged `/librarian` ingest. Tiering: the planned deep read was about 20 files; in practice only ALT and AST were read section by section in Stage 1 and Stage 2, plus the LDL Particle Number, LDL Small, and LDL Medium sections in Stage 2. Every other biomarker entered the wiki as frontmatter values (via the script-built registry) and results tables; their explainer sections (Why it matters, Causes, Foods, Supplements, and the rest) were not read and exist only in the raw files. Deltas for the 83 two-result files were computed by script; 40 single-result files were rolled up. (Corrected 2026-10-25: this entry first said about 20 files were read in depth.) Stage 2 (liver synthesis page, `_pillar.md`, health-performance topic map, `index.md` health-flag section) remains. `protocol-health-upgrade.md` and `protocols/biomarker_correction_plan.md` stay unchanged by Gil's choice; changes are proposed in the panel note.
 
 **Actions taken:**
 
@@ -862,7 +862,7 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 
 ## [2026-10-24] ingest | Function Health Panel Oct 2026 — Stage 2 of 2 (Flagged-Biomarker Synthesis)
 
-**Sources read:** `00-Raw_Sources/L1_Health/function-health/2026-10-02/` — ALT, AST, GGT, ALP, total bilirubin, LDL Particle Number, LDL Small, and LDL Medium files (results plus Why it matters, Summary, Causes, Associated conditions, Follow up, Self care, Supplements, Additional tests); registry values for ferritin, iron, lead, mercury, thyroid, ANA, and the other panel markers that bear on each liver cause. Vault pages read: `_pillar.md`, `health-performance-crossmap.md`, `protocol-health-upgrade.md` (Domains 2 and 4), `protocols/biomarker_correction_plan.md` (consult preparation and decision tree), `weight-tracker.md`, `index.md`. `qmd search` found no existing liver page.
+**Sources read:** `00-Raw_Sources/L1_Health/function-health/2026-10-02/` — ALT and AST files (Summary, Causes, Associated conditions, Follow up; ALT also Self care, Supplements, Additional tests, Foods to limit), the LDL Particle Number, LDL Small, and LDL Medium files (Why it matters, Summary, Follow up), and the results rows for GGT, ALP, and total bilirubin (their explainer sections were not read) (corrected 2026-10-25: this entry first listed all eight files as read section by section); registry values for ferritin, iron, lead, mercury, thyroid, ANA, and the other panel markers that bear on each liver cause. Vault pages read: `_pillar.md`, `health-performance-crossmap.md`, `protocol-health-upgrade.md` (Domains 2 and 4), `protocols/biomarker_correction_plan.md` (consult preparation and decision tree), `weight-tracker.md`, `index.md`. `qmd search` found no existing liver page.
 
 **Context:** Stage 1 (2026-10-24) wrote the panel note, registry, and `blood-analysis.md` / `biomarker-reference.md` updates. Stage 2 covers the cross-pillar synthesis for the flagged biomarkers. `protocol-health-upgrade.md` and `protocols/biomarker_correction_plan.md` stay unchanged by Gil's choice.
 
@@ -908,3 +908,126 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 - Orphan pages: 0 (the liver page has inbound links from the index, panel note, biomarker reference, pillar, and topic map)
 - Unresolved wiki links in the touched pages: 0
 - Raw sources and protocol files untouched
+
+
+## [2026-10-25] lint | L1 Health Check (leftover May-era claims, orphans, stale source paths)
+
+**Protocol:** Lint Protocol — Librarian, scoped to `L1-Health/` plus the pages that carry L1 claims (`health-performance-crossmap.md`, `books-health-synthesis.md`, `gil_os_master.md`, the other pillar pages, `index.md`).
+
+**Method:** pattern scan of 14 L1 pages and 9 related pages for 13 claim families (ALT/AST healthy, MCH persistent, low cortisol, SHBG binding, Pattern B, excellent cardiovascular, Total T improving, hs-CRP rising, urgent Q2 consult, May as current, deficit 6/10, draw counts, not-retested); existence check of every `00-Raw_Sources/` path in L1; inbound-link count for every non-raw page; `hyalo find --broken-links / --orphan / --dead-end` and `hyalo properties summary`; manual verification of every automated finding (file existence on disk).
+
+### 1. Contradictions Between Pages
+
+🔴 **SHBG-binding explanation persists in the protocol layer.** `protocols/biomarker_correction_plan.md` (lines 35, 78, 87, 273, 284) and `biomarker-scorecard-may2026.md` (line 66) still state that SHBG sequesters Free T. SHBG measured 13 (May) and 15 nmol/L (Oct). The correction plan's own decision tree sends SHBG < 35 to the "production problem" branch. Protocol files are unchanged by Gil's choice; proposal below.
+
+🟡 **HbA1c trigger wording conflicts.** `protocol-health-upgrade.md` (lines 69, 85) says "> 5.3%"; `biomarker-scorecard-may2026.md` (line 168) says "if ≥ 5.3%". Oct result is 5.3%.
+
+🟡 **Free T Quest range conflicts.** Vault pages quote 46–224 pg/mL; the Function export lists 35–155.
+
+🟡 **Age conflicts.** Age 34 appears in the four book notes, `protocol-health-upgrade.md` (line 18, citing a Mar 2026 source), the May panel note, and the `blood-analysis.md` timeline; the Function account profile gives 33 at both draws. The sources disagree with each other. Flag text in `blood-analysis.md` widened to say the discrepancy is vault-wide.
+
+🟡 **Scorecard arithmetic does not reproduce.** The May scorecard states a Deficit Score of 6/10 ("count outside Medicine 3.0 optimal"). Counting the table strictly gives 7 (Free T, hs-CRP, Total T, Glucose, HDL Large, LDL Peak Size, Omega-3; HbA1c sits inside 4.8–5.2). 6 reproduces only if the "borderline" LDL Peak Size is excluded. Provisional Oct recount on the same 10 biomarkers, strict reading: **6/10** (Free T, hs-CRP, Total T, HbA1c 5.3 vs 4.8–5.2, Glucose 93 vs 70–85, Omega-3 5.0), with Omega-3 and ApoB still at May values. The protocol schedules a Q3 panel (2026-09-01) to "compute updated Biomarker Deficit Score"; this definition omits the new ALT, AST, and LDL particle flags. Not written to the scorecard pending Gil's choice of convention.
+
+🟢 **Self-correction.** The Stage 1 text in `blood-analysis.md` said the low Testosterone:Cortisol ratio "no longer reflects current data." That was wrong. On the vault's convention (Total T ng/dL ÷ cortisol mcg/dL ÷ 1000, inferred from 262 ÷ 7.6 = 0.034) the ratio was 0.0375 in May and 0.0194 in Oct: cortisol doubled while Total T slipped. Corrected in place.
+
+### 2. Stale Claims Superseded by the Oct 2026 Panel
+
+| Claim | Where | Status |
+|---|---|---|
+| "ALT / AST consistently healthy" | `biomarker-reference.md` | Fixed in ingest Stage 1 |
+| MCH "persistently elevated", "Restart immediately" B-complex because of MCH 3/3 | `book-notes-robbins-life-mastery.md` (lines 49, 141, 170) | **Open.** MCH read 32.9 and 32.6 pg (in range). Homocysteine 10.0 (May) still supports B-complex review. Needs Gil's call on the supplement row |
+| "Cortisol 7.6 below range" as a live paradox | `book-notes-dispenza-breaking-habit.md` (line 38) | **Open.** Jan 2026 reading; cortisol 14.7 in Oct. Left as source-derived Jan record |
+| LDL Peak Size "trending toward Pattern B" | `protocols/biomarker_correction_plan.md` (line 46); May panel note; scorecard (line 101) | Panel note and scorecard now carry snapshot banners; correction plan **open** |
+| Glucose 100 and HDL Large 6,147 as "active at-risk" | `protocols/biomarker_correction_plan.md` (Deficiency Map) | **Open.** Both resolved in Oct. Free T, hs-CRP, HbA1c, Omega-3 rows carry May values with no Oct column |
+| "Q2 2026 … urgent" physician consult | `protocols/biomarker_correction_plan.md` (heading, line 263), `protocol-health-upgrade.md` (line 181), crossmap action table | Crossmap annotated (target passed; no visit recorded). Protocol files **open** |
+| Free T "bioavailability, not production" framing | `health-performance-crossmap.md` Priority 1 | Annotated in place; History retained |
+| "Request MCH on next draw" | crossmap Priority 2 | Annotated as done |
+| "Persistent Flags … not yet retested at Function Health" | `blood-analysis.md` | Retitled: DHEA-S, Cortisol, TSH, and Homocysteine were all retested |
+| "8 blood draws" | `index.md` row | Fixed to 9 |
+| "Cortisol intervention targets (if low, as in 2026)" | `biomarker-reference.md` | Reworded to the Jan/May versus Oct readings |
+| "For Low HDL Large + LDL Peak Size" heading | `biomarker-reference.md` | Annotated: both resolved; steps now apply to the LDL particle flags |
+| Health Data Files bullets and "Deficit Score 6/10" | `_pillar.md` | Updated to Oct summaries; Deficit Score labeled May |
+| "7 draws" cross-reference | `blood-analysis-function-may2026.md` (line 225) | Left in the dated snapshot |
+
+### 3. Orphans
+
+**No orphans among the 15 L1 pages.** Inbound-link counts after this ingest: `_pillar` 9, `blood-analysis` 10, `blood-analysis-function-may2026` 9, `protocol-health-upgrade` 8, `biomarker-reference` 7, `blood-analysis-function-oct2026` 7, `function-health-registry` 6, `liver-enzymes-alt-ast-oct2026` 6, `weight-tracker` 5, `biomarker-scorecard-may2026` 5, each book note 3, `biomarker_correction_plan` 3. Vault-wide: only `Claude.md` (a config file) and raw sources have none. All 15 L1 pages are indexed.
+
+### 4. Missing Cross-References and Data Gaps
+
+1. `protocol-health-upgrade.md` and `protocols/biomarker_correction_plan.md` do not link to the Oct panel note, the liver page, or the registry (protocol files untouched by choice).
+2. `weight-tracker.md` ends at W17 (May; last body composition W5, Jan). About 26 weeks (W18–W43) of the L1 Driver's weight and composition OKRs have no data.
+3. The vault records OKR targets and the supplement/protocol plan but no adherence data for alcohol, training, supplements, or medications, so the liver, hs-CRP, and Free T interventions cannot be tested.
+4. Protocol milestones with no recorded outcome: Q2 physician consult (due 2026-06-30), DEXA, VO2 Max test, 30-day CGM, DHEA and B-complex status checks.
+5. Protocol-tracked markers with May values only: ApoB, Omega-3, Homocysteine, TSH.
+6. The Oct panel is the protocol's "Q3 2026 panel" (scheduled 2026-09-01; drawn 2026-10-02).
+
+### 5. Fixes Applied
+
+| Action | File(s) | Notes |
+|---|---|---|
+| Repointed 19 stale `00-Raw_Sources/L1_Batch/` references to `00-Raw_Sources/L1_Health/` | 10 L1 files: 4 book notes, `biomarker-reference`, `biomarker-scorecard-may2026`, `blood-analysis`, `weight-tracker`, `protocol-health-upgrade`, `protocols/biomarker_correction_plan` | Path segment swap only; every target verified on disk. The two protocol files received this path fix and no content change |
+| Added snapshot banners | `biomarker-scorecard-may2026.md`, `blood-analysis-function-may2026.md` | Point to the Oct note; list what the Oct data supersedes; the scorecard pointer was promised in Stage 1 and omitted |
+| Annotated stale claims in place | `health-performance-crossmap.md`, `biomarker-reference.md`, `blood-analysis.md`, `_pillar.md` | History retained; see the table above |
+| Corrected the Testosterone:Cortisol ratio statement | `blood-analysis.md` | Self-correction, see §1 |
+| Widened the age flag | `blood-analysis.md` | Discrepancy runs through seven pages |
+| Fixed index row and total | `02-Indexes/index.md` | "9 blood draws"; total pages 46 → 47. The breakdown (1 + 7 + 10 + 4 + 5 + 3 + 4 + 4 + 2 + 1 + 1 + 5) sums to 47, so the stated total was one low since the previous ingest |
+
+### 6. Not Fixed (needs Gil)
+
+1. **Protocol and plan edits** (all proposals): in `biomarker_correction_plan.md`, replace "SHBG sequestration" at lines 35, 78, 87; update the Free T and HbA1c rows with Oct values; drop or re-label the Glucose, HDL Large, and LDL Peak Size rows (resolved); mark the Q2 consult overdue; add ALT/AST and LDL particle rows; add an Oct result to the decision-tree section. In `protocol-health-upgrade.md`, add Oct values and an ALT/AST trigger to the Critical Biomarker Table, update the Deficit Score, and add Related Files links to the Oct note, liver page, and registry.
+2. **Book-note supplement rows** (`book-notes-robbins-life-mastery.md`): re-justify B-complex on homocysteine rather than MCH.
+3. **Conventions to decide:** HbA1c trigger (">" or "≥"); Deficit Score definition (strict outside-optimal count, and whether the new flags join the score); which age is correct.
+4. **Frontmatter drift:** all 7 pillar pages lack a `type` property; the four book notes lack `status`; the index stores `last_updated` as text ("2026-10-24 (Session 13)") while 32 other files use a date. The raw pilot file `alanine-aminotransferase-alt.md` uses the older schema (no `critical_priority_1`, `sections`, or `result_count`; 122 of 123 files carry `critical_priority_1`). Raw sources stay immutable; regenerate on the next extraction.
+5. **Outside L1 scope, noticed during the scan:** `hyalo find --broken-links` lists `L3-Career/_pillar.md`, `L5-Finance/_pillar.md`, and `L5-Finance/transaction-analysis-2026-jan-oct.md` (not verified); and one `index.md` link (line ~206) to `L5-Finance/transaction-analysis-2026-jan-oct.md` is written without the `../` prefix.
+
+### 7. Tool Note
+
+`hyalo` reports every `../`-relative link in `index.md` and `function-health-registry.md` as unresolved (including links that predate this work). It resolves them from the vault root. A manual existence check shows all 123 registry links and every L1 and index link resolve. These are false positives; the broken-links result is not a reliable gate for this link style.
+
+**Verification after fixes:**
+- 0 `L1_Batch` references remain in `L1-Health/` (historical log entries keep them as the record).
+- 0 unresolved wiki links and 0 unresolved relative links in L1, the crossmap, and the index, except the one finance link in item 6.5.
+- 0 L1 orphans; 15 of 15 L1 pages indexed.
+- `git diff --stat`: 14 files changed (the 12 L1 pages above, `health-performance-crossmap.md`, `index.md`) before this log entry; nothing under `00-Raw_Sources/`.
+
+
+## [2026-10-25] ingest | Function Health Biomarker Digests — 15 Category Pages (explainer text for 123 biomarkers)
+
+**Sources read:** `00-Raw_Sources/L1_Health/function-health/2026-10-02/` — Why it matters and Summary for all 122 biomarker files that carry them (`white-blood-cell-wbc-urine.md` has no explainer), plus Causes and Follow up for the Tier 1 files that have those sections (ALT, AST, hs-CRP, LDL Particle Number, LDL Medium, LDL Small, OmegaCheck, Insulin, Vitamin D), and Self care, Foods, and Supplements for the seven out-of-range biomarkers. Long sections were read through the first 1,500–3,000 characters (the extract script truncates), so late parts of a few action lists (for example some supplement doses) were not read; the digests send readers to the raw file for those. `qmd search` found no existing digest pages.
+
+**Context:** Gil asked whether the explainer text was in the wiki. It was not (raw layer only; this was stated in the earlier "Why it matters" Q&A and the Stage 1 log entries were corrected). Gil chose category digests with tiered depth and lever lists only for out-of-range biomarkers.
+
+**Actions taken:**
+
+| Action | File Created/Updated | Notes |
+|---|---|---|
+| Wrote 15 digest pages | `L1-Health/biomarker-digest-<category>.md` (new ×15) | liver 9, heart 14, male-health 13, metabolic 5, nutrients 19, immune-regulation 12, blood 11, thyroid 5, stress-aging 4, kidney 5, electrolytes 4, pancreas 2, autoimmunity 2, environmental-toxins 2, urine 16 = 123 entries |
+| Linked from the registry | `L1-Health/function-health-registry.md` (regenerated) | an `Explainers:` link under each category heading |
+| Cross-referenced | `L1-Health/blood-analysis-function-oct2026.md`, `L1-Health/biomarker-reference.md` | one pointer line each |
+| Indexed | `02-Indexes/index.md` | new "L1 Biomarker Digests" table (15 rows); page count 47 → 62 |
+| Added tooling | `.claude/skills/function-health-extract/scripts/build_digest_skeleton.py`, `check_digests.py` (new); `build_registry.py` (digest links, current date); `SKILL.md` step 10 | skeleton dump per category; verification script |
+| Updated memory | `function-health-extraction.md` | digest convention |
+
+**Verification (script-run):** 123 of 123 biomarkers appear exactly once; every `[raw file]` link resolves and points at the right file; no entry shares a run of 12 or more words with its raw file; Tier 1 entries carry Causes and Follow-up where the raw file has them; Tier 2 entries carry neither; only the 7 out-of-range entries carry a Levers line; all 123 "Your result" lines contain the registry values for every draw; frontmatter counts match; wiki links resolve; raw files untouched.
+
+**Findings noticed while reading (record only; nothing outside the digests was changed on this basis):**
+
+1. **DHEA-S sits far below Function's own benchmark.** Function's text lists 500–640 mcg/dL as optimal for younger men (400–500 middle-aged); Gil's 212 is in Quest's range (93–415) but well under that. This strengthens the vault's "low DHEA-S" claim by Function's own standard.
+2. **Prolactin is new to the vault's watch list.** 9.9 → 14.9 ng/mL (+51%), in Quest range (2–18) and above Function's 5 ng/mL baseline. Function says elevated prolactin can suppress testosterone production. No vault page mentions prolactin.
+3. **SHBG ties to insulin.** Function states SHBG moves inversely with insulin; Gil's SHBG sits low-normal (13 → 15) while insulin rose 10.9 → 12.5, which reinforces the Stage 2 correction of the "SHBG sequestration" claim.
+4. **hs-CRP draw conditions.** Function says intense exercise the day before a draw can raise hs-CRP temporarily. Training load before draws is not recorded, which adds to the draw-log proposal.
+5. **Ferritin cutoff shifts with inflammation.** Function's text says clinicians aim for 100–300 ng/mL in men when inflammation is present; Gil's 98 sits just under it with hs-CRP above range on the same day.
+6. **Function's own ranges disagree.** MCV page text names 85–90 fL optimal; the export shows 85–95; Gil's 93.4 sits between. OmegaCheck dosing is 500–1,000 mg EPA+DHA on its own page, 1–3 g on the LDL and hs-CRP pages, and 2 g in the vault protocol.
+7. **Random urine albumin without creatinine** read < 0.2 then 0.4 mg/dL with no lab range; Function says it has limited use without a follow-up albumin-to-creatinine ratio (uACR).
+8. **Non-comparable results:** TgAb (< 2 vs optimal ≤ 1), mercury (< 4 vs Function's 1–5 "slightly elevated" band), and lead (1.0 vs a zero target) cannot be placed against Function's bands from the values reported.
+9. **Urine pH** was 8.0 in May (above Function's 6.5–7.5) and 7.0 in Oct.
+
+**Open gaps:** the 40 May-only biomarkers still lack an Oct result; the Causes, Follow up, and action-list sections of the Tier 1 files were read only through their first 1,500–3,000 characters (see Sources read); the digests carry the Oct 2 values and need a refresh after the next draw (the skill documents the steps).
+
+**Vault state after this ingest:**
+- Total pages: 62 per the index method (15 new)
+- New files: 15 digest pages plus 2 scripts
+- Pages updated: 5 (`function-health-registry.md`, `blood-analysis-function-oct2026.md`, `biomarker-reference.md`, `index.md`, `log.md`) plus the skill and memory
+- Orphan pages: 0 (each digest page is linked from the index and the registry)
+- Raw sources untouched

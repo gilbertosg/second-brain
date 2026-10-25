@@ -8,8 +8,8 @@ last_updated: 2026-05-25
 status: active
 tags: [l1, protocol, training, nutrition, supplements, biomarkers, medicine-3.0, progressive-overload, zone-2, alpha-beta-gamma]
 sources:
-  - 00-Raw_Sources/L1_Batch/Gil-Health-Upgrade-Protocol-Proposal.md
-  - 00-Raw_Sources/L1_Batch/Critical-Biomarkers-for-Male-Longevity-and-Performance.md
+  - 00-Raw_Sources/L1_Health/Gil-Health-Upgrade-Protocol-Proposal.md
+  - 00-Raw_Sources/L1_Health/Critical-Biomarkers-for-Male-Longevity-and-Performance.md
 related: [L1-Health/_pillar, L1-Health/biomarker-scorecard-may2026, L1-Health/blood-analysis, L1-Health/biomarker-reference, 02-Indexes/topic_maps/health-performance-crossmap]
 ---
 

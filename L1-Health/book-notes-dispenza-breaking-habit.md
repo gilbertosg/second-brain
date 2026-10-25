@@ -164,4 +164,4 @@ True neuroplastic reprogramming only occurs in Creation Mode (Alpha/Theta). The 
 
 ## Source Reference
 
-Raw source: `00-Raw_Sources/L1_Batch/books/Book-Breaking-the-Habit-of-Being-Yourself.md` (immutable)
+Raw source: `00-Raw_Sources/L1_Health/books/Book-Breaking-the-Habit-of-Being-Yourself.md` (immutable)

@@ -76,6 +76,20 @@ watch the first poll results and fix it here if something breaks.
    `function-health-data-report-<print-date>.md` in the date folder. The PDF header carries Gil's
    name and date of birth: leave both out of files.
 
+10. **Category digests (explainer text).** The raw files hold Function's explainer sections; the wiki
+    carries 15 paraphrased digest pages (`L1-Health/biomarker-digest-<category>.md`), tiered depth, every entry
+    linked to its raw file.
+    - `python3 -I scripts/build_digest_skeleton.py <date folder> --list` lists categories;
+      `... <date folder> "<Category>" <scratch>/<slug>.txt` dumps the source text (Tier 2: Why it matters and
+      Summary; Tier 1, meaning out of range now or tracked in the vault: plus Causes and Follow up; out of range:
+      plus Self care, Foods, Supplements). Edit `TRACKED` in the script to change the tracked set.
+    - Write or refresh each page in your own words (no 12-word runs from the raw text). Entry layout: Measures,
+      Why it matters, High / low, Your result, then Causes and Follow-up (Tier 1 when the raw file has them),
+      Levers Function lists (out of range only), and a `[raw file](...)` link.
+    - `python3 -I scripts/check_digests.py <date folder> L1-Health` must report 123 of 123 entries, resolved
+      links, no copied runs, and the tier rules. On later draws, refresh the Your result lines and move entries
+      between tiers as ranges change.
+
 ## Pitfalls found in the first run
 
 - **Slugs are not derivable.** `%` stays in the URL as `%25` (`lymphocytes-%25`), and
@@ -97,6 +111,7 @@ watch the first poll results and fix it here if something breaks.
   reloads and Cloudflare re-checks. Unknown paths silently stay on the previous page.
 - **Do not print JWTs or localStorage contents.** The extractor needs neither; the store carries the
   data.
+- Digest copy check: lists of drug names trip the 12-word limit. Shorten them and point to the raw file.
 - Dates in the PDF are `Mon D, YYYY`. Text extraction adds stray spaces inside numbers (`7 .4`).
   The reconcile script normalizes them.
 

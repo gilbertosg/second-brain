@@ -189,4 +189,4 @@ Cross-referencing Life Mastery recommendations with existing blood data and Life
 
 ## Source Reference
 
-Raw source: `00-Raw_Sources/L1_Batch/books/Life-Mastery-Workbook-Tony-Robbins.pdf` (immutable — pages 1–20 processed)
+Raw source: `00-Raw_Sources/L1_Health/books/Life-Mastery-Workbook-Tony-Robbins.pdf` (immutable — pages 1–20 processed)

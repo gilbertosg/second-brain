@@ -148,4 +148,4 @@ This reinforces the L1 exercise OKR (4 sessions/week) as non-negotiable. Exercis
 
 ## Source Reference
 
-Raw source: `00-Raw_Sources/L1_Batch/books/Book-Life-Force_Tony-Robbins.pdf` (immutable — pages 1–10 processed)
+Raw source: `00-Raw_Sources/L1_Health/books/Book-Life-Force_Tony-Robbins.pdf` (immutable — pages 1–10 processed)

@@ -14,6 +14,8 @@ related: [L1-Health/blood-analysis, L1-Health/blood-analysis-function-may2026, L
 
 # L1 — Biomarker Scorecard: Medicine 3.0 Dashboard (May 2026)
 
+> **Snapshot — partly superseded by the Oct 2, 2026 panel.** This scorecard holds the May 19, 2026 values. Oct changes: Free T 54.0 → 64.1 pg/mL (still under trigger), Total T 300 → 285, HbA1c 5.2 → 5.3% (on the trigger line), hs-CRP unchanged at 1.2, glucose 100 → 93; ALT/AST and LDL particle flags are new and not scored here. The Deficit Score below was not recomputed. See [[L1-Health/blood-analysis-function-oct2026]].
+
 **Date:** May 19, 2026
 **Platform:** Function Health
 **Sources cross-referenced:**
@@ -238,8 +240,8 @@ Two new quantitative columns to append to Weekly Reviews 2026:
 
 ## Source References
 
-- Raw source 1: `00-Raw_Sources/L1_Batch/Critical-Biomarkers-for-Male-Longevity-and-Performance.md` (immutable)
-- Raw source 2: `00-Raw_Sources/L1_Batch/Out-of-Range-Biomarkers.md` (immutable — prior ingest)
-- Raw source 3: `00-Raw_Sources/L1_Batch/Gil-Health-Upgrade-Protocol-Proposal.md` (immutable)
+- Raw source 1: `00-Raw_Sources/L1_Health/Critical-Biomarkers-for-Male-Longevity-and-Performance.md` (immutable)
+- Raw source 2: `00-Raw_Sources/L1_Health/Out-of-Range-Biomarkers.md` (immutable — prior ingest)
+- Raw source 3: `00-Raw_Sources/L1_Health/Gil-Health-Upgrade-Protocol-Proposal.md` (immutable)
 - See [[L1-Health/blood-analysis-function-may2026]] for full out-of-range analysis
 - See [[L1-Health/protocol-health-upgrade]] for full protocol implementation guide
