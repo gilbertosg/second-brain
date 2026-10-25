@@ -4,13 +4,14 @@ type: health-data
 pillar_id: L1
 owner: Gilberto Silva Gonzalez
 created: 2026-05-24
-last_updated: 2026-05-25
+last_updated: 2026-10-24
 status: active
 tags: [l1, blood, biomarkers, testosterone, hormones, metabolic, health-data]
 sources:
   - 00-Raw_Sources/L1_Batch/Blood_Analysis_Historical.md
   - 00-Raw_Sources/L1_Batch/Blood_Analysis_Biomarkers_LifeForce.md
-related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/health-performance-crossmap]
+  - 00-Raw_Sources/L1_Health/function-health/2026-10-02/
+related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/health-performance-crossmap, L1-Health/blood-analysis-function-oct2026, L1-Health/function-health-registry]
 ---
 
 # L1 — Blood Analysis History
@@ -19,6 +20,7 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 
 | Date | Age | Platform | Heart | Metabolic | Inflammation | Nutritional |
 |---|---|---|---|---|---|---|
+| **Oct 2, 2026** | **33** | **Function Health** | — | — | — | — |
 | **May 19, 2026** | **34** | **Function Health** | — | — | — | — |
 | Jan 22, 2026 | 33 | Spren | **96** | **87** | **92** | **98** |
 | Aug 14, 2025 | 32 | Spren | 82 | 76 | 94 | 77 |
@@ -32,13 +34,34 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 
 > **⚠ May 2026 Update:** The Function Health panel (May 19, 2026) contradicts the Jan 2026 Spren optimism. hs-CRP has risen from 0.49 mg/L to 1.2 mg/L — a 2.4x increase in 4 months. Metabolic stress signals now visible at the particle level. See [[L1-Health/blood-analysis-function-may2026]] for full analysis.
 
+> **⚠ Oct 2026 Update:** The Oct 2, 2026 Function Health panel adds two new liver flags (ALT 31 → 94 U/L, AST 21 → 50 U/L), three new LDL particle flags (LDL-P 1033 → 1309 nmol/L; LDL Medium and Small above range), and an unchanged hs-CRP of 1.2 mg/L. Glucose, HDL Large, LDL Peak Size, and LH returned to range. Free Testosterone rose from 54.0 to 64.1 pg/mL and stays far below the Medicine 3.0 floor. See [[L1-Health/blood-analysis-function-oct2026]] for the full analysis and [[L1-Health/function-health-registry]] for all 123 biomarkers.
+
+> **Age discrepancy flagged:** This timeline lists age 34 at the May 19, 2026 draw, but the Function account profile gives age 33 at both May 19 and Oct 2, 2026 (and the Jan 22, 2026 row already lists 33). The May entry likely holds an error. Confirm before correcting.
+
 > **Data anomaly flagged:** The 2025 Aug 14 results table in the source document contains dates of "01/22/2026" for all entries. The biomarker values appear identical to the Jan 2026 results. This is likely a source document copy-paste error. The Spren scores for Aug 2025 are distinct (82/76/94/77) and appear genuine. Biomarker data for Aug 2025 should be treated as unconfirmed until the original data is located.
 
 ---
 
-## Critical Flags — Updated (May 2026)
+## Critical Flags — Updated (Oct 2026)
 
-### New Flags (May 19, 2026 — Function Health)
+### Oct 2, 2026 — Function Health (second panel)
+
+| Flag | Biomarker | Result | Range | Severity | Change vs May 2026 |
+|---|---|---|---|---|---|
+| 🔴 HIGH | **ALT** | **94 U/L** | 9–46 (Quest) | **High — 2× upper limit; new** | Was 31 (+203%) |
+| 🔴 HIGH | **AST** | **50 U/L** | 10–40 (Quest) | **High; new** | Was 21 (+138%) |
+| 🔴 HIGH | **LDL Particle Number** | **1309 nmol/L** | < 1138 | **High; new** | Was 1033 (+27%) |
+| 🔴 HIGH | **LDL Medium** | **294 nmol/L** | < 215 | Moderate; new | Was 203 (+45%) |
+| 🔴 HIGH | **LDL Small** | **153 nmol/L** | < 142 | Moderate; new | Was 124 (+23%) |
+| 🔴 HIGH | **hs-CRP** | **1.2 mg/L** | < 1.0 | **Critical — persistent** | Unchanged |
+| 🔴 LOW | **Free Testosterone** | **64.1 pg/mL** | 148.8–228.1 (Medicine 3.0) | **Critical — improving** | Was 54.0 (+19%) |
+| 🟡 LOW | Omega-3 Total | 5.0% (May; not retested) | ≥ 5.5% | Moderate | — |
+
+**Resolved since May:** Glucose (100 → 93 mg/dL), HDL Large (6,147 → 7,370 nmol/L), LDL Peak Size (222.4 → 225.3 Å), LH (1.4 → 3.5 mIU/mL).
+
+### May 19, 2026 — Function Health (first panel)
+
+#### New Flags (May 19, 2026 — Function Health)
 
 | Flag | Biomarker | Result | Optimal Range | Severity | Change vs Jan 2026 |
 |---|---|---|---|---|---|
@@ -49,7 +72,7 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 | 🟡 LOW | LDL Peak Size | 222.4 Angstrom | > 222.9 Angstrom | Moderate (borderline) | New measurement |
 | 🟡 LOW | Omega-3 Total | 5.0% by wt | ≥ 5.5% | Moderate | New measurement |
 
-### Improved (May 19, 2026 — Function Health, first retest of Jan 2026 flags)
+#### Improved (May 19, 2026 — Function Health, first retest of Jan 2026 flags)
 
 | Biomarker | Jan 2026 | May 2026 | Change | Status |
 |---|---|---|---|---|
@@ -57,7 +80,7 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 | ApoB | 62 mg/dL | **56 mg/dL** | −10% | ✅ Now within Medicine 3.0 optimal (< 60–70 mg/dL) |
 | HbA1c | 5.1% | **5.2%** | +0.1% | 🟡 At optimal ceiling — action trigger (5.3%) not breached |
 
-### Persistent Flags (Jan 2026 — Spren, not yet retested at Function Health)
+#### Persistent Flags (Jan 2026 — Spren, not yet retested at Function Health)
 
 | Flag | Biomarker | Result | Range | Severity |
 |---|---|---|---|---|
@@ -86,6 +109,9 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 | Jan 2024 | 283 | ng/dL | InsideTracker 250–1100 | Healthy |
 | Jan 2026 | 262 | ng/dL | Spren 500–1200 | **Low (Spren optimal)** |
 | **May 2026** | **300** | **ng/dL** | **Function Health** | **🟢 First positive reversal — +14.5% from Jan 2026** |
+| **Oct 2026** | **285** | **ng/dL** | **Function Health 250–1100 (optimal 500–1000)** | **🟡 −5% from May; +9% vs Jan 2026** |
+
+**Trend update (Oct 2026):** Total T slipped from 300 to 285 ng/dL (−5%). The May reversal did not hold, although the value stays above the Jan 2026 low of 262. SHBG moved 13 → 15 nmol/L over the same interval (in range, 10–50).
 
 **Trend update (May 2026):** The 262 → 300 ng/dL increase (+14.5%) is the first upward reversal since the Aug 2023 peak. Still below Spren optimal (500–1200) but the direction has changed. Total T alone does not capture biological activity — see Free Testosterone section below.
 
@@ -94,6 +120,7 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 | Date | Result | Units | Lab Range | Medicine 3.0 Optimal | Status |
 |---|---|---|---|---|---|
 | **May 2026** | **54.0** | **pg/mL** | **Function Health: 46–224 pg/mL (In Range)** | **148.8–228.1 pg/mL** | **🔴 CRITICAL — action trigger (< 150) breached; 64% below optimal floor** |
+| **Oct 2026** | **64.1** | **pg/mL** | **Function export: Quest range 35–155 pg/mL (In Range)** | **148.8–228.1 pg/mL** | **🔴 CRITICAL — still below trigger; +19% from May; 57% below optimal floor** |
 
 **Critical finding:** Free Testosterone has never been directly measured in Gil's prior blood panels. The May 2026 Function Health panel captures it for the first time. At 54.0 pg/mL, Gil registers at:
 - 36% of the Medicine 3.0 optimal minimum (148.8 pg/mL)
@@ -102,7 +129,7 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 
 **Why Free Testosterone matters more than Total:** Total Testosterone includes the SHBG-bound fraction, which is biologically inert. Only Free T (approximately 1–4% of total) crosses cell membranes and drives muscle protein synthesis, cognitive function, motivation, and bone mineral density. A Total T of 300 ng/dL with Free T of 54.0 pg/mL confirms that the vast majority of available testosterone is being sequestered by binding proteins — the biologically active fraction is critically depleted.
 
-**Root cause candidates:** Elevated SHBG (data from 2024: 12 — was healthy then; may have changed), excessive cortisol binding, body composition (27% body fat), and stress load all contribute to Free T suppression independent of Total T production.
+**Root cause candidates (SHBG item checked Oct 2026: SHBG measured 13 nmol/L in May and 15 in Oct, in range and low-normal, so elevated SHBG is not supported):** Elevated SHBG (data from 2024: 12 — was healthy then; may have changed), excessive cortisol binding, body composition (27% body fat), and stress load all contribute to Free T suppression independent of Total T production.
 
 **Action required:** Physician consultation with Full hormone panel — specifically SHBG, Free T, LH, FSH. Evaluate Clomiphene citrate, Enclomiphene, or TRT pathway per the protocol upgrade document.
 
@@ -112,6 +139,8 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 
 **May 2026 update:** Total T improved to 300 ng/dL (+14.5% from Jan 2026) — the first upward reversal since the Aug 2023 peak. However, the first-ever Free Testosterone measurement (54.0 pg/mL) reveals the Total T improvement is largely illusory: the biologically active fraction remains critically depleted at 36% of the Medicine 3.0 optimal minimum. The hormonal axis remains suppressed. Symptoms — fatigue, difficulty focusing, increased body fat, reduced muscle recovery — directly undermine L3 Deep Work capacity and the Principal Promotion timeline. See the Free Testosterone section below for the full analysis.
 
+**Oct 2026 update:** Free T rose from 54.0 to 64.1 pg/mL (+19%) while Total T fell to 285 ng/dL, so the free fraction improved without a gain in total production. Both draws sit below the 150 pg/mL action trigger. The protocol's escalation rule — clinical consultation after two consecutive quarterly panels below trigger ([[L1-Health/protocol-health-upgrade]]) — is met by the May and Oct results. The Function export lists the Quest range as 35–155 pg/mL; the 46–224 figure above came from earlier vault sources (see [[L1-Health/blood-analysis-function-oct2026]], Data Quality Notes).
+
 ### DHEA-S
 
 | Date | Result | Units | Status |
@@ -119,6 +148,8 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 | Mar 2023 | 308 | ug/dL | Healthy (Lifeforce range) |
 | Aug 2023 | 462 | ug/dL | **Peak — optimal** |
 | Jan 2026 | 215 | ug/dL | **Low (Spren 260–520)** |
+| May 2026 | 234 | mcg/dL | Function/Quest 93–415 (in range); below Spren band |
+| **Oct 2026** | **212** | **mcg/dL** | **Function/Quest 93–415 (in range); below Spren band; −9% from May** |
 
 53% decline from peak. DHEA-S is the precursor that feeds testosterone and estrogen production. This decline explains the concurrent testosterone drop.
 
@@ -130,8 +161,11 @@ related: [L1-Health/_pillar, L1-Health/weight-tracker, 02-Indexes/topic_maps/hea
 | Aug 2023 | 0.933 | uIU/mL | Healthy |
 | Jan 2024 | 0.95 | uIU/mL | Healthy (0.5–4.15) |
 | Jan 2026 | 0.64 | uIU/mL | **Low (Spren 1–2)** |
+| May 2026 | 1.08 | mIU/L | Function/Quest 0.4–4.5 (in range); inside Spren 1–2 band; Function optimal 0.45–2 |
 
-Trending downward. Low TSH may indicate the thyroid is slightly overactive (producing adequate T4 without needing much stimulation). The Aug 2023 test also showed T4 Free HIGH at 1.36 ng/dL. This pattern warrants physician review — it could reflect subclinical hyperthyroidism or lab variation.
+**Update (May 2026):** TSH rose to 1.08 mIU/L, inside both Spren's and Function's optimal bands, and T4 Free (1.5 ng/dL) and T3 Free (3.6 pg/mL) sit in range. The downward trend ended at the last measurement. TSH was not retested in October. The paragraph below describes the Jan 2026 reading.
+
+Trending downward (through Jan 2026). Low TSH may indicate the thyroid is slightly overactive (producing adequate T4 without needing much stimulation). The Aug 2023 test also showed T4 Free HIGH at 1.36 ng/dL. This pattern warrants physician review — it could reflect subclinical hyperthyroidism or lab variation.
 
 ### Cortisol
 
@@ -139,6 +173,10 @@ Trending downward. Low TSH may indicate the thyroid is slightly overactive (prod
 |---|---|---|---|
 | Jan 2024 | 9.6 | µg/dL | Healthy (InsideTracker 4–22) |
 | Jan 2026 | 7.6 | ug/dL | **Low (Spren 10–15)** |
+| May 2026 | 8.0 | mcg/dL | Function/Quest 4–22 (in range); below Spren band |
+| **Oct 2026** | **14.7** | **mcg/dL** | **Function/Quest 4–22 (in range); inside Spren band; +84% from May** |
+
+**Oct 2026 update:** The "low cortisol" reading is superseded. Cortisol rose from 8.0 (May) to 14.7 mcg/dL (Oct), inside Spren's 10–15 band. Function's export carries no draw time, and cortisol follows a circadian rhythm, so a morning versus afternoon draw could explain part of the gap. Record draw time and fasting status at the next draw. The low Testosterone:Cortisol ratio quoted below dates from Jan 2026 and no longer reflects current data.
 
 Low cortisol combined with low testosterone creates the low Testosterone:Cortisol ratio (0.034). This pattern is associated with reduced anabolic drive and recovery capacity. Cortisol follows a circadian rhythm — morning tests are expected to be higher. A 7.6 reading in the morning is functionally low.
 
@@ -155,8 +193,11 @@ Low cortisol combined with low testosterone creates the low Testosterone:Cortiso
 | Jan 2024 | 5.4% | Healthy (3–5.7) | InsideTracker |
 | Jan 2026 | 5.1% | **High (Spren 4–5%)** | Spren |
 | **May 2026** | **5.2%** | **🟡 At Medicine 3.0 optimal ceiling (4.8–5.2%)** | **Function Health** |
+| **Oct 2026** | **5.3%** | **🟡 Above Medicine 3.0 optimal (4.8–5.2%); on the 5.3% action line** | **Function Health (optimal 4.8–5.5)** |
 
 May 2026 update: HbA1c held at 5.2%, within the Medicine 3.0 optimal range (4.8–5.2%). The action trigger (> 5.3%) is not breached. Latino/Mexican genetic predisposition to insulin resistance makes this the primary metabolic surveillance metric. If it crosses 5.3%, the protocol demands immediate carbohydrate sequencing to peri-workout windows only.
+
+**Oct 2026 update:** HbA1c rose to 5.3%, exactly on the action line. The protocol states the trigger as "> 5.3%" ([[L1-Health/protocol-health-upgrade]]), so it is not breached under that wording. The scorecard states "if ≥ 5.3%, action trigger activates" ([[L1-Health/biomarker-scorecard-may2026]]), so it activates under that one. Fasting glucose fell to 93 mg/dL while fasting insulin rose from 10.9 to 12.5 uIU/mL. Decide which wording governs.
 
 ### Standard Metabolic Markers — Updated May 2026
 
@@ -169,6 +210,22 @@ May 2026 update: HbA1c held at 5.2%, within the Medicine 3.0 optimal range (4.8�
 | **hs-CRP** | 0.49 mg/L | **1.2 mg/L** | +145% | 🔴 Above range — action trigger breached |
 
 **ApoB note (May 2026):** ApoB improvement from 62 → 56 mg/dL is a genuine positive signal. It now sits within the Medicine 3.0 optimal range (< 60–70 mg/dL) and well clear of the action trigger (> 80 mg/dL). This result is the only unambiguous improvement across the cardiovascular axis.
+
+**Standard Metabolic Markers — Oct 2026 (Function Health):**
+
+| Biomarker | May 2026 | Oct 2026 | Change | Status |
+|---|---|---|---|---|
+| LDL-Cholesterol (calc) | 76 mg/dL | 82 mg/dL | +8% | In Quest range (< 100); above Function optimal (20–70) |
+| Triglycerides | 74 mg/dL | 91 mg/dL | +23% | In Quest range (< 150); above Function optimal (30–70) |
+| Non-HDL Cholesterol | 91 mg/dL | 99 mg/dL | +9% | In range |
+| ApoB | 56 mg/dL | Not retested | — | Last value in Medicine 3.0 optimal |
+| Insulin (fasting) | 10.9 uIU/mL | 12.5 uIU/mL | +15% | In Quest range (≤ 18.4); above Function optimal (2–5) |
+| Glucose (fasting) | 100 mg/dL | 93 mg/dL | −7% | In Quest range (65–99) |
+| **hs-CRP** | **1.2 mg/L** | **1.2 mg/L** | **0** | 🔴 Above range on both draws |
+
+The LDL 46 and triglycerides 44 figures in the table above come from Jan 2026 (Spren). Function's May and Oct values are higher and come from a different lab and method, so read the cross-platform gap with caution.
+
+**hs-CRP note (Oct 2026):** hs-CRP held at 1.2 mg/L, above range on two consecutive draws. See [[L1-Health/blood-analysis-function-oct2026]].
 
 **hs-CRP note (May 2026):** The 2.4x increase in 4 months (Jan → May 2026) is the most alarming short-term trajectory in the full dataset. Systemic inflammation is actively rising. See [[L1-Health/blood-analysis-function-may2026]] for full root-cause analysis.
 
@@ -184,6 +241,7 @@ May 2026 update: HbA1c held at 5.2%, within the Medicine 3.0 optimal range (4.8�
 | Mar 2023 | 8.6 | umol/L | Healthy (0–14.5) |
 | Aug 2023 | 7.7 | umol/L | Healthy (0–10) |
 | Jan 2026 | 7.55 | umol/L | **High (Spren 5–7)** |
+| May 2026 | 10.0 | umol/L | Function/Quest ≤ 13.5 (in range); above Function optimal (6–8) and Spren band; not retested in Oct |
 
 Homocysteine has remained persistently elevated by Spren's optimal range (5–7). Elevated homocysteine is linked to cardiovascular risk and cognitive decline. The Lifeforce program recommended B-complex supplementation and diet changes (leafy greens, avocado, broccoli) to support the methylation cycle. Uncertain whether this protocol was maintained.
 
@@ -199,6 +257,8 @@ Homocysteine has remained persistently elevated by Spren's optimal range (5–7)
 | Aug 2023 | 92.7 | ng/mL | Healthy (50–100) |
 | Jan 2024 | 57 | ng/mL | Healthy (30–100) |
 | Jan 2026 | 65.36 | ng/mL | Healthy (40–70) |
+| May 2026 | 54 | ng/mL | Healthy (Function optimal 45–100) |
+| Oct 2026 | 52 | ng/mL | Healthy (Function optimal 45–100); −20% since Jan |
 
 After the 2022 toxicity event (119 ng/mL), Vitamin D is now well-managed and consistently in the healthy range.
 
@@ -208,8 +268,9 @@ After the 2022 toxicity event (119 ng/mL), Vitamin D is now well-managed and con
 |---|---|---|
 | Jan 2024 | 163 ng/mL | Healthy (20–345) |
 | Jan 2026 | 84 ng/mL | Healthy (50–150) |
+| May 2026 | 98 ng/mL | Healthy (Function optimal 70–150); not retested in Oct |
 
-Declined from 163 to 84 — still healthy but worth monitoring trend. Lower ferritin within range is generally preferable.
+Declined from 163 to 84 through Jan 2026, then rose to 98 by May 2026 (the decline did not continue) — still healthy. Lower ferritin within range is generally preferable.
 
 ---
 
@@ -220,10 +281,14 @@ Declined from 163 to 84 — still healthy but worth monitoring trend. Lower ferr
 | Mar 2023 | 34.1 pg | **HIGH** | 26.6–33.0 |
 | Aug 2023 | 33.4 pg | **HIGH** | 26.6–33.0 |
 | Jan 2024 | 33.5 pg | **HIGH** | 27–33 |
+| May 2026 | 32.9 pg | In range | 27.0–33.0 (Function/Quest) |
+| **Oct 2026** | **32.6 pg** | **In range** | **27.0–33.0 (Function/Quest)** |
 
 MCH (Mean Corpuscular Hemoglobin) has been consistently elevated in every test that measured it (3/3 draws). Elevated MCH indicates larger-than-normal red blood cells, a pattern associated with B12 or folate deficiency (macrocytic/megaloblastic anemia precursor) or liver function issues. Other RBC markers (MCV, MCHC, RDW) have been healthy. The Lifeforce doctor recommended B-complex supplementation in Mar 2023 specifically to "build red blood cells and improve MCV levels." MCH was not retested in 2026 via Spren.
 
-**Action item:** Request MCH on next blood draw. If still elevated at 3+ years, escalate to physician for B12/folate investigation.
+**Update (Oct 2026):** The requested retest happened twice. MCH read 32.9 (May) and 32.6 pg (Oct), both just under the 33.0 limit, so the "persistently elevated" pattern no longer holds at the last two draws. Both values sit within 0.4 pg of the limit, and MCV (93.2 → 93.4 fL) and the other red-cell markers are in range. Homocysteine rose to 10.0 umol/L in May, which keeps B12/folate status relevant.
+
+**Action item (open):** Keep MCH on each draw; confirm B12/folate status (MMA 91 nmol/L in May is in range).
 
 ---
 
@@ -254,3 +319,5 @@ MCH (Mean Corpuscular Hemoglobin) has been consistently elevated in every test t
 - [[L1-Health/weight-tracker]] — Weight data; body fat trajectory correlates with hormonal health
 - [[02-Indexes/topic_maps/health-performance-crossmap]] — Low testosterone impact on L3 Deep Work and career performance
 - [[L1-Health/_pillar]] — OKR targets and fitness protocol
+- [[L1-Health/blood-analysis-function-oct2026]] — Oct 2, 2026 Function Health panel (liver flags, LDL particle flags, deltas vs May)
+- [[L1-Health/function-health-registry]] — all 123 Function Health biomarkers with May and Oct values

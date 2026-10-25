@@ -58,7 +58,11 @@ watch the first poll results and fix it here if something breaks.
 7. **Check the files.** `hyalo find --glob '00-Raw_Sources/L1_Health/function-health/<date>/*.md'
    --limit 500 --format text` parses every file. Compare the count with `prog.total` minus
    the errors. Spot-check 3 values against the live page.
-8. **Reconcile with the PDF (when Gil provides one).** Gil downloads the Data page as a PDF.
+8. **Build the registry.** `python3 -I scripts/build_registry.py 00-Raw_Sources/L1_Health/function-health/<date> L1-Health/function-health-registry.md --vault-root .`
+   regenerates the 123-row L1 registry from the files (no hand-typing). Then run `/librarian ingest` on the
+   dated folder (see the staged plan: panel note, registry, existing-note updates, then a liver/flag
+   synthesis, then an L1 lint).
+9. **Reconcile with the PDF (when Gil provides one).** Gil downloads the Data page as a PDF.
    Dump its text with PDFKit (poppler and pypdf are not installed):
    ```
    swift - <<'EOF' > <scratchpad>/pdf_text.txt
