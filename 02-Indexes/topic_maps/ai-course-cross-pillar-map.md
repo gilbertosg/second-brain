@@ -11,6 +11,7 @@ sources:
   - "L7-Contribute/_pillar.md"
   - "02-Indexes/topic_maps/career-productivity-crossmap.md"
 created: 2026-08-02
+last_updated: 2026-08-02
 tags: [ai, course, teaching, l3, l4, l7, agent-award, teaching-loop, confidentiality]
 ---
 

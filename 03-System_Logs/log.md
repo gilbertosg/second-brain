@@ -1031,3 +1031,46 @@ Each article follows a consistent structure: Theory → Personal Thoughts → Ho
 - Pages updated: 5 (`function-health-registry.md`, `blood-analysis-function-oct2026.md`, `biomarker-reference.md`, `index.md`, `log.md`) plus the skill and memory
 - Orphan pages: 0 (each digest page is linked from the index and the registry)
 - Raw sources untouched
+
+## [2026-10-25] lint | Full Vault Health Check
+
+Second lint pass of the day. The first covered L1 only; this one covers L1–L7, entities, and indexes.
+
+**Scan results**
+- **Orphans:** 0 wiki pages. Hyalo lists 8: 7 raw sources and root `Claude.md` (expected).
+- **Broken links:** hyalo reports 11. Ten sit in `00-Raw_Sources/L4_Growth/2026-08-02/` (typos in source filenames such as `Chossing`, `Intalling`); raw is immutable, so they stay. The other two are false positives: `L5-Finance/_pillar.md` links a `.csv` (exists), and `index.md` uses `../` paths (resolve). The 27 case-mismatch reports share the `../` cause; all targets exist.
+- **Inbox count error:** `00-Raw_Sources/inbox/` holds 4 files, but earlier entries say "Inbox items pending: 3". `3-Second-Brain-Teaching-Summary.md` was never counted. None are ingested.
+- **Missing `last_updated`:** `career-productivity-crossmap.md` and `ai-course-cross-pillar-map.md`.
+
+**Stale claims found and annotated** (`02-Indexes/topic_maps/books-health-synthesis.md`, written 2026-05-24)
+- MCH "elevation" to correct (3 places): MCH is in range on both 2026 draws.
+- Testosterone projection 240 → 220 ng/dL: actual Total T 262 → 300 → 285.
+- "No supplementation in place": true in May; status since May is unrecorded.
+- No mention of Oct ALT 94 / AST 50. Added a snapshot banner and links to the Oct note and the liver page. The book synthesis itself is unchanged.
+
+**Pages changed:** `books-health-synthesis.md` (banner, 4 annotations, `last_updated`), `career-productivity-crossmap.md` (`last_updated`; hs-CRP 1.2 mg/L on both draws, link to the immune digest), `ai-course-cross-pillar-map.md` (`last_updated: 2026-08-02` from git history), `index.md` (synthesis row). No new pages; total stays 62. Raw sources untouched.
+
+**Open items (need Gil)**
+- `book-notes-robbins-life-mastery.md` lines 49, 141, 170 still cite MCH.
+- No entity pages for Function Health (28 pages cite it) or Blue Origin (23 pages); `01-Entities` holds 2 nodes.
+- Ingest the 4 inbox files, or retire them.
+- Carried from the L1 lint: HbA1c trigger wording, Deficit Score convention, age 33 vs 34, protocol proposals, weight tracker ends W17, no record of Q2 consult / DEXA / VO2 Max / CGM, `qmd embed` model missing.
+
+## [2026-10-25] ingest | Entity Pages — Function Health and Blue Origin
+
+Created the two organization nodes flagged by the full-vault lint. `qmd` found no existing pages for either name.
+
+**Created**
+- `01-Entities/function-health.md`: draws (May 19, Oct 2), data pipeline, privacy rule, L5 cost ($365 + $199 on 2026-05-18, $326 on 2026-09-28; $890 total from the ledger CSV), cross-pillar roles.
+- `01-Entities/blue-origin.md`: role, household income concentration (86% of YTD income by ledger; 100% of June–July net), cross-pillar links, open discrepancies.
+
+**Inbound links added:** `L1-Health/_pillar.md`, `L1-Health/blood-analysis.md`, `L3-Career/_pillar.md`, `01-Entities/luisa.md`, `02-Indexes/topic_maps/household-finance-relationship-map.md`, `L6-Hobbies/_pillar.md`, plus two rows in the index Entities table. Index page count 62 → 64.
+
+**Contradictions flagged (not resolved)**
+- `L6-Hobbies/_pillar.md` assumes a Seattle/Washington location "given Blue Origin location"; the book notes place Gil in Cocoa, FL. Annotated as unverified in the L6 page.
+- The vault records no Blue Origin start date; `luisa.md` implies about 3 years 9 months as of mid-2026.
+- The 86% and 100% income shares use different bases; both stated on the entity page.
+
+**Stale claim spotted, not edited:** `L1-Health/blood-analysis.md` (Free Testosterone section) still says binding proteins sequester most of the testosterone. The Oct SHBG of 15 nmol/L (low-normal) contradicts it; the Stage 2 notes already corrected this in the crossmap and Oct note.
+
+**Vault state:** 2 new files, 7 existing pages edited (links only), raw sources untouched.

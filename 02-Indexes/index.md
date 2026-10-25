@@ -90,7 +90,7 @@ One page per Function Health category, paraphrasing Function's explainer text fo
 | File | Covers | Key Finding |
 |---|---|---|
 | [Health × Career Performance](topic_maps/health-performance-crossmap.md) | L1, L3, L4, L5 | Free Testosterone (54.0 → 64.1 pg/mL) is the primary L3 bottleneck — 57% below Medicine 3.0 optimal minimum; the two-panel consult criterion is met. **Oct 2026 correction:** SHBG is 13–15 nmol/L (not elevated), so the "SHBG sequestration" chain no longer holds; the plan's decision tree points to the production branch. Cortisol "low" and MCH "elevated" superseded. New liver flags (ALT 94 / AST 50) and LDL particle flags added; physician visit now covers both. |
-| [Books × Health Synthesis](topic_maps/books-health-synthesis.md) | L1, L3, L4 | All 4 books converge on the same hormonal/biochemical root cause. Tiered 90-day intervention stack with Tier 1 self-managed actions and Tier 2 physician-directed protocol. |
+| [Books × Health Synthesis](topic_maps/books-health-synthesis.md) | L1, L3, L4 | All 4 books converge on the same hormonal/biochemical root cause. Tiered 90-day intervention stack with Tier 1 self-managed actions and Tier 2 physician-directed protocol. May 2026 snapshot; Oct 2026 banner and annotations added (MCH, Total T trajectory, liver flags). |
 | [Career Progression × Productivity Systems](topic_maps/career-productivity-crossmap.md) | L3, L4, L1, L7 | PIE Model gap: no Image OKR. Deep Work math fails without GTD + communication norms + chronotype scheduling in parallel. L4 teaching loop unlocks L7 content pipeline. |
 | [AI for Friends Course × Career × Contribution](topic_maps/ai-course-cross-pillar-map.md) | L4, L3, L7 | Self-created AI course is concrete Agent Award evidence; realizes the previously-unwired L4→L7 teaching loop; flags a personal compliance gap re: confidential data on personal Claude Pro. |
 | [Household Finance × Relationship](topic_maps/household-finance-relationship-map.md) | L5, L2, L3 | New-home L2 milestone was stale — Everbe already closed (a Pulte home); three recurring mortgage payments confirmed (Aug–Oct). Household income 100% single-employer (Blue Origin). Refreshed data (2026-10-24): adjusted YTD net +$8,243.98; a $29,331.20 loan inflow inflates the headline. MPI naming question updated with Omaha-group evidence (the $5,500 row is an inflow). |
@@ -214,14 +214,16 @@ Module 4 ("Building Your AI Personal Assistant") is referenced in this batch but
 |---|---|---|
 | [AI for Friends (Course)](../01-Entities/ai-for-friends-course.md) | initiative | First entity page in the vault. Connecting node for the self-created AI course across L4 (learning), L3 (career evidence), and L7 (content pipeline) |
 | [Luisa](../01-Entities/luisa.md) | person | Partner; Blue Origin employee since 2026-04-20 (same employer as Gil); primary stakeholder in L2/L5 decisions. Created 2026-08-02 upon the L5 Finance ingest |
+| [Function Health](../01-Entities/function-health.md) | organization | Blood-testing service behind the May and Oct 2026 panels; draws, data pipeline, cost, and links to the registry and digests. Created 2026-10-25 |
+| [Blue Origin](../01-Entities/blue-origin.md) | organization | Gil's employer; household payroll concentration (86% YTD income), cross-pillar links, open discrepancies. Created 2026-10-25 |
 | *(none yet)* | — | Luna (companion) identified as a key entity; page not yet created |
 
 ---
 
 ## Vault Health
 
-- **Total pages:** 62 (1 master + 7 pillar schemas + 10 L1 data/protocol files + 15 L1 biomarker digests + 4 L1 book notes + 5 topic maps + 3 L3/L4 career/growth notes + 4 L4 course notes + 4 L5 finance files + 2 entities + 1 index + 1 log + 5 raw batches)
-- **Last full rebuild:** 2026-10-25 (Session 14 — Function Health Oct 2026 ingest: stages 1–2, L1 lint, and 15 biomarker digest pages; L5 Finance refresh from Session 12 retained)
+- **Total pages:** 64 (1 master + 7 pillar schemas + 10 L1 data/protocol files + 15 L1 biomarker digests + 4 L1 book notes + 5 topic maps + 3 L3/L4 career/growth notes + 4 L4 course notes + 4 L5 finance files + 4 entities + 1 index + 1 log + 5 raw batches)
+- **Last full rebuild:** 2026-10-25 (Session 14 — Function Health Oct 2026 ingest: stages 1–2, L1 lint, 15 biomarker digest pages, full-vault lint, and Function Health and Blue Origin entity pages; L5 Finance refresh from Session 12 retained)
 - **Inbox items pending ingest:** 3
 - **Orphan pages:** 0
 - **Source-quality gaps found (2026-08-02, AI course batch):** `00-Raw_Sources/L4_Growth/2026-08-02/2-1_Installing_Windows_terminal.md` is empty (Lesson 2.1 content missing, low impact — Module 3 doesn't depend on it); `2-3_Navigating_Terminal.md` contains a duplicated-content tail (Module 3 index repeated) not double-counted in synthesis; Module 4 of the course ("Building Your AI Personal Assistant") is referenced but has no source file yet.

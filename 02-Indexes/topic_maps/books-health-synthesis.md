@@ -3,12 +3,14 @@ title: "Topic Map — Books × Health Performance Synthesis"
 type: topic-map
 owner: Gilberto Silva Gonzalez
 created: 2026-05-24
-last_updated: 2026-05-24
+last_updated: 2026-10-25
 tags: [l1, l3, l4, synthesis, testosterone, longevity, neuroplasticity, medicine-3.0, topic-map]
 related: [L1-Health/_pillar, L3-Career/_pillar, L4-Growth/_pillar, 02-Indexes/topic_maps/health-performance-crossmap]
 ---
 
 # Topic Map — Books × Health Performance Synthesis
+
+> **Snapshot of May 2026 data.** The Oct 2, 2026 panel supersedes several figures below: MCH is in range on both 2026 draws (32.9, 32.6 pg), Total T reads 262 → 300 → 285 ng/dL, and new flags appear for ALT 94 and AST 50 U/L and for LDL particle markers. See [[L1-Health/blood-analysis-function-oct2026]] and [[L1-Health/liver-enzymes-alt-ast-oct2026]]. Supplement status after May is not recorded.
 
 **Sources synthesized:**
 1. [[L1-Health/book-notes-attia-outlive]] — Peter Attia, *Outlive*
@@ -42,7 +44,7 @@ Prioritized by independence (can be started without physician approval) and spee
 | Action | Source | Expected Impact | Timeframe |
 |---|---|---|---|
 | Restart DHEA (25–50 mg/day) | Life Force + Life Mastery | DHEA-S → T precursor pathway; low risk, OTC | 4–8 weeks to see serum change |
-| Restart B-complex / Methylfolate / B12 | Life Mastery | Corrects MCH elevation; reduces homocysteine 7.55; restores cognitive substrate | 6–12 weeks to normalize MCH |
+| Restart B-complex / Methylfolate / B12 | Life Mastery | Corrects MCH elevation (superseded: MCH in range in Oct); reduces homocysteine 7.55 (May value, not retested); restores cognitive substrate | 6–12 weeks to normalize MCH |
 | Add Magnesium glycinate (300 mg at bedtime) | Life Mastery | Improves sleep quality; reduces cortisol; testosterone cofactor | 1–2 weeks (sleep) |
 | Add Zinc (30 mg/day with food) | Life Mastery | Testosterone synthesis cofactor | 6–8 weeks |
 | Add Omega-3 EPA/DHA (2–3g/day) | Life Mastery | Anti-inflammatory; supports testosterone metabolism | 4–8 weeks |
@@ -82,7 +84,7 @@ Prioritized by independence (can be started without physician approval) and spee
 | L1 Testosterone restored | L3 Deep Work | Testosterone → dopamine → prefrontal cortex function → sustained focus | Life Force, Outlive |
 | L1 Zone 2 cardio | L3 Cognitive endurance | BDNF release; hippocampal volume; sustained working memory | Outlive |
 | L1 Cortisol regulation | L3 Decision quality | Reduced High-Beta reactivity → neocortical (vs. limbic) decision-making | Breaking the Habit |
-| L1 B12/Folate restoration | L4 Learning capacity | MCH normalization → red blood cell oxygen delivery → cognitive endurance | Life Mastery |
+| L1 B12/Folate restoration | L4 Learning capacity | MCH normalization → red blood cell oxygen delivery → cognitive endurance (MCH in range in Oct; link no longer supported by the data) | Life Mastery |
 | L1 Sleep optimization | L1 Testosterone | 70% of daily testosterone production occurs during sleep; 7:20 hr minimum is not aspirational — it is the production window | Outlive, Life Force |
 | L3 TPM stress | L1 Cortisol/testosterone | Chronic sympathetic activation is the active suppressor; the work environment is the source | Breaking the Habit |
 | L1 Weight loss (−8 kg) | L1 Testosterone | Visceral fat aromatizes testosterone to estrogen; every kg lost reduces conversion rate | Outlive, Life Mastery |
@@ -106,10 +108,10 @@ A 90-day execution window across all tiers.
 
 | Scenario | Probability | Impact |
 |---|---|---|
-| Testosterone declines further (240 → 220 ng/dL by year-end) | High if current trajectory holds | Fatigue, motivation loss, lean mass decline — directly threatens Principal Promotion |
+| Testosterone declines further (240 → 220 ng/dL by year-end; May projection, actual Total T 300 → 285 in Oct, see [[L1-Health/blood-analysis-function-oct2026]]) | High if current trajectory holds | Fatigue, motivation loss, lean mass decline — directly threatens Principal Promotion |
 | Weight continues to increase | Medium-High | Visceral fat aromatization accelerates testosterone → estrogen conversion |
-| MCH/Homocysteine remain uncorrected | High (no supplementation in place) | Sustained cognitive impairment; cardiovascular risk accumulates |
-| Deep Work capacity declines below L3 threshold | Medium | Principal Promotion timeline extends; E7 brand stalls |
+| MCH/Homocysteine remain uncorrected (MCH in range in Oct; homocysteine not retested) | High in May (no supplementation then); status since May unrecorded | Sustained cognitive impairment; cardiovascular risk accumulates |
+| Deep Work capacity declines below L3 threshold; liver enzymes ALT 94 / AST 50 add an unaddressed Oct flag ([[L1-Health/liver-enzymes-alt-ast-oct2026]]) | Medium | Principal Promotion timeline extends; E7 brand stalls |
 | Intervention (Tier 1) executed within 2 weeks | High if committed | All biochemical deficiencies addressed within 90 days; testosterone trajectory reverses |
 
 **Bottom line:** The 4-book stack confirms what the blood data already indicated — an actionable biochemical intervention exists, it is low-cost and largely self-managed in Tier 1, and the cost of inaction compounds monthly. The L3 Principal Promotion path and the L1 physical performance targets are linked to the same root fix.

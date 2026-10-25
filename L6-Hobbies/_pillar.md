@@ -66,5 +66,5 @@ The 4 trips with Luisa (L2 KR) contribute substantially to L6 quality even thoug
 ## Notes
 
 - **Luna** — Named companion (likely dog). Features in new-spots travel goal and morning routine sunlight walks.
-- Soccer team search: identify local leagues. Likely in the Seattle/Washington area given Blue Origin location.
+- Soccer team search: identify local leagues. Likely in the Seattle/Washington area given Blue Origin location. *(Unverified: the book notes place Gil in Cocoa, FL; see [[01-Entities/blue-origin]].)*
 - Golf is a deliberate social and professional skill with long-term networking value in tech/aerospace circles — mild L3 adjacency.

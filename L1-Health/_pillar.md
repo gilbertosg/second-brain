@@ -48,7 +48,7 @@ The foundation pillar. Physical health and mental peace generate the energy that
 
 **⚠ Oct 2026 update:** The Oct 2, 2026 panel adds liver flags (ALT 94, AST 50) and LDL particle flags (LDL-P 1309, LDL Medium and Small above range), leaves hs-CRP at 1.2 mg/L, and clears glucose, HDL Large, and LDL Peak Size. Weight and composition rows below end at W17 (May) and W5 (Jan); the vault holds no later data.
 
-See [[L1-Health/blood-analysis]], [[L1-Health/blood-analysis-function-oct2026]], [[L1-Health/blood-analysis-function-may2026]], and [[L1-Health/weight-tracker]] for full data.
+Source: [[01-Entities/function-health]]. See [[L1-Health/blood-analysis]], [[L1-Health/blood-analysis-function-oct2026]], [[L1-Health/blood-analysis-function-may2026]], and [[L1-Health/weight-tracker]] for full data.
 
 ---
 

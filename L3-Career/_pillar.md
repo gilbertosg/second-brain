@@ -27,6 +27,8 @@ The primary professional pillar. Drives income, identity, and mission. L3 splits
 
 ### Career — Blue Origin (Driver)
 
+Entity: [[01-Entities/blue-origin]].
+
 | Key Result | Target | Cadence |
 |---|---|---|
 | Deep Work | 10 hr/week | Weekly |

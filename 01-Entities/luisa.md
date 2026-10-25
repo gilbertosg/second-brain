@@ -13,7 +13,7 @@ related: [L2-Relationships/_pillar, L3-Career/_pillar, L5-Finance/_pillar, L5-Fi
 # Luisa
 
 **Relationship:** Gil's partner. Primary stakeholder in L2 (relationship) and L5 (joint finance) decisions — see the bi-weekly Dream & Finance meetings in [[L2-Relationships/_pillar]].
-**Employer:** Blue Origin — joined **2026-04-20**, the same employer as Gil (who has been there ~3 years 9 months as of mid-2026).
+**Employer:** Blue Origin ([[01-Entities/blue-origin]]) — joined **2026-04-20**, the same employer as Gil (who has been there ~3 years 9 months as of mid-2026).
 **Income:** $123,000 annual gross; net biweekly salary ~$3,563 (single deposit, Personal/Base account) — see [[L5-Finance/household-income-2026]] for the full household income structure.
 **Other ventures:** Runs an individual recruitment business (tracked under the "Lu Recruitment Business" expense subcategory in [[L5-Finance/expense-categorization-schema]]).
 

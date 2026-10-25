@@ -9,6 +9,7 @@ sources:
   - "L3-Career/_pillar.md"
   - "L4-Growth/_pillar.md"
 created: 2026-06-20
+last_updated: 2026-10-25
 tags: [career, productivity, l3, l4, principal-promotion, deep-work, pie-model, habits, systems]
 ---
 
@@ -211,7 +212,7 @@ A finding that the original pillar schemas did not surface:
 |---|---|---|---|
 | L4 (ML courses) | L3 (Agent Award) | Domain expertise → technical credibility for nomination | 🔴 High |
 | L4 (Weekly Reviews) | L3 (Deep Work OKR) | System 2 planning prevents Homer Self from filling week with reactive work | 🔴 High |
-| L3 (Communication drain) | L1 (hs-CRP) | TPM stress → cortisol → NF-κB → inflammation. Identified in health crossmap. | 🔴 High |
+| L3 (Communication drain) | L1 (hs-CRP) | TPM stress → cortisol → NF-κB → inflammation. Identified in health crossmap. hs-CRP read 1.2 mg/L on May 19 and Oct 2, 2026, above range both times ([[L1-Health/biomarker-digest-immune-regulation]]). | 🔴 High |
 | L4 (Books read) | L3 (PIE Image OKR) | Communication, leadership, and influence skills built through reading | 🟡 Med |
 | L4 (Teaching loop) | L7 (Content pipeline) | Each book read → potential content output; removes E7 content block | 🟡 Med |
 | L3 (PIE / Exposure) | L4 (Awareness Luck) | Visible expertise → opportunity recognition | 🟡 Med |

@@ -38,7 +38,7 @@ Financial reality:       Everbe property CLOSED 2026-06-02
 
 ## 2. L5 ↔ L3: Single-Employer Household Income Concentration
 
-Luisa joined Blue Origin on 2026-04-20 — the same employer Gil has worked at for ~3 years 9 months. As of this ingest, **100% of household net income comes from one employer.**
+Luisa joined Blue Origin ([[01-Entities/blue-origin]]) on 2026-04-20 — the same employer Gil has worked at for ~3 years 9 months. As of this ingest, **100% of household net income comes from one employer.**
 
 ```
 Household Net Income (June 2026, standard month): $19,253.67
